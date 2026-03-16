@@ -11,14 +11,16 @@ public_folder: "/gambar" # URL yang dicetak CMS ke dalam artikel
 # 3. Merancang Formulir Input (Koleksi Artikel)
 collections:
   - name: "artikel"
-    label: "Artikel & Materi" # Nama menu di sidebar admin
-    folder: "content/posts" # Folder tujuan tempat artikel baru akan disimpan
-    create: true # Mengizinkan klien membuat artikel baru
+    label: "Artikel & Materi"
+    folder: "content/posts"
+    # --- BARIS SAKTI UNTUK MEMBACA FOLDER (PAGE BUNDLES) ---
+    path: "{{slug}}/index" 
+    # --------------------------------------------------------
+    create: true
     extension: "md"
     format: "yaml-frontmatter"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Format otomatis penamaan file
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      # Inilah wujud visual yang akan dilihat oleh klien:
       - {label: "Judul Materi", name: "title", widget: "string"}
       - {label: "Tanggal Terbit", name: "date", widget: "datetime"}
       - {label: "Kategori", name: "categories", widget: "list", required: false}
