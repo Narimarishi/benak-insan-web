@@ -5,8 +5,8 @@ backend:
   branch: main
 
 # 2. Pengaturan Media & Gambar
-media_folder: "static/images" # Tempat CMS menyimpan gambar yang di-upload klien
-public_folder: "/images" # URL yang dicetak CMS ke dalam artikel
+media_folder: "static/gambar" # Tempat CMS menyimpan gambar yang di-upload klien
+public_folder: "/gambar" # URL yang dicetak CMS ke dalam artikel
 
 # 3. Merancang Formulir Input (Koleksi Artikel)
 collections:
