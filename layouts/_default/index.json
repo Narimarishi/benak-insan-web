@@ -1,0 +1,6 @@
+{{- $list := slice -}}
+{{- /* SANGAT KETAT: Hanya mengambil file Markdown dari dalam folder "posts" */ -}}
+{{- range where .Site.RegularPages "Section" "posts" -}}
+  {{- $list = $list | append (dict "title" .Title "permalink" .RelPermalink "summary" (.Summary | plainify)) -}}
+{{- end -}}
+{{- $list | jsonify -}}

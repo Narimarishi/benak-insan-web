@@ -68,3 +68,9 @@ canonifyURLs = true
     name = "Profil Saya"
     url = "/profil/" 
     weight = 30
+
+# =========================================================
+# 6. PENGATURAN DATABASE PENCARIAN (JSON)
+# =========================================================
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

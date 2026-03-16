@@ -1,0 +1,75 @@
+<div class="widget-search widget">
+    <h4 class="widget__title">Pencarian Materi</h4>
+    <form class="widget-search__form" role="search" method="get" action="#" onsubmit="return false;">
+        <label>
+            <span class="screen-reader-text">Search for:</span>
+            <input class="widget-search__field" type="search" placeholder="Ketik kata kunci..." id="local-search-input" autocomplete="off">
+        </label>
+        <input class="widget-search__submit" type="submit" value="Search">
+    </form>
+    
+    <div id="local-search-results" style="max-height: 350px; overflow-y: auto; background: transparent; padding: 0;"></div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const input = document.getElementById('local-search-input');
+    const resultsContainer = document.getElementById('local-search-results');
+    let searchData = [];
+
+    input.addEventListener('focus', async function() {
+        if (searchData.length === 0) {
+            try {
+                // PERBAIKAN: Menggunakan absURL agar selalu mencari di akar website
+                const response = await fetch('{{ "index.json" | absURL }}');
+                searchData = await response.json();
+            } catch (e) {
+                console.error('Gagal memuat database pencarian');
+            }
+        }
+    });
+
+    input.addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        resultsContainer.innerHTML = ''; 
+        
+        if (query.length < 2) return; 
+
+        const matches = searchData.filter(item => 
+            item.title.toLowerCase().includes(query) || 
+            item.summary.toLowerCase().includes(query)
+        );
+
+        if (matches.length > 0) {
+            const list = document.createElement('ul');
+            list.style.listStyle = 'none';
+            list.style.padding = '0';
+            list.style.margin = '15px 0 0 0';
+            
+            matches.forEach(item => {
+                const li = document.createElement('li');
+                li.style.padding = '10px 0';
+                li.style.borderBottom = '1px solid #E2E8F0';
+                
+                const a = document.createElement('a');
+                a.href = item.permalink;
+                a.textContent = item.title;
+                a.style.color = '#1A365D';
+                a.style.fontWeight = 'bold';
+                a.style.textDecoration = 'none';
+                a.style.display = 'block';
+                a.style.transition = 'color 0.2s';
+                
+                a.onmouseover = () => a.style.color = '#3182CE';
+                a.onmouseout = () => a.style.color = '#1A365D';
+
+                li.appendChild(a);
+                list.appendChild(li);
+            });
+            resultsContainer.appendChild(list);
+        } else {
+            resultsContainer.innerHTML = '<div style="padding: 15px 0; color: #718096; font-size: 14px; font-style: italic;">Artikel tidak ditemukan.</div>';
+        }
+    });
+});
+</script>
