@@ -1,0 +1,49 @@
+baseURL = "https://example.org/"
+title = "Benak Insan"
+languageCode = "id-id"
+theme = "mainroad"
+
+[params.author]
+  name = "Mohammad Rizky Luthfiah Aziz"
+  bio = "Aparatur Sipil Negara | Akademisi & Peneliti"
+  image = "/images/foto-profil-rizky.jpg"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  readmore = true 
+  post_meta = ["author", "date", "categories"]
+  # Mendaftarkan file CSS buatan kita sendiri
+  customCSS = ["/css/custom.css"]
+
+# BLOK LOGO (Letakkan di bawah [params] dan sebelum [params.sidebar])
+[params.logo]
+  image = "gambar/logo.png" # Sesuaikan dengan nama file gambar Anda
+  title = "BENAK INSAN"
+  subtitle = "Portal Materi Ajar & Catatan Bebas"
+
+[params.sidebar]
+  home = "right"          
+  list = "right"
+  single = "right"
+  widgets = ["search", "recent", "categories", "taglist"]
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "artikel"
+    name = "Artikel"
+    url = "/posts/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "profil"
+    name = "Profil Saya"
+    url = "/profil/"
+    weight = 30
