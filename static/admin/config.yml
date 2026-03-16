@@ -13,9 +13,9 @@ collections:
   - name: "artikel"
     label: "Artikel & Materi" # Nama menu di sidebar admin
     folder: "content/posts" # Folder tujuan tempat artikel baru akan disimpan
+    create: true # Mengizinkan klien membuat artikel baru
     extension: "md"
     format: "yaml-frontmatter"
-    create: true # Mengizinkan klien membuat artikel baru
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Format otomatis penamaan file
     fields:
       # Inilah wujud visual yang akan dilihat oleh klien:
