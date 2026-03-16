@@ -1,0 +1,25 @@
+# 1. Konfigurasi Server
+backend:
+  name: github
+  repo: Narimarishi/benak-insan-web # Target repositori Anda
+  branch: main # Cabang utama
+
+# 2. Pengaturan Media & Gambar
+media_folder: "static/images" # Tempat CMS menyimpan gambar yang di-upload klien
+public_folder: "/images" # URL yang dicetak CMS ke dalam artikel
+
+# 3. Merancang Formulir Input (Koleksi Artikel)
+collections:
+  - name: "artikel"
+    label: "Artikel & Materi" # Nama menu di sidebar admin
+    folder: "content/posts" # Folder tujuan tempat artikel baru akan disimpan
+    create: true # Mengizinkan klien membuat artikel baru
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Format otomatis penamaan file
+    fields:
+      # Inilah wujud visual yang akan dilihat oleh klien:
+      - {label: "Judul Materi", name: "title", widget: "string"}
+      - {label: "Tanggal Terbit", name: "date", widget: "datetime"}
+      - {label: "Kategori", name: "categories", widget: "list", required: false}
+      - {label: "Tag (Kata Kunci)", name: "tags", widget: "list", required: false}
+      - {label: "Gambar Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Isi Teks Artikel", name: "body", widget: "markdown"}
