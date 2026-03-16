@@ -1,9 +1,8 @@
 # 1. Konfigurasi Server
 backend:
   name: github
-  repo: Narimarishi/benak-insan-web # Target repositori Anda
-  branch: main # Cabang utama
-
+  repo: Narimarishi/benak-insan-web
+  branch: main
   auth_type: pkce
   app_id: "Ov23liPMjTqqgEwmmfst"
 
