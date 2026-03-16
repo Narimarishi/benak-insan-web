@@ -1,15 +1,13 @@
 # =========================================================
-# 1. PENGATURAN UTAMA & PERBAIKAN URL GITHUB PAGES
+# 1. PENGATURAN UTAMA
 # =========================================================
-# WAJIB: Alamat asli GitHub Pages Anda (harus ada garis miring di akhir)
 baseURL = "https://Narimarishi.github.io/benak-insan-web/"
 title = "Benak Insan"
 languageCode = "id-id"
 theme = "mainroad"
 
-# SAKLAR AJAIB: Memaksa Hugo memperbaiki semua link gambar & CSS yang rusak
+# SAKLAR AJAIB: Cukup gunakan ini, HAPUS relativeURLs agar tidak nyasar
 canonifyURLs = true
-relativeURLs = true
 
 # =========================================================
 # 2. PROFIL PENULIS
@@ -17,8 +15,8 @@ relativeURLs = true
 [params.author]
   name = "Mohammad Rizky Luthfiah Aziz"
   bio = "Aparatur Sipil Negara | Akademisi & Peneliti"
-  # PERBAIKAN: Hapus garis miring (/) di paling depan
-  image = "images/foto-profil-rizky.jpg"
+  # KEMBALIKAN GARIS MIRING: Agar selalu mencari di root folder images
+  image = "/images/foto-profil-rizky.jpg"
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -27,21 +25,19 @@ relativeURLs = true
 # 3. PENGATURAN TEMA & CSS KUSTOM
 # =========================================================
 [params]
-  # PERBAIKAN: Mencegah halaman profil muncul di daftar artikel beranda
   mainSections = ["posts"] 
-  
   readmore = true 
   post_meta = ["author", "date", "categories"]
   
-  # PERBAIKAN: Hapus garis miring (/) di paling depan
-  customCSS = ["css/custom.css"]
+  # KEMBALIKAN GARIS MIRING
+  customCSS = ["/css/custom.css"]
 
 # =========================================================
 # 4. LOGO & SIDEBAR
 # =========================================================
 [params.logo]
-  # Ini sudah benar (tidak ada garis miring di depan)
-  image = "gambar/logo.png" 
+  # KEMBALIKAN GARIS MIRING
+  image = "/gambar/logo.png" 
   title = "BENAK INSAN"
   subtitle = "Portal Materi Ajar & Catatan Bebas"
 
@@ -52,7 +48,7 @@ relativeURLs = true
   widgets = ["search", "recent", "categories", "taglist"]
 
 # =========================================================
-# 5. MENU NAVIGASI
+# 5. MENU NAVIGASI (KEMBALIKAN GARIS MIRING ABSOLUT)
 # =========================================================
 [menu]
   [[menu.main]]
@@ -64,13 +60,11 @@ relativeURLs = true
   [[menu.main]]
     identifier = "artikel"
     name = "Artikel"
-    # PERBAIKAN: Menghapus garis miring di depan agar tidak nyasar
-    url = "posts/" 
+    url = "/posts/" 
     weight = 20
 
   [[menu.main]]
     identifier = "profil"
     name = "Profil Saya"
-    # PERBAIKAN: Menghapus garis miring di depan
-    url = "profil/" 
+    url = "/profil/" 
     weight = 30
