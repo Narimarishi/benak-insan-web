@@ -4,6 +4,9 @@ backend:
   repo: Narimarishi/benak-insan-web # Target repositori Anda
   branch: main # Cabang utama
 
+  auth_type: pkce
+  app_id: "Ov23liPMjTqqgEwmmfst"
+
 # 2. Pengaturan Media & Gambar
 media_folder: "static/images" # Tempat CMS menyimpan gambar yang di-upload klien
 public_folder: "/images" # URL yang dicetak CMS ke dalam artikel
