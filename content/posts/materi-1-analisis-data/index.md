@@ -1,9 +1,10 @@
 ---
-title: "Materi 1: Pengantar Analisis Data"
+title: 'Materi 1: Pengantar Analisis Data'
 date: 2026-03-04
-author: "Mohammad Rizky Luthfiah Aziz"
-categories: ["Materi Kuliah"]
-thumbnail: "/posts/materi-1-analisis-data/teknik-analisis-data-pengertian-jenis-dan-contohnya-199343.webp"
+categories:
+  - Materi Kuliah
+thumbnail: teknik-analisis-data-pengertian-jenis-dan-contohnya-199343.webp
+author: Mohammad Rizky Luthfiah Aziz
 ---
 
 Isi artikel Anda di sini...
@@ -11,6 +12,7 @@ Isi artikel Anda di sini...
 Dalam era modern, data yang melimpah tidak akan memiliki arti jika tidak diolah menjadi informasi. Analisis data adalah proses inspeksi, pembersihan, dan pemodelan data.
 <!--more-->
 Berikut adalah tahapannya:
+
 - Pengumpulan Data
 - Pembersihan Data
 - Visualisasi Data
