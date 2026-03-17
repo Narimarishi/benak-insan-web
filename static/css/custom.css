@@ -49,6 +49,7 @@ body > .container,
     font-family: 'Gotu', sans-serif !important; /* Menggunakan Font Gotu */
     font-weight: 400 !important; /* Dibuat Regular (Tebal 400) agar elegan */
     letter-spacing: 3px !important; /* Jarak antar huruf dilebarkan ala gaya minimalis */
+    font-style: italic !important; /* --- INI KODE BARU UNTUK MEMBUATNYA MIRING --- */
 }
 .logo__tagline { 
     color: #8A6849 !important; /* Warna Cokelat Karamel */
