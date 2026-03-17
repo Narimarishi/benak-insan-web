@@ -1,6 +1,6 @@
 ---
 title: Matematika Kalkulus 2
-date: 2026-03-15T12:25:00
+date: 2026-03-16T12:25:00
 categories:
   - Materi Kuliah
 tags:
