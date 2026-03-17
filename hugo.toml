@@ -39,7 +39,7 @@ canonifyURLs = true
   # KEMBALIKAN GARIS MIRING
   image = "/gambar/logo.png" 
   title = "BENAK INSAN"
-  subtitle = "Portal Materi Ajar & Catatan Bebas"
+  subtitle = "Catatan Reflektif dari Ruang Pikir dan Batin"
 
 [params.sidebar]
   home = "right"          

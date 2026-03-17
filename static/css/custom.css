@@ -1,14 +1,20 @@
 /* =========================================================
-   0. RESET KERANGKA & LATAR BELAKANG UTAMA
+   IMPORT FONT ESTETIK (VINTAGE) DARI GOOGLE FONTS
+   ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+/* =========================================================
+   0. RESET KERANGKA & LATAR BELAKANG UTAMA (Kertas Vintage)
    ========================================================= */
 html, body {
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
-    background-color: #F8F7F3 !important; /* Latar Broken White Elegan */
+    background-color: #F4EFE6 !important; /* Latar Cream / Broken White Elegan */
     overflow-x: hidden; 
-    color: #2D3748 !important; /* Teks Artikel Abu-abu Gelap */
+    color: #3E362E !important; /* Teks Artikel Cokelat Gelap Klasik */
+    font-family: 'Lora', serif !important; /* Font nyaman dibaca ala koran lama */
 }
 
 body > .container, 
@@ -23,11 +29,11 @@ body > .container,
 }
 
 /* =========================================================
-   1. HEADER NAVY ELEGAN & MENU
+   1. HEADER VINTAGE & MENU
    ========================================================= */
 .header {
-    background-color: #1A365D !important; /* Biru Dongker / Navy */
-    border-bottom: 3px solid #90CDF4 !important; /* Garis bawah biru muda */
+    background-color: #EFE8DB !important; /* Latar header senada tapi sedikit lebih gelap */
+    border-bottom: 3px solid #D4C4A8 !important; /* Garis bawah cokelat pudar */
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
@@ -36,8 +42,19 @@ body > .container,
 
 .logo__img { display: none !important; }
 .logo { margin: 0 !important; }
-.logo__title, .logo__link { color: #ffffff !important; }
-.logo__tagline { color: #90CDF4 !important; }
+
+/* Judul dan Tagline Menggunakan Font Klasik */
+.logo__title, .logo__link { 
+    color: #5C4033 !important; /* Warna Kopi Gelap */
+    font-family: 'Gotu', sans-serif !important; /* Menggunakan Font Gotu */
+    font-weight: 400 !important; /* Dibuat Regular (Tebal 400) agar elegan */
+    letter-spacing: 3px !important; /* Jarak antar huruf dilebarkan ala gaya minimalis */
+}
+.logo__tagline { 
+    color: #8A6849 !important; /* Warna Cokelat Karamel */
+    font-family: 'Lora', serif !important;
+    font-style: italic;
+}
 
 @media (min-width: 768px) {
     .header__container {
@@ -60,13 +77,14 @@ body > .container,
     align-items: center;
 }
 .menu__link {
-    color: #ffffff !important; 
+    color: #5C4033 !important; 
+    font-family: 'Playfair Display', serif !important;
     font-weight: 700 !important;
     text-transform: uppercase;
     padding: 5px 0 !important;
     transition: color 0.3s ease;
 }
-.menu__link:hover { color: #90CDF4 !important; }
+.menu__link:hover { color: #8B5A2B !important; /* Berubah sepia saat disorot */ }
 
 /* =========================================================
    2. TATA LETAK KONTEN, WARNA JUDUL & LINK HOVER
@@ -78,27 +96,42 @@ body > .container,
     max-width: 100% !important;
 }
 
-/* Judul widget, list, dan link artikel */
+/* KELOMPOK JUDUL UTAMA (Ditambah .main__title untuk Kategori/Tag) */
 .widget__title, 
 .list__title, 
 .recent-posts__title,
-.post__title a { 
-    color: #1A365D !important; 
+.post__title a,
+.page__title,
+.main__title { 
+    color: #5C4033 !important; 
+    font-family: 'Playfair Display', serif !important;
     transition: color 0.3s ease;
 }
 
-/* Mengubah SEMUA teks tautan (Judul, Recent Post, Category) saat disorot */
+/* Khusus untuk judul halaman Kategori/Tag, kita tambahkan garis bawah */
+.page__title,
+.main__title {
+    font-weight: 700 !important;
+    border-bottom: 2px dashed #D4C4A8 !important; 
+    padding-bottom: 10px !important;
+}
+
+/* Mengubah SEMUA teks tautan saat disorot */
 a:hover, 
 .widget__link:hover, 
 .widget__item a:hover,
 .post__meta a:hover,
 .post__category a:hover,
 .post__title a:hover {
-    color: #3182CE !important; /* Royal Blue */
+    color: #8B5A2B !important; 
+}
+
+a {
+    color: #8A6849 !important;
 }
 
 /* =========================================================
-   3. TOMBOL, TAGS & READ MORE (BIRU NAVY)
+   3. TOMBOL, TAGS & READ MORE (VINTAGE DARK COFFEE)
    ========================================================= */
 .btn, 
 .post__readmore, 
@@ -106,19 +139,20 @@ a:hover,
 .widget-tags__link, 
 .button, 
 .category,
-.tags__title { /* Menyatukan kotak ikon tag ke sini */
-    background-color: #1A365D !important; 
-    color: #ffffff !important; 
+.tags__title { 
+    background-color: #5C4033 !important; /* Cokelat Kopi */
+    color: #F4EFE6 !important; /* Teks cream */
     border: none !important; 
     border-radius: 4px !important;
     padding: 6px 14px !important;
     transition: background-color 0.3s ease !important;
     text-decoration: none !important;
     display: inline-block;
+    font-family: 'Lora', serif !important;
 }
 
-/* Memastikan ikon gambar SVG di dalam tag tetap putih */
-.tags__svg { fill: #ffffff !important; }
+/* Memastikan ikon gambar SVG di dalam tag tetap selaras */
+.tags__svg { fill: #F4EFE6 !important; }
 
 /* Efek Hover untuk semua tombol */
 .btn:hover, 
@@ -127,7 +161,7 @@ a:hover,
 .widget-tags__link:hover, 
 .button:hover, 
 .category:hover {
-    background-color: #3182CE !important; 
+    background-color: #8A6849 !important; /* Cokelat Terang */
     color: #ffffff !important;
 }
 
@@ -136,7 +170,7 @@ a:hover,
    ========================================================= */
 .widget__title {
     border-top: none !important; 
-    border-bottom: 2px solid #3182CE !important; 
+    border-bottom: 2px dashed #D4C4A8 !important; /* Garis putus-putus ala buku jurnal */
 }
 
 .post, 
@@ -144,7 +178,12 @@ a:hover,
 .post__meta, 
 .post__footer, 
 .authorbox {
-    border-color: #E2E8F0 !important; 
+    border-color: #E6D8C0 !important; /* Garis pembatas warna cream tua */
+}
+
+/* Widget diberi sedikit latar agar kontras dengan body */
+.widget {
+    background-color: #FDFBF7 !important;
 }
 
 /* =========================================================
@@ -153,22 +192,22 @@ a:hover,
 .footer {
     padding: 25px 5% !important;
     box-sizing: border-box !important;
-    background-color: #1A365D !important; /* Footer Navy Dongker */
-    color: #ffffff !important;
-    border-top: 5px solid #3182CE !important; 
+    background-color: #3E362E !important; /* Footer Cokelat Sangat Gelap */
+    color: #F4EFE6 !important;
+    border-top: 5px solid #5C4033 !important; 
     margin: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
-    text-align: center !important; /* Memaksa teks dasar ke tengah */
+    text-align: center !important; 
+    font-family: 'Lora', serif !important;
 }
 
-/* Membongkar pemisah kiri-kanan bawaan Mainroad dan menumpuknya di tengah */
 .footer__container {
     display: flex !important;
-    flex-direction: column !important; /* Menumpuk atas-bawah */
-    align-items: center !important; /* Rata tengah horizontal */
+    flex-direction: column !important; 
+    align-items: center !important; 
     justify-content: center !important;
-    gap: 10px; /* Jarak antar baris jika ada beberapa teks */
+    gap: 10px; 
 }
 
 .footer__copyright, 
@@ -177,7 +216,7 @@ a:hover,
     text-align: center !important;
 }
 
-.footer a { color: #90CDF4 !important; }
+.footer a { color: #D4C4A8 !important; }
 .footer a:hover { color: #ffffff !important; }
 
 /* =========================================================
@@ -202,15 +241,32 @@ a:hover,
 /* =========================================================
    7. MENGHANCURKAN SISA MERAH TERAKHIR (BADGE ICON)
    ========================================================= */
-/* Mengubah latar kotak ikon Tag & Kategori menjadi Navy */
 .tags__badge,
 .categories__badge {
-    background-color: #1A365D !important; 
-    color: #ffffff !important;
+    background-color: #5C4033 !important; 
+    color: #F4EFE6 !important;
 }
 
-/* Memastikan warna ikon SVG di dalamnya putih bersih */
 .tags__badge svg,
 .categories__badge svg {
-    fill: #ffffff !important;
+    fill: #F4EFE6 !important;
+}
+
+/* =========================================================
+   8. FORM & KOTAK PENCARIAN (MENGHILANGKAN OUTLINE BIRU)
+   ========================================================= */
+input:focus, 
+textarea:focus, 
+.widget-search__field:focus {
+    outline: none !important; /* Mematikan garis biru neon bawaan browser */
+    border: 2px solid #8B5A2B !important; /* Menggantinya dengan warna Cokelat Sepia */
+    box-shadow: 0 0 5px rgba(139, 90, 43, 0.2) !important; /* Memberikan sedikit pendar cokelat yang lembut */
+    background-color: #FDFBF7 !important; /* Memastikan warna latar kotak tetap putih gading saat diklik */
+    color: #3E362E !important; /* Teks yang diketik tetap cokelat gelap */
+}
+
+/* Sedikit penyesuaian untuk kotak input secara umum agar tepiannya lebih estetik */
+.widget-search__field {
+    border: 1px solid #D4C4A8 !important; /* Garis tepi saat belum diklik */
+    border-radius: 4px !important;
 }
