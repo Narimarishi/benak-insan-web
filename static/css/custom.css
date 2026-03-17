@@ -280,3 +280,29 @@ textarea:focus,
     border: 1px solid #D4C4A8 !important; /* Garis tepi saat belum diklik */
     border-radius: 4px !important;
 }
+
+/* =========================================================
+   10. PENYERAGAMAN UKURAN THUMBNAIL (ASPECT RATIO)
+   ========================================================= */
+
+/* Untuk Thumbnail di Halaman Utama (Home & Kategori) */
+.list__thumbnail img {
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: 16 / 9 !important; /* Bingkai rasio 16:9 (Layar Lebar) */
+    object-fit: cover !important; /* Memotong kelebihan gambar dengan cerdas */
+    object-position: center !important; /* Memastikan bagian tengah gambar yang selalu tersorot */
+    border-radius: 4px !important; /* Sedikit lengkungan di sudut agar estetik */
+}
+
+/* Untuk Thumbnail besar di dalam Artikel */
+.post__thumbnail img,
+.post__thumbnail-image {
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: 16 / 9 !important; 
+    max-height: 450px !important; /* Batas tinggi maksimal agar tidak terlalu raksasa di layar PC */
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 8px !important; 
+}
