@@ -27,4 +27,4 @@ Berikut adalah beberapa konsep dasar yang kamu akan pelajari dalam kalkulus:
 3. **Integral**: Integral adalah kebalikan dari turunan. Jika turunan menghitung laju perubahan, maka integral menghitung total akumulasi dari perubahan tersebut. Contohnya adalah menghitung total jarak yang ditempuh berdasarkan kecepatan.
 4. **Persamaan Diferensial**: Ini adalah aplikasi lanjut dari turunan dan integral. Persamaan diferensial digunakan untuk memodelkan berbagai fenomena dunia nyata seperti penyebaran penyakit, perubahan populasi, dan bahkan gelombang suara.
 
-[`Klik Disini untuk Download Materi PDF`](Matematika-Kalkulus.pdf)
+Klik Disini untuk Download [Materi PDF](Matematika-Kalkulus.pdf)
