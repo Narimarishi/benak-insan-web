@@ -1,8 +1,15 @@
 {{- if .Params.thumbnail }}
 <figure class="post__thumbnail">
     <a class="post__thumbnail-link" href="{{ .RelPermalink }}">
-        {{- $namaGambar := strings.TrimPrefix "/" .Params.thumbnail -}}
-        <img class="post__thumbnail-image" src="{{ .RelPermalink }}{{ $namaGambar }}" alt="{{ .Title }}">
+        {{- $namaFile := path.Base .Params.thumbnail -}}
+        
+        {{- $gambar := .Resources.GetMatch (printf "**%s*" $namaFile) -}}
+        
+        {{- if $gambar -}}
+            <img class="post__thumbnail-image" src="{{ $gambar.RelPermalink }}" alt="{{ .Title }}">
+        {{- else -}}
+            <img class="post__thumbnail-image" src="{{ .RelPermalink }}{{ $namaFile }}" alt="{{ .Title }}">
+        {{- end -}}
     </a>
 </figure>
 {{- end }}
