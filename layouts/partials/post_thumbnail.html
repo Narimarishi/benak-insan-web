@@ -1,14 +1,17 @@
 {{- if .Params.thumbnail }}
 <figure class="post__thumbnail">
     <a class="post__thumbnail-link" href="{{ .RelPermalink }}">
+        {{- /* 1. Ambil nama file murni (buang embel-embel folder dari CMS) */ -}}
         {{- $namaFile := path.Base .Params.thumbnail -}}
         
-        {{- $gambar := .Resources.GetMatch (printf "**%s*" $namaFile) -}}
+        {{- /* 2. Gunakan radar Hugo untuk mencari file tersebut di folder materi */ -}}
+        {{- $gambar := .Resources.GetMatch $namaFile -}}
         
         {{- if $gambar -}}
             <img class="post__thumbnail-image" src="{{ $gambar.RelPermalink }}" alt="{{ .Title }}">
         {{- else -}}
-            <img class="post__thumbnail-image" src="{{ .RelPermalink }}{{ $namaFile }}" alt="{{ .Title }}">
+            {{- $urlPaksa := printf "%s%s" .RelPermalink $namaFile -}}
+            <img class="post__thumbnail-image" src="{{ $urlPaksa }}" alt="{{ .Title }}">
         {{- end -}}
     </a>
 </figure>
