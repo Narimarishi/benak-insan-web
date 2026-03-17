@@ -1,13 +1,8 @@
 {{- if .Params.thumbnail }}
 <figure class="post__thumbnail">
     <a class="post__thumbnail-link" href="{{ .RelPermalink }}">
-        {{- $image := .Resources.GetMatch .Params.thumbnail }}
-        
-        {{- if $image }}
-        <img class="post__thumbnail-image" src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
-        {{- else }}
-        <img class="post__thumbnail-image" src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
-        {{- end }}
+        {{- $namaGambar := strings.TrimPrefix "/" .Params.thumbnail -}}
+        <img class="post__thumbnail-image" src="{{ .RelPermalink }}{{ $namaGambar }}" alt="{{ .Title }}">
     </a>
 </figure>
 {{- end }}
