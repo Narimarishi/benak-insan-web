@@ -1,7 +1,7 @@
 /* =========================================================
    IMPORT FONT ESTETIK (VINTAGE) DARI GOOGLE FONTS
    ========================================================= */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
 
 /* =========================================================
    0. RESET KERANGKA & LATAR BELAKANG UTAMA (Kertas Vintage)
@@ -46,11 +46,12 @@ body > .container,
 /* Judul dan Tagline Menggunakan Font Klasik / Signature */
 .logo__title, .logo__link { 
     color: #5C4033 !important; /* Warna Kopi Gelap */
-    font-family: 'Dancing Script', cursive !important; /* Font tegak bersambung */
-    font-weight: 700 !important; /* Dibuat sangat tebal sesuai permintaan */
-    font-size: 2.8rem !important; /* Diperbesar agar goresannya terbaca jelas */
-    letter-spacing: 0px !important; /* Spasi dinolkan agar hurufnya saling menyambung sempurna */
-    font-style: normal !important; /* Dikembalikan ke normal karena font ini sudah miring bawaan */
+    font-family: 'Allura', cursive !important; /* Font signature Allura */
+    font-size: 3.5rem !important; /* Ukuran besar agar detailnya terlihat */
+    font-weight: 400 !important; /* Allura memang paling optimal di ketebalan regular (400) */
+    letter-spacing: 1px !important; 
+    font-style: normal !important;
+    text-transform: capitalize !important; /* Memastikan hanya huruf awal yang besar */
 }
 .logo__tagline { 
     color: #8A6849 !important; /* Warna Cokelat Karamel */
