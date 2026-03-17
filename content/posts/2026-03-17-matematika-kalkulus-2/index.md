@@ -11,9 +11,7 @@ thumbnail: a4ba4f38fb085d4f3ea1ce80eb68e45c.jpg
 dokumen: Matematika-Kalkulus.pdf
 ---
 
-**Kalkulus adalah** alat yang sangat kuat dalam matematika karena membantu kita menganalisis berbagai fenomena, mulai dari perubahan cuaca hingga dinamika ekonomi. Dan tidak hanya itu, materi kalkulus juga sering digunakan dalam pemrograman, fisika, teknik, dan banyak bidang lainnya.
-
-<!--more-->
+**Kalkulus adalah** alat yang sangat kuat dalam matematika karena membantu kita menganalisis berbagai fenomena, mulai dari perubahan cuaca hingga dinamika ekonomi. Dan tidak hanya itu, materi kalkulus juga sering digunakan dalam pemrograman, fisika, teknik, dan banyak bidang lainnya. <!--more-->
 
 Dalam dunia pemrograman, terutama yang berkaitan dengan **machine learning**, **kalkulus adalah** salah satu dasar utama. Kenapa begitu?
 
