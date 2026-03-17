@@ -38,7 +38,7 @@ canonifyURLs = true
 [params.logo]
   # KEMBALIKAN GARIS MIRING
   image = "/gambar/logo.png" 
-  title = "BenaK Insan"
+  title = "Benak Insan"
   subtitle = "Catatan Reflektif dari Ruang Pikir dan Batin"
 
 [params.sidebar]
