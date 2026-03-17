@@ -13,6 +13,8 @@ dokumen: Matematika-Kalkulus.pdf
 
 **Kalkulus adalah** alat yang sangat kuat dalam matematika karena membantu kita menganalisis berbagai fenomena, mulai dari perubahan cuaca hingga dinamika ekonomi. Dan tidak hanya itu, materi kalkulus juga sering digunakan dalam pemrograman, fisika, teknik, dan banyak bidang lainnya.
 
+<!--more-->
+
 Dalam dunia pemrograman, terutama yang berkaitan dengan **machine learning**, **kalkulus adalah** salah satu dasar utama. Kenapa begitu?
 
 - **Optimisasi Algoritma**: Salah satu penggunaan utama kalkulus dalam pemrograman adalah untuk optimisasi. Misalnya, dalam algoritma machine learning, kita menggunakan kalkulus untuk mencari nilai terbaik dari parameter model. Proses ini sering kali melibatkan pencarian minimum atau maksimum dari suatu fungsi, yang bisa dilakukan dengan menggunakan kalkulus diferensial.
