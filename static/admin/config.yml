@@ -13,9 +13,11 @@ collections:
   - name: "artikel"
     label: "Artikel & Materi"
     folder: "content/posts"
-    # --- BARIS SAKTI UNTUK MEMBACA FOLDER (PAGE BUNDLES) ---
     path: "{{slug}}/index" 
-    # --------------------------------------------------------
+    # --- DUA BARIS INI ADALAH KUNCI UNTUK ENTRY ASSETS ---
+    media_folder: "" 
+    public_folder: ""
+    # ------------------------------------------------------
     create: true
     extension: "md"
     format: "yaml-frontmatter"
