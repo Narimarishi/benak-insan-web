@@ -308,88 +308,97 @@ textarea:focus,
 }
 
 /* =========================================================
-   11. PERBAIKAN RESPONSIF TAMPILAN MOBILE (HP) - VERSI FINAL
+   11. PERBAIKAN RESPONSIF MOBILE (HP) - VERSI FINAL & STANDAR
    ========================================================= */
 @media (max-width: 768px) {
-    /* A. Merapikan Header (Logo & Tagline) */
+    /* A. Penempatan Parent Container */
+    .header__inner {
+        position: relative !important; /* RAHASIA: Biar tombol bisa ditaruh di pojok */
+    }
+
+    /* B. Penyesuaian Header (Logo & Tagline) */
     .logo__title, .logo__link {
-        font-size: 3rem !important; 
+        font-size: 2.8rem !important; /* Dikecilkan agar harmonis dengan logo */
         line-height: 1 !important; 
+        align-self: flex-start !important; /* Rata kiri */
     }
     .logo__tagline {
-        margin-top: 15px !important;
+        margin-top: 10px !important;
         line-height: 1.4 !important;
-        margin-bottom: 20px !important; /* Memberi jarak napas sebelum tombol menu */
+        align-self: flex-start !important; /* Rata kiri */
+        margin-bottom: 0 !important;
     }
 
-    /* B. Tombol "MENU" - Ditengahkan Sempurna & Dipersempit */
+    /* C. Tombol MENU (di Kanan Atas) & Ikon Hamburger Putih */
     .menu__btn {
-        background-color: #5C4033 !important; 
-        color: #FFFFFF !important; 
-        border-radius: 8px !important; 
-        padding: 8px 18px !important; /* Dipersempit agar tidak gemuk */
-        display: flex !important; 
-        align-items: center !important;
-        justify-content: center !important;
-        gap: 8px !important; 
+        position: absolute !important; /* Taruh secara manual */
+        top: 20px !important; /* Jarak dari atas */
+        right: 20px !important; /* Jarak dari kanan */
+        background-color: transparent !important; /* Latar belakang transparan */
         border: none !important;
-        margin: 0 auto 20px auto !important; /* RAHASIA TENGAH: Memaksa tombol ke tengah layar */
-        width: fit-content !important; /* Ukuran tombol memeluk teksnya */
-        position: relative !important;
-        right: auto !important;
-        top: auto !important;
-    }
-    .menu__btn-title {
-        color: #FFFFFF !important; 
-        font-weight: 600 !important;
+        padding: 0 !important;
+        width: auto !important;
+        height: auto !important;
         margin: 0 !important;
-        font-size: 1rem !important; /* Ukuran teks proporsional */
+        cursor: pointer !important;
     }
-    .menu__btn svg {
-        fill: #FFFFFF !important;
-        width: 18px !important;
-        height: 18px !important;
+    /* Sembunyikan tulisan plain "MENU" */
+    .menu__btn-title {
+        display: none !important;
+    }
+    /* GANTI dengan Ikon Hamburger Putih (Tiga Garis) Modern */
+    .menu__btn-icon {
+        display: inline-block !important;
+        width: 25px !important;
+        height: 20px !important;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' fill='%23ffffff'/%3E%3C/svg%3E") !important; /* Ikon Hamburger Putih resmi */
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: cover !important;
     }
 
-    /* C. Daftar Menu (Dropdown Box) */
+    /* D. Daftar Dropdown Menu - DITIPISKAN TOTAL (Compact) */
     .menu__list {
-        flex-direction: column !important; 
-        background-color: #333333 !important; 
-        padding: 0 !important;
-        margin: 0 !important;
+        display: none; /* Sembunyikan default (tema yang handles toggle) */
+        position: absolute !important;
+        top: 60px !important; /* Tepat di bawah tombol */
+        right: 20px !important; /* Jarak dari kanan */
+        width: 150px !important; /* UKURAN LEBAR DIPER-KECIL TOTAL */
+        background-color: #2b2b2b !important; /* Latar gelap premium */
         list-style: none !important;
-        border-bottom: 3px solid #5C4033 !important; 
+        padding: 5px 0 !important; /* Jarak pas (Compact) */
+        border-radius: 6px !important; /* Sedikit lengkungan estetik */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3) !important; /* Efek bayangan */
+        margin: 0 !important;
+        z-index: 9999 !important; /* Biar selalu di atas konten */
+    }
+    /* Tampilkan daftar saat tema menambahkan kelas "menu__open" */
+    .menu__open .menu__list {
+        display: block !important;
     }
     .menu__item {
         display: block !important; 
-        border-top: 1px solid #4a4a4a !important; 
+        border-top: none !important; /* Hilangkan garis pemisah theme */
         margin: 0 !important;
         padding: 0 !important;
     }
 
-    /* D. Tautan Menu - DIPERAS AGAR TIPIS DAN COMPACT */
+    /* E. Tautan Menu (Compact dan Tipis) */
     .menu__link {
         display: block !important;
-        padding: 10px 15px !important; /* DARI 15px DITIPISKAN JADI 10px */
-        color: #ffffff !important; 
-        text-align: center !important;
+        padding: 6px 15px !important; /* Jarak Compact (Tipis ke bawah) */
+        color: #ffffff !important; /* Teks putih */
+        text-align: left !important; /* Rata kiri (Standar premium) */
         text-decoration: none !important;
-        line-height: 1.2 !important; /* Jarak antar baris dirapatkan */
-        font-size: 0.95rem !important; /* Teks sedikit dikecilkan agar muat banyak */
-        height: auto !important; 
+        line-height: 1.2 !important; /* Jarak antar baris rapat */
+        font-size: 0.9rem !important; /* Teks proporsional */
         background-color: transparent !important; 
         width: 100% !important;
     }
 
-    /* E. Hover & Active States */
+    /* F. Hover State (Jari Sentuh) */
     .menu__link:hover {
-        background-color: #5C4033 !important; 
+        background-color: #5C4033 !important; /* Efek sentuh warna kopi */
         color: #FFFFFF !important; 
-    }
-    .menu__item.is-active .menu__link,
-    .menu__item.active .menu__link {
-        background-color: #5C4033 !important; 
-        color: #FFFFFF !important;
-        font-weight: 700 !important;
     }
 }
