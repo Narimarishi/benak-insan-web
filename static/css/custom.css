@@ -419,3 +419,47 @@ input:focus, textarea:focus, .widget-search__field:focus {
         margin-bottom: 0 !important;
     }
 }
+
+/* =========================================================
+   15. PEMANGKASAN TINGGI HEADER KHUSUS MOBILE (SUPER SLIM)
+   ========================================================= */
+@media (max-width: 768px) {
+    /* Menghapus jarak luar bawaan tema */
+    .header {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    /* Memeras bantalan dalam agar atas dan bawahnya tipis */
+    .header__container {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+
+    /* Memastikan logo tidak memiliki jarak tambahan */
+    .logo {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Memotong "kotak gaib" font Allura di layar HP */
+    .logo__title, .logo__link {
+        line-height: 0.8 !important; 
+        margin-bottom: 0 !important;
+    }
+
+    /* Mengurangi jarak bawah tagline yang sebelumnya membuat header bengkak */
+    .logo__tagline {
+        margin-bottom: 5px !important; 
+    }
+
+    /* Menyesuaikan letak tombol hamburger agar sejajar dengan header yang baru (naik sedikit) */
+    .menu__btn {
+        top: 20px !important; 
+    }
+
+    /* Menyesuaikan letak jatuhnya dropdown menu agar tidak melayang terlalu jauh */
+    .menu__list {
+        top: 65px !important; 
+    }
+}
