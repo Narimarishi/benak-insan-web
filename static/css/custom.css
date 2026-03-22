@@ -311,94 +311,88 @@ textarea:focus,
    11. PERBAIKAN RESPONSIF MOBILE (HP) - VERSI FINAL & STANDAR
    ========================================================= */
 @media (max-width: 768px) {
-    /* A. Penempatan Parent Container */
-    .header__inner {
-        position: relative !important; /* RAHASIA: Biar tombol bisa ditaruh di pojok */
+    /* A. Penahan Posisi agar Tombol Tidak Lari */
+    .header {
+        position: relative !important; 
     }
 
-    /* B. Penyesuaian Header (Logo & Tagline) */
+    /* B. Teks Header (Logo & Tagline) */
     .logo__title, .logo__link {
-        font-size: 2.8rem !important; /* Dikecilkan agar harmonis dengan logo */
+        font-size: 2.5rem !important; 
         line-height: 1 !important; 
-        align-self: flex-start !important; /* Rata kiri */
     }
     .logo__tagline {
         margin-top: 10px !important;
-        line-height: 1.4 !important;
-        align-self: flex-start !important; /* Rata kiri */
-        margin-bottom: 0 !important;
+        font-size: 0.95rem !important;
+        margin-bottom: 20px !important;
     }
 
-    /* C. Tombol MENU (di Kanan Atas) & Ikon Hamburger Putih */
+    /* C. TOMBOL MENU: Di Kanan Atas + Ikon Hamburger Putih */
     .menu__btn {
-        position: absolute !important; /* Taruh secara manual */
-        top: 20px !important; /* Jarak dari atas */
-        right: 20px !important; /* Jarak dari kanan */
-        background-color: transparent !important; /* Latar belakang transparan */
+        position: absolute !important; 
+        top: 25px !important; 
+        right: 20px !important; 
+        width: 42px !important; 
+        height: 38px !important; 
+        background-color: #5C4033 !important; 
+        border-radius: 6px !important; 
         border: none !important;
         padding: 0 !important;
-        width: auto !important;
-        height: auto !important;
         margin: 0 !important;
-        cursor: pointer !important;
-    }
-    /* Sembunyikan tulisan plain "MENU" */
-    .menu__btn-title {
-        display: none !important;
-    }
-    /* GANTI dengan Ikon Hamburger Putih (Tiga Garis) Modern */
-    .menu__btn-icon {
-        display: inline-block !important;
-        width: 25px !important;
-        height: 20px !important;
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' fill='%23ffffff'/%3E%3C/svg%3E") !important; /* Ikon Hamburger Putih resmi */
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' fill='%23ffffff'/%3E%3C/svg%3E") !important;
+        background-size: 24px 24px !important;
         background-repeat: no-repeat !important;
         background-position: center !important;
-        background-size: cover !important;
+        display: block !important; 
+        cursor: pointer !important;
     }
 
-    /* D. Daftar Dropdown Menu - DITIPISKAN TOTAL (Compact) */
+    .menu__btn-title, .menu__btn svg {
+        display: none !important;
+    }
+
+    /* D. KOTAK DROPDOWN: Diperkecil & Melayang */
     .menu__list {
-        display: none; /* Sembunyikan default (tema yang handles toggle) */
-        position: absolute !important;
-        top: 60px !important; /* Tepat di bawah tombol */
-        right: 20px !important; /* Jarak dari kanan */
-        width: 150px !important; /* UKURAN LEBAR DIPER-KECIL TOTAL */
-        background-color: #2b2b2b !important; /* Latar gelap premium */
-        list-style: none !important;
-        padding: 5px 0 !important; /* Jarak pas (Compact) */
-        border-radius: 6px !important; /* Sedikit lengkungan estetik */
-        box-shadow: 0 4px 6px rgba(0,0,0,0.3) !important; /* Efek bayangan */
+        position: absolute !important; 
+        top: 68px !important; /* Disesuaikan agar pas di bawah tombol */
+        right: 20px !important; 
+        width: 140px !important; /* Lebar sudah mungil */
+        background-color: #2b2b2b !important; 
+        border-radius: 6px !important;
+        padding: 5px 0 !important; 
         margin: 0 !important;
-        z-index: 9999 !important; /* Biar selalu di atas konten */
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important; 
+        z-index: 9999 !important; 
+        /* RAHASIA: Memaksa menu berbaris ke BAWAH, bukan menyamping */
+        flex-direction: column !important; 
+        white-space: normal !important;
     }
-    /* Tampilkan daftar saat tema menambahkan kelas "menu__open" */
-    .menu__open .menu__list {
-        display: block !important;
-    }
+
     .menu__item {
-        display: block !important; 
-        border-top: none !important; /* Hilangkan garis pemisah theme */
+        display: block !important;
+        width: 100% !important; /* Paksa memenuhi kotak agar tidak bisa bersebelahan */
+        border: none !important; 
         margin: 0 !important;
         padding: 0 !important;
     }
 
-    /* E. Tautan Menu (Compact dan Tipis) */
+    /* E. TAUTAN MENU: Tersusun Rapi di Tengah */
     .menu__link {
         display: block !important;
-        padding: 6px 15px !important; /* Jarak Compact (Tipis ke bawah) */
-        color: #ffffff !important; /* Teks putih */
-        text-align: left !important; /* Rata kiri (Standar premium) */
-        text-decoration: none !important;
-        line-height: 1.2 !important; /* Jarak antar baris rapat */
-        font-size: 0.9rem !important; /* Teks proporsional */
-        background-color: transparent !important; 
         width: 100% !important;
+        box-sizing: border-box !important; /* Mencegah teks keluar dari kotak */
+        padding: 12px 15px !important; 
+        color: #ffffff !important;
+        font-size: 0.9rem !important; 
+        text-align: center !important; /* Diratakan ke tengah agar estetik */
+        line-height: 1 !important;
+        height: auto !important;
+        background-color: transparent !important;
+        border-radius: 0 !important;
     }
 
-    /* F. Hover State (Jari Sentuh) */
     .menu__link:hover {
-        background-color: #5C4033 !important; /* Efek sentuh warna kopi */
-        color: #FFFFFF !important; 
+        background-color: #5C4033 !important; 
+        color: #ffffff !important;
     }
 }
