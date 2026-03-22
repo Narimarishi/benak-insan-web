@@ -321,20 +321,25 @@ textarea:focus,
         line-height: 1.4 !important;
     }
 
-    /* 2. Memperbaiki Menu Navigasi HP */
+    /* 2. Memperbaiki Jarak Menu Raksasa (Reset ke Normal) */
     .menu__list {
         flex-direction: column !important; 
         background-color: #333333 !important; 
         padding: 0 !important;
+        margin: 0 !important;
     }
     .menu__item {
         display: block !important; 
         border-top: 1px solid #4a4a4a !important; 
         margin: 0 !important;
+        padding: 0 !important;
     }
     .menu__link {
         display: block !important;
-        padding: 12px 20px !important;
+        padding: 15px 20px !important; /* Memaksa kotak kembali ke ukuran wajar */
+        margin: 0 !important;
+        line-height: 1.5 !important; /* MEMATIKAN line-height raksasa dari versi desktop */
+        height: auto !important; /* MEMATIKAN paksaan tinggi dari versi desktop */
         color: #ffffff !important; 
         text-align: center !important;
     }
@@ -342,12 +347,13 @@ textarea:focus,
         background-color: #5C4033 !important; 
     }
 
-    /* === BARU: Mengubah Warna Tombol Menu Merah Menjadi Cokelat === */
-    .menu__toggle {
-        background-color: #5C4033 !important; /* Warna cokelat yang seragam */
-        color: #FFFFFF !important; /* Teks putih agar terbaca */
+    /* 3. Mengubah Warna Tombol "MENU" dari Merah menjadi Cokelat */
+    .menu__btn, .menu__btn-title {
+        color: #5C4033 !important; /* Ubah teks "MENU" jadi cokelat */
+        background-color: transparent !important;
     }
-    .menu__toggle:hover {
-        background-color: #333333 !important; /* Warna latar gelap saat disorot */
+    /* Jika tombol tersebut memiliki ikon tiga garis (hamburger), ubah juga warnanya */
+    .menu__btn svg {
+        fill: #5C4033 !important;
     }
 }
