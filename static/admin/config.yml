@@ -3,6 +3,7 @@ backend:
   name: github
   repo: Narimarishi/benak-insan-web
   branch: main
+  app_id: "Ov23liPMjTqqgEwmmfst"
 
 # 2. Pengaturan Media & Gambar
 media_folder: "static/gambar" # Tempat CMS menyimpan gambar yang di-upload klien
