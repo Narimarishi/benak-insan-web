@@ -390,3 +390,32 @@ input:focus, textarea:focus, .widget-search__field:focus {
         height: 40px;
     }
 }
+
+/* =========================================================
+   13. PEMANGKASAN TINGGI HEADER DESKTOP (SUPER SLIM)
+   ========================================================= */
+@media (min-width: 768px) {
+    /* Menghapus semua jarak bawaan dari lapisan terluar */
+    .header {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    /* Memeras bantalan dalam (container) yang diam-diam membesar */
+    .header__container {
+        padding-top: 15px !important;  /* Jarak atas ditekan habis */
+        padding-bottom: 15px !important; /* Jarak bawah ditekan habis */
+    }
+
+    /* Memastikan tidak ada margin tersembunyi pada blok logo */
+    .logo {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Menekan "kotak gaib" font Allura lebih ketat lagi */
+    .logo__title, .logo__link {
+        line-height: 0.7 !important; 
+        margin-bottom: 0 !important;
+    }
+}
