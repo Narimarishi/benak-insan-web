@@ -4,24 +4,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
-  
   <style>
-    /* Sveltia menggunakan tombol dengan ikon SVG untuk GitHub. Kita sembunyikan tombol tersebut. */
-    button:has(svg) { 
-        display: none !important; 
-    }
-    /* Memastikan formulir Token tetap terlihat sempurna */
-    form, input[type="password"], input[type="text"] {
-        display: flex !important;
-    }
-    /* Menyembunyikan teks pemisah seperti "or" / "atau" jika ada */
-    .divider, hr {
+    /* Menyembunyikan garis pemisah "atau" / "or" jika ada */
+    hr, .divider, [role="separator"] {
         display: none !important;
     }
   </style>
-
 </head>
 <body>
   <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+
+  <script>
+    // Membuat pengawas yang akan selalu mengecek elemen baru di layar
+    const observer = new MutationObserver(() => {
+      // Cari semua elemen tombol di layar
+      const buttons = document.querySelectorAll('button');
+      
+      buttons.forEach(btn => {
+        // Jika menemukan tombol dengan teks persis seperti ini...
+        if (btn.textContent.trim() === 'Sign In with GitHub') {
+          // ...Hancurkan (Sembunyikan)!
+          btn.style.setProperty('display', 'none', 'important');
+        }
+      });
+    });
+
+    // Nyalakan CCTV-nya untuk mengawasi seluruh tubuh website (body)
+    observer.observe(document.body, { childList: true, subtree: true });
+  </script>
 </body>
 </html>
