@@ -440,3 +440,29 @@ textarea:focus,
         height: 40px;
     }
 }
+
+/* =========================================================
+   13. PENYESUAIAN HIERARKI TIPOGRAFI (KESEIMBANGAN LOGO)
+   ========================================================= */
+
+/* --- A. TAMPILAN DESKTOP (LAPTOP) --- */
+.logo__title, .logo__link {
+    font-size: 5rem !important; /* Benak Insan dibesarkan secara signifikan */
+}
+.logo__tagline {
+    font-size: 1.1rem !important; /* Tagline dikecilkan */
+    letter-spacing: 2px !important; /* Spasi direnggangkan agar elegan dan bernapas */
+    font-weight: 400 !important;
+}
+
+/* --- B. TAMPILAN MOBILE (HP) --- */
+@media (max-width: 768px) {
+    .logo__title, .logo__link {
+        font-size: 3.8rem !important; /* Benak Insan HP dibesarkan */
+    }
+    .logo__tagline {
+        font-size: 0.75rem !important; /* Tagline HP dikecilkan drastis */
+        letter-spacing: 1px !important;
+        margin-top: 0 !important; /* Merapatkan jarak dengan judul */
+    }
+}
