@@ -313,33 +313,41 @@ textarea:focus,
 @media (max-width: 768px) {
     /* 1. Melonggarkan jarak Judul dan Tagline */
     .logo__title, .logo__link {
-        font-size: 3rem !important; /* Sedikit dikecilkan agar manis di layar HP */
-        line-height: 1 !important; /* Melonggarkan jarak agar tidak menabrak tagline */
+        font-size: 3rem !important; 
+        line-height: 1 !important; 
     }
     .logo__tagline {
         margin-top: 15px !important;
         line-height: 1.4 !important;
     }
 
-    /* 2. Memperbaiki Menu Navigasi yang tumpah */
+    /* 2. Memperbaiki Menu Navigasi HP */
     .menu__list {
-        display: flex !important;
-        flex-direction: column !important; /* Susun menu dari atas ke bawah, BUKAN menyamping */
-        background-color: #2b2b2b !important; /* Latar belakang gelap agar menyatu dengan tombol MENU */
+        flex-direction: column !important; 
+        background-color: #333333 !important; 
         padding: 0 !important;
-        width: 100% !important;
     }
     .menu__item {
-        border-top: 1px solid #444 !important; /* Garis pemisah tipis antar menu */
+        display: block !important; 
+        border-top: 1px solid #4a4a4a !important; 
         margin: 0 !important;
     }
     .menu__link {
         display: block !important;
-        padding: 15px !important;
-        color: #ffffff !important; /* Teks putih agar kontras dengan latar gelap */
+        padding: 12px 20px !important;
+        color: #ffffff !important; 
         text-align: center !important;
     }
     .menu__link:hover {
-        background-color: #5C4033 !important; /* Efek sentuh warna kopi */
+        background-color: #5C4033 !important; 
+    }
+
+    /* === BARU: Mengubah Warna Tombol Menu Merah Menjadi Cokelat === */
+    .menu__toggle {
+        background-color: #5C4033 !important; /* Warna cokelat yang seragam */
+        color: #FFFFFF !important; /* Teks putih agar terbaca */
+    }
+    .menu__toggle:hover {
+        background-color: #333333 !important; /* Warna latar gelap saat disorot */
     }
 }
