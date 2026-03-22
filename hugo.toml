@@ -32,6 +32,9 @@ canonifyURLs = true
   # KEMBALIKAN GARIS MIRING
   customCSS = ["/css/custom.css"]
 
+  # MENAMBAHKAN TOMBOL BACK TO TOP
+  customJS = ["js/custom.js"]
+
 # =========================================================
 # 4. LOGO & SIDEBAR
 # =========================================================

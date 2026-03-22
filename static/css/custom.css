@@ -396,3 +396,47 @@ textarea:focus,
         color: #ffffff !important;
     }
 }
+
+/* =========================================================
+   12. TOMBOL BACK TO TOP (KEMBALI KE ATAS)
+   ========================================================= */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: #5C4033; /* Cokelat khas Benak Insan */
+    color: #ffffff;
+    border: none;
+    border-radius: 50%; /* Bentuk bulat sempurna */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Bayangan estetik */
+    opacity: 0; /* Tersembunyi secara default */
+    visibility: hidden;
+    transition: all 0.3s ease-in-out; /* Animasi halus saat muncul */
+    z-index: 9999; /* Pastikan selalu di atas elemen lain */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#backToTop.show {
+    opacity: 1; /* Muncul! */
+    visibility: visible;
+}
+
+#backToTop:hover {
+    background-color: #333333; /* Berubah gelap saat disentuh */
+    transform: translateY(-5px); /* Efek melayang sedikit ke atas */
+}
+
+/* Penyesuaian khusus layar HP (Mobile) */
+@media (max-width: 768px) {
+    #backToTop {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
