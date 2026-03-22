@@ -11,10 +11,10 @@ html, body {
     padding: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
-    background-color: #F4EFE6 !important; /* Latar Cream / Broken White Elegan */
+    background-color: #F4EFE6 !important; 
     overflow-x: hidden; 
-    color: #3E362E !important; /* Teks Artikel Cokelat Gelap Klasik */
-    font-family: 'Lora', serif !important; /* Font nyaman dibaca ala koran lama */
+    color: #3E362E !important; 
+    font-family: 'Lora', serif !important; 
 }
 
 body > .container, 
@@ -29,41 +29,45 @@ body > .container,
 }
 
 /* =========================================================
-   1. HEADER VINTAGE & MENU
+   1. HEADER VINTAGE & MENU (DESKTOP)
    ========================================================= */
 .header {
-    background-color: #EFE8DB !important; /* Latar header senada tapi sedikit lebih gelap */
-    border-bottom: 3px solid #D4C4A8 !important; /* Garis bawah cokelat pudar */
+    background-color: #EFE8DB !important; 
+    border-bottom: 3px solid #D4C4A8 !important; 
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
     border-radius: 0 !important;
+    padding-top: 15px !important; /* Header Slim */
+    padding-bottom: 15px !important; /* Header Slim */
 }
 
 .logo__img { display: none !important; }
 .logo { margin: 0 !important; }
 
-/* Judul dan Tagline Menggunakan Font Klasik / Signature */
-/* Judul dan Tagline Menggunakan Font Klasik / Signature */
+/* Judul dan Tagline */
 .logo__title, .logo__link { 
     color: #5C4033 !important; 
     font-family: 'Allura', cursive !important; 
-    font-size: 3.5rem !important; 
+    font-size: 5rem !important; /* Ukuran Besar Final */
     font-weight: 400 !important; 
     letter-spacing: 1px !important; 
     font-style: normal !important;
     text-transform: capitalize !important; 
-    /* --- DUA BARIS INI UNTUK MENGHILANGKAN CELAH LEBAR --- */
-    line-height: 0.7 !important; /* Memangkas paksa kotak gaib bawaan font */
+    line-height: 0.8 !important; /* Memangkas kotak gaib */
+    margin-bottom: 5px !important;
     display: block !important; 
 }
 
-/* Sedikit penyesuaian agar tagline tidak terlalu menempel jika line-height terlalu ekstrem */
 .logo__tagline { 
     color: #8A6849 !important; 
     font-family: 'Lora', serif !important;
     font-style: italic;
-    margin-top: 10px !important; 
+    font-size: 1.1rem !important; /* Ukuran Proporsional Final */
+    letter-spacing: 2px !important; /* Spasi Elegan */
+    font-weight: 400 !important;
+    margin-top: 5px !important; 
+    margin-bottom: 0 !important;
 }
 
 @media (min-width: 768px) {
@@ -71,6 +75,9 @@ body > .container,
         display: flex !important;
         align-items: center !important;
         justify-content: space-between !important;
+    }
+    .menu {
+        margin-top: 10px !important; /* Sejajar dengan Logo */
     }
 }
 
@@ -94,7 +101,7 @@ body > .container,
     padding: 5px 0 !important;
     transition: color 0.3s ease;
 }
-.menu__link:hover { color: #8B5A2B !important; /* Berubah sepia saat disorot */ }
+.menu__link:hover { color: #8B5A2B !important; }
 
 /* =========================================================
    2. TATA LETAK KONTEN, WARNA JUDUL & LINK HOVER
@@ -106,7 +113,6 @@ body > .container,
     max-width: 100% !important;
 }
 
-/* KELOMPOK JUDUL UTAMA (Ditambah .main__title untuk Kategori/Tag) */
 .widget__title, 
 .list__title, 
 .recent-posts__title,
@@ -118,7 +124,6 @@ body > .container,
     transition: color 0.3s ease;
 }
 
-/* Khusus untuk judul halaman Kategori/Tag, kita tambahkan garis bawah */
 .page__title,
 .main__title {
     font-weight: 700 !important;
@@ -126,7 +131,6 @@ body > .container,
     padding-bottom: 10px !important;
 }
 
-/* Mengubah SEMUA teks tautan saat disorot */
 a:hover, 
 .widget__link:hover, 
 .widget__item a:hover,
@@ -135,23 +139,14 @@ a:hover,
 .post__title a:hover {
     color: #8B5A2B !important; 
 }
-
-a {
-    color: #8A6849 !important;
-}
+a { color: #8A6849 !important; }
 
 /* =========================================================
    3. TOMBOL, TAGS & READ MORE (VINTAGE DARK COFFEE)
    ========================================================= */
-.btn, 
-.post__readmore, 
-.tags__link, 
-.widget-tags__link, 
-.button, 
-.category,
-.tags__title { 
-    background-color: #5C4033 !important; /* Cokelat Kopi */
-    color: #F4EFE6 !important; /* Teks cream */
+.btn, .post__readmore, .tags__link, .widget-tags__link, .button, .category, .tags__title { 
+    background-color: #5C4033 !important; 
+    color: #F4EFE6 !important; 
     border: none !important; 
     border-radius: 4px !important;
     padding: 6px 14px !important;
@@ -161,17 +156,10 @@ a {
     font-family: 'Lora', serif !important;
 }
 
-/* Memastikan ikon gambar SVG di dalam tag tetap selaras */
 .tags__svg { fill: #F4EFE6 !important; }
 
-/* Efek Hover untuk semua tombol */
-.btn:hover, 
-.post__readmore:hover, 
-.tags__link:hover, 
-.widget-tags__link:hover, 
-.button:hover, 
-.category:hover {
-    background-color: #8A6849 !important; /* Cokelat Terang */
+.btn:hover, .post__readmore:hover, .tags__link:hover, .widget-tags__link:hover, .button:hover, .category:hover {
+    background-color: #8A6849 !important; 
     color: #ffffff !important;
 }
 
@@ -180,21 +168,12 @@ a {
    ========================================================= */
 .widget__title {
     border-top: none !important; 
-    border-bottom: 2px dashed #D4C4A8 !important; /* Garis putus-putus ala buku jurnal */
+    border-bottom: 2px dashed #D4C4A8 !important; 
 }
-
-.post, 
-.widget, 
-.post__meta, 
-.post__footer, 
-.authorbox {
-    border-color: #E6D8C0 !important; /* Garis pembatas warna cream tua */
+.post, .widget, .post__meta, .post__footer, .authorbox {
+    border-color: #E6D8C0 !important; 
 }
-
-/* Widget diberi sedikit latar agar kontras dengan body */
-.widget {
-    background-color: #FDFBF7 !important;
-}
+.widget { background-color: #FDFBF7 !important; }
 
 /* =========================================================
    5. PENGATURAN WARNA & POSISI FOOTER (RATA TENGAH)
@@ -202,7 +181,7 @@ a {
 .footer {
     padding: 25px 5% !important;
     box-sizing: border-box !important;
-    background-color: #3E362E !important; /* Footer Cokelat Sangat Gelap */
+    background-color: #3E362E !important; 
     color: #F4EFE6 !important;
     border-top: 5px solid #5C4033 !important; 
     margin: 0 !important;
@@ -211,7 +190,6 @@ a {
     text-align: center !important; 
     font-family: 'Lora', serif !important;
 }
-
 .footer__container {
     display: flex !important;
     flex-direction: column !important; 
@@ -219,13 +197,10 @@ a {
     justify-content: center !important;
     gap: 10px; 
 }
-
-.footer__copyright, 
-.footer__info {
+.footer__copyright, .footer__info {
     margin: 0 !important;
     text-align: center !important;
 }
-
 .footer a { color: #D4C4A8 !important; }
 .footer a:hover { color: #ffffff !important; }
 
@@ -251,83 +226,67 @@ a {
 /* =========================================================
    7. MENGHANCURKAN SISA MERAH TERAKHIR (BADGE ICON)
    ========================================================= */
-.tags__badge,
-.categories__badge {
+.tags__badge, .categories__badge {
     background-color: #5C4033 !important; 
     color: #F4EFE6 !important;
 }
-
-.tags__badge svg,
-.categories__badge svg {
-    fill: #F4EFE6 !important;
-}
+.tags__badge svg, .categories__badge svg { fill: #F4EFE6 !important; }
 
 /* =========================================================
-   8. FORM & KOTAK PENCARIAN (MENGHILANGKAN OUTLINE BIRU)
+   8. FORM & KOTAK PENCARIAN
    ========================================================= */
-input:focus, 
-textarea:focus, 
-.widget-search__field:focus {
-    outline: none !important; /* Mematikan garis biru neon bawaan browser */
-    border: 2px solid #8B5A2B !important; /* Menggantinya dengan warna Cokelat Sepia */
-    box-shadow: 0 0 5px rgba(139, 90, 43, 0.2) !important; /* Memberikan sedikit pendar cokelat yang lembut */
-    background-color: #FDFBF7 !important; /* Memastikan warna latar kotak tetap putih gading saat diklik */
-    color: #3E362E !important; /* Teks yang diketik tetap cokelat gelap */
+input:focus, textarea:focus, .widget-search__field:focus {
+    outline: none !important; 
+    border: 2px solid #8B5A2B !important; 
+    box-shadow: 0 0 5px rgba(139, 90, 43, 0.2) !important; 
+    background-color: #FDFBF7 !important; 
+    color: #3E362E !important; 
 }
-
-/* Sedikit penyesuaian untuk kotak input secara umum agar tepiannya lebih estetik */
 .widget-search__field {
-    border: 1px solid #D4C4A8 !important; /* Garis tepi saat belum diklik */
+    border: 1px solid #D4C4A8 !important; 
     border-radius: 4px !important;
 }
 
 /* =========================================================
    10. PENYERAGAMAN UKURAN THUMBNAIL (ASPECT RATIO)
    ========================================================= */
-
-/* Untuk Thumbnail di Halaman Utama (Home & Kategori) */
 .list__thumbnail img {
     width: 100% !important;
     height: 100% !important;
-    aspect-ratio: 16 / 9 !important; /* Bingkai rasio 16:9 (Layar Lebar) */
-    object-fit: cover !important; /* Memotong kelebihan gambar dengan cerdas */
-    object-position: center !important; /* Memastikan bagian tengah gambar yang selalu tersorot */
-    border-radius: 4px !important; /* Sedikit lengkungan di sudut agar estetik */
+    aspect-ratio: 16 / 9 !important; 
+    object-fit: cover !important; 
+    object-position: center !important; 
+    border-radius: 4px !important; 
 }
-
-/* Untuk Thumbnail besar di dalam Artikel */
-.post__thumbnail img,
-.post__thumbnail-image {
+.post__thumbnail img, .post__thumbnail-image {
     width: 100% !important;
     height: 100% !important;
     aspect-ratio: 16 / 9 !important; 
-    max-height: 450px !important; /* Batas tinggi maksimal agar tidak terlalu raksasa di layar PC */
+    max-height: 450px !important; 
     object-fit: cover !important;
     object-position: center !important;
     border-radius: 8px !important; 
 }
 
 /* =========================================================
-   11. PERBAIKAN RESPONSIF MOBILE (HP) - VERSI FINAL & STANDAR
+   11. PERBAIKAN RESPONSIF MOBILE (HP) - VERSI FINAL
    ========================================================= */
 @media (max-width: 768px) {
-    /* A. Penahan Posisi agar Tombol Tidak Lari */
-    .header {
-        position: relative !important; 
-    }
+    .header { position: relative !important; }
 
-    /* B. Teks Header (Logo & Tagline) */
+    /* Hierarki Tipografi Mobile Final */
     .logo__title, .logo__link {
-        font-size: 2.5rem !important; 
+        font-size: 3.8rem !important; 
         line-height: 1 !important; 
     }
     .logo__tagline {
-        margin-top: 10px !important;
-        font-size: 0.95rem !important;
+        margin-top: 0 !important;
+        font-size: 0.75rem !important;
+        letter-spacing: 1px !important;
         margin-bottom: 20px !important;
     }
 
-    /* C. TOMBOL MENU: Di Kanan Atas + Ikon Hamburger Putih */
+    /* Tombol Hamburger */
     .menu__btn {
         position: absolute !important; 
         top: 25px !important; 
@@ -346,51 +305,45 @@ textarea:focus,
         display: block !important; 
         cursor: pointer !important;
     }
+    .menu__btn-title, .menu__btn svg { display: none !important; }
 
-    .menu__btn-title, .menu__btn svg {
-        display: none !important;
-    }
-
-    /* D. KOTAK DROPDOWN: Diperkecil & Melayang */
+    /* Dropdown Melayang */
     .menu__list {
         position: absolute !important; 
-        top: 68px !important; /* Disesuaikan agar pas di bawah tombol */
+        top: 68px !important; 
         right: 20px !important; 
-        width: 140px !important; /* Lebar sudah mungil */
+        width: 140px !important; 
         background-color: #2b2b2b !important; 
         border-radius: 6px !important;
         padding: 5px 0 !important; 
         margin: 0 !important;
         box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important; 
         z-index: 9999 !important; 
-        /* RAHASIA: Memaksa menu berbaris ke BAWAH, bukan menyamping */
         flex-direction: column !important; 
         white-space: normal !important;
     }
-
     .menu__item {
         display: block !important;
-        width: 100% !important; /* Paksa memenuhi kotak agar tidak bisa bersebelahan */
+        width: 100% !important; 
         border: none !important; 
         margin: 0 !important;
         padding: 0 !important;
     }
 
-    /* E. TAUTAN MENU: Tersusun Rapi di Tengah */
+    /* Tautan Menu */
     .menu__link {
         display: block !important;
         width: 100% !important;
-        box-sizing: border-box !important; /* Mencegah teks keluar dari kotak */
+        box-sizing: border-box !important; 
         padding: 12px 15px !important; 
         color: #ffffff !important;
         font-size: 0.9rem !important; 
-        text-align: center !important; /* Diratakan ke tengah agar estetik */
+        text-align: center !important; 
         line-height: 1 !important;
         height: auto !important;
         background-color: transparent !important;
         border-radius: 0 !important;
     }
-
     .menu__link:hover {
         background-color: #5C4033 !important; 
         color: #ffffff !important;
@@ -406,63 +359,34 @@ textarea:focus,
     right: 30px;
     width: 45px;
     height: 45px;
-    background-color: #5C4033; /* Cokelat khas Benak Insan */
+    background-color: #5C4033; 
     color: #ffffff;
     border: none;
-    border-radius: 50%; /* Bentuk bulat sempurna */
+    border-radius: 50%; 
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Bayangan estetik */
-    opacity: 0; /* Tersembunyi secara default */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+    opacity: 0; 
     visibility: hidden;
-    transition: all 0.3s ease-in-out; /* Animasi halus saat muncul */
-    z-index: 9999; /* Pastikan selalu di atas elemen lain */
+    transition: all 0.3s ease-in-out; 
+    z-index: 9999; 
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 #backToTop.show {
-    opacity: 1; /* Muncul! */
+    opacity: 1; 
     visibility: visible;
 }
-
 #backToTop:hover {
-    background-color: #333333; /* Berubah gelap saat disentuh */
-    transform: translateY(-5px); /* Efek melayang sedikit ke atas */
+    background-color: #333333; 
+    transform: translateY(-5px); 
 }
 
-/* Penyesuaian khusus layar HP (Mobile) */
 @media (max-width: 768px) {
     #backToTop {
         bottom: 20px;
         right: 20px;
         width: 40px;
         height: 40px;
-    }
-}
-
-/* =========================================================
-   13. PENYESUAIAN HIERARKI TIPOGRAFI (KESEIMBANGAN LOGO)
-   ========================================================= */
-
-/* --- A. TAMPILAN DESKTOP (LAPTOP) --- */
-.logo__title, .logo__link {
-    font-size: 5rem !important; /* Benak Insan dibesarkan secara signifikan */
-}
-.logo__tagline {
-    font-size: 1.1rem !important; /* Tagline dikecilkan */
-    letter-spacing: 2px !important; /* Spasi direnggangkan agar elegan dan bernapas */
-    font-weight: 400 !important;
-}
-
-/* --- B. TAMPILAN MOBILE (HP) --- */
-@media (max-width: 768px) {
-    .logo__title, .logo__link {
-        font-size: 3.8rem !important; /* Benak Insan HP dibesarkan */
-    }
-    .logo__tagline {
-        font-size: 0.75rem !important; /* Tagline HP dikecilkan drastis */
-        letter-spacing: 1px !important;
-        margin-top: 0 !important; /* Merapatkan jarak dengan judul */
     }
 }
