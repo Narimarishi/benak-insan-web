@@ -319,80 +319,76 @@ textarea:focus,
     .logo__tagline {
         margin-top: 15px !important;
         line-height: 1.4 !important;
+        margin-bottom: 20px !important; /* Memberi jarak napas sebelum tombol menu */
     }
 
-    /* B. Tombol "MENU" (The Toggle Button) - Cokelat & Berikon Hamburger */
+    /* B. Tombol "MENU" - Ditengahkan Sempurna & Dipersempit */
     .menu__btn {
-        background-color: #5C4033 !important; /* Latar belakang cokelat tua */
-        color: #FFFFFF !important; /* Teks putih */
-        border-radius: 8px !important; /* Lengkungan sedikit agar estetik */
-        padding: 10px 15px !important; /* Jarak pas untuk jari */
-        display: flex !important; /* Biar ikon & teks sejajar */
+        background-color: #5C4033 !important; 
+        color: #FFFFFF !important; 
+        border-radius: 8px !important; 
+        padding: 8px 18px !important; /* Dipersempit agar tidak gemuk */
+        display: flex !important; 
         align-items: center !important;
         justify-content: center !important;
-        gap: 10px !important; /* Jarak antara ikon & teks */
+        gap: 8px !important; 
         border: none !important;
-        top: 20px !important; /* Atur posisi vertikalnya di header */
-        right: 20px !important; /* Atur posisi horizontalnya di header */
-        width: auto !important; /* Biar ukuran tombolnya proporsional */
+        margin: 0 auto 20px auto !important; /* RAHASIA TENGAH: Memaksa tombol ke tengah layar */
+        width: fit-content !important; /* Ukuran tombol memeluk teksnya */
+        position: relative !important;
+        right: auto !important;
+        top: auto !important;
     }
     .menu__btn-title {
-        color: #FFFFFF !important; /* Teks "MENU" putih */
+        color: #FFFFFF !important; 
         font-weight: 600 !important;
         margin: 0 !important;
+        font-size: 1rem !important; /* Ukuran teks proporsional */
     }
-    /* Jika tema Mainroad menyediakan ikon SVG (hamburger), warnai jadi putih */
     .menu__btn svg {
         fill: #FFFFFF !important;
-        width: 20px !important;
-        height: 20px !important;
-    }
-    /* Menambahkan ikon menu (tiga garis) dan ikon silang (untuk tutup) via teks */
-    .menu__btn-icon {
-        color: #FFFFFF !important;
-        font-size: 1.2rem !important;
+        width: 18px !important;
+        height: 18px !important;
     }
 
-    /* C. Daftar Menu (The Expanded Dropdown) */
+    /* C. Daftar Menu (Dropdown Box) */
     .menu__list {
         flex-direction: column !important; 
-        background-color: #333333 !important; /* Latar gelap permanen */
+        background-color: #333333 !important; 
         padding: 0 !important;
         margin: 0 !important;
         list-style: none !important;
-        border-bottom: 3px solid #5C4033 !important; /* Garis cokelat di bawah menu */
+        border-bottom: 3px solid #5C4033 !important; 
     }
     .menu__item {
         display: block !important; 
         border-top: 1px solid #4a4a4a !important; 
         margin: 0 !important;
         padding: 0 !important;
-        border-radius: 0 !important; /* Matikan lengkungan bawaan theme */
     }
 
-    /* D. Tautan Menu (.menu__link) - MEMATIKAN KOTAK PUTIH JARRING */
+    /* D. Tautan Menu - DIPERAS AGAR TIPIS DAN COMPACT */
     .menu__link {
         display: block !important;
-        padding: 15px 20px !important; /* Jarak pas untuk jari */
-        color: #ffffff !important; /* Teks putih permanen */
+        padding: 10px 15px !important; /* DARI 15px DITIPISKAN JADI 10px */
+        color: #ffffff !important; 
         text-align: center !important;
         text-decoration: none !important;
-        line-height: 1.5 !important; /* Reset line-height raksasa desktop */
-        height: auto !important; /* Reset height paksa desktop */
-        background-color: transparent !important; /* Matikan kotak putih theme */
-        border-radius: 0 !important; /* Matikan lengkungan theme */
+        line-height: 1.2 !important; /* Jarak antar baris dirapatkan */
+        font-size: 0.95rem !important; /* Teks sedikit dikecilkan agar muat banyak */
+        height: auto !important; 
+        background-color: transparent !important; 
         width: 100% !important;
     }
 
-    /* E. Hover & Active States (Sentuhan Jari) */
+    /* E. Hover & Active States */
     .menu__link:hover {
-        background-color: #5C4033 !important; /* Efek sentuh cokelat */
-        color: #FFFFFF !important; /* Teks tetap putih */
+        background-color: #5C4033 !important; 
+        color: #FFFFFF !important; 
     }
-    /* Untuk Menu yang Sedang Aktif (Active Item) */
     .menu__item.is-active .menu__link,
     .menu__item.active .menu__link {
-        background-color: #5C4033 !important; /* Berikan indikator halaman aktif cokelat */
+        background-color: #5C4033 !important; 
         color: #FFFFFF !important;
         font-weight: 700 !important;
     }
