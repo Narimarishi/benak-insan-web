@@ -5,6 +5,8 @@
             <div class="header__right">
                 <div class="header-search">
                     <form class="header-search__form" role="search" method="get" action="{{ "search/" | absURL }}">
+                        <input class="header-search__field" type="search" placeholder="Cari..." name="q">
+                    </form>
                 </div>
                 {{ partial "menu.html" . }}
             </div>
