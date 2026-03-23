@@ -140,56 +140,78 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
    6. TAMPILAN DESKTOP (PC/LAPTOP)
    ========================================================= */
 @media (min-width: 769px) {
-    /* Wadah Utama Header: Ditarik ke kiri & diberi bantalan pelindung di kanan */
+    /* Wadah utama: Paksa sejajar mendatar dan beri jarak antar grup */
     .header__container {
-        display: flex !important; flex-direction: row !important;
-        align-items: center !important; justify-content: space-between !important;
-        padding: 10px 30px 10px 20px !important; 
-        max-width: 100% !important; gap: 30px !important;
+        display: flex !important;
+        flex-direction: row !important; /* Paksa satu baris */
+        justify-content: space-between !important; /* Logo kiri, Menu-Search kanan */
+        align-items: center !important;
+        padding: 10px 2% !important; /* Beri sedikit ruang di pinggir */
+        max-width: 100% !important;
+        gap: 20px !important;
     }
 
-    /* Susunan Logo */
-    .logo__link, .logo__item, .logo__text {
-        display: flex !important; flex-direction: row !important;
-        align-items: center !important; text-decoration: none !important; margin: 0 !important; padding: 0 !important;
+    /* Grup Kiri: Logo + Judul + Tagline */
+    .logo__link {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        flex-shrink: 0 !important; /* Jangan biarkan logo menyusut */
     }
+
     .logo__img {
-        display: inline-block !important; height: 48px !important; width: 48px !important;
-        object-fit: cover !important; margin-right: 15px !important;
-        border-radius: 50% !important; border: 2px solid #D4C4A8 !important; box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
-    }
-    .logo__title {
-        font-size: 3rem !important; line-height: 1 !important; margin: 0 !important; padding-right: 20px !important;
-        white-space: nowrap !important; border-right: 2px solid #D4C4A8 !important; display: block !important;
-    }
-    .logo__title::after { display: none !important; }
-    .logo__tagline {
-        font-size: 0.75rem !important; letter-spacing: 1px !important; margin: 0 0 0 20px !important;
-        text-align: left !important; padding: 0 !important; border-left: none !important;
-        white-space: nowrap !important; line-height: 1 !important;
+        display: inline-block !important;
+        height: 48px !important; width: 48px !important;
+        margin-right: 15px !important;
+        border-radius: 50% !important;
+        border: 2px solid #D4C4A8 !important;
     }
 
-    /* Susunan Menu & Kotak Pencarian */
+    .logo__title {
+        font-size: 2.8rem !important; /* Ukuran pas untuk sejajar */
+        border-right: 2px solid #D4C4A8 !important;
+        padding-right: 20px !important;
+        margin-right: 20px !important;
+        white-space: nowrap !important;
+    }
+
+    .logo__tagline {
+        font-size: 0.75rem !important;
+        white-space: nowrap !important;
+        display: block !important;
+    }
+
+    /* Grup Kanan: Menu Navigasi + Kotak Pencarian */
     .header__right {
-        display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important;
-        align-items: center !important; gap: 15px !important; margin-left: auto !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 25px !important; /* Jarak antara menu dan search bar */
+        margin-left: auto !important; /* Dorong ke pojok kanan */
     }
+
     .menu__list {
-        display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important;
-        gap: 15px !important; align-items: center !important; margin: 0 !important; padding: 0 !important;
-        background: transparent !important; /* Menghilangkan kotak hitam */
-        box-shadow: none !important; /* Membersihkan sisa bayangan */
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 20px !important;
+        background: transparent !important;
+        box-shadow: none !important;
     }
-    .menu__item, .menu__link { white-space: nowrap !important; }
-    .menu__link { font-size: 0.85rem !important; }
-    
+
+    .menu__link {
+        font-size: 0.9rem !important;
+        white-space: nowrap !important;
+    }
+
+    /* Search bar desktop: Lebar pas agar tidak makan tempat */
     .header-search__field {
-        width: 170px !important; /* Dilebarkan dari 140px menjadi 170px */
+        width: 160px !important;
         transform-origin: right center !important;
     }
-    .header-search__field:focus { width: 200px !important; }
+    .header-search__field:focus {
+        width: 220px !important;
+    }
 }
-
 
 /* =========================================================
    7. TAMPILAN MOBILE (HP & TABLET) - CLEAN & CENTERED
