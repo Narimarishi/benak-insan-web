@@ -29,6 +29,9 @@ canonifyURLs = true
   readmore = true 
   post_meta = ["author", "date", "categories"]
   
+  # MENGAKTIFKAN FAVICON (IKON TAB BROWSER)
+  favicon = "/favicon.png"
+  
   # KEMBALIKAN GARIS MIRING
   customCSS = ["/css/custom.css"]
 
@@ -40,7 +43,7 @@ canonifyURLs = true
 # =========================================================
 [params.logo]
   # KEMBALIKAN GARIS MIRING
-  image = "/gambar/logo.png" 
+  image = "/gambar/Logo-Benak-Insan.png" 
   title = "Benak Insan"
   subtitle = "Catatan Reflektif dari Ruang Pikir dan Batin"
 
