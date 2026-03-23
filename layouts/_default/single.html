@@ -26,4 +26,17 @@
 {{ partial "authorbox.html" . }}
 {{ partial "pager.html" . }}
 {{ partial "comments.html" . }}
+<style>
+    /* Menyembunyikan semua widget di sidebar pada halaman ini */
+    .sidebar .widget {
+        display: none !important;
+    }
+    
+    /* Memanggil dan menampilkan KEMBALI khusus widget pencarian */
+    .sidebar .widget-search {
+        display: block !important;
+        /* Opsional: Menambahkan sedikit jarak agar terlihat proporsional */
+        margin-top: 20px !important; 
+    }
+</style>
 {{ end }}
