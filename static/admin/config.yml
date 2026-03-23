@@ -28,5 +28,13 @@ collections:
       - {label: "Kategori", name: "categories", widget: "list", required: false}
       - {label: "Tag (Kata Kunci)", name: "tags", widget: "list", required: false}
       - {label: "Gambar Thumbnail", name: "thumbnail", widget: "image", required: false}
-      - {label: "Dokumen Lampiran (PDF/PPT/Word)", name: "dokumen", widget: "file", required: false}
+      - label: "Daftar Lampiran Dokumen"
+        name: "lampiran"
+        widget: "list"
+        required: false
+        collapsed: false
+        summary: '{{fields.nama_dokumen}}'
+        fields:
+          - {label: "Nama/Judul Dokumen", name: "nama_dokumen", widget: "string"}
+          - {label: "File Dokumen (PDF/PPT/Doc)", name: "file_dokumen", widget: "file"}
       - {label: "Isi Teks Artikel", name: "body", widget: "markdown"}
