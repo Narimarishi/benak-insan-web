@@ -223,55 +223,86 @@ input:focus, textarea:focus, .widget-search__field:focus {
 }
 
 /* =========================================================
-   7. RESPONSIF MOBILE (HP) - HEADER TETAP RAPI
-   ========================================================= */
+   7. RESPONSIF MOBILE (HP & TABLET) - 2 BARIS (RATA KIRI)
+========================================================= */
 @media (max-width: 768px) {
+    /* Penyesuaian Ruang Header Utama */
     .header { position: relative !important; }
-    .header__container { padding: 15px 5% !important; }
+    .header__container {
+        padding: 15px 20px !important;
+        display: block !important;
+    }
 
-    /* Di HP, kita kembalikan mereka bertumpuk ke bawah */
-    .logo__link, .logo__item, .logo__text {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: flex-start !important;
+    /* Membersihkan margin & Memaksa Wrapper Rata Kiri */
+    .logo { 
+        margin: 0 !important; 
+        padding: 0 !important; 
+        text-align: left !important; /* PAKSA RATA KIRI */
+    }
+
+    /* BUNGKUSAN LOGO (GRID) */
+    .logo__link {
+        display: grid !important;
+        grid-template-columns: auto 1fr !important; 
+        align-items: center !important;
+        gap: 0px 12px !important; 
         text-decoration: none !important;
+        padding-right: 55px !important; 
+    }
+
+    /* Menghancurkan Kotak Gaib Tema */
+    .logo__item, .logo__text {
+        display: contents !important; 
+    }
+
+    /* --- BARIS 1 (KIRI): LOGO GAMBAR --- */
+    .logo__img {
+        grid-column: 1 / 2 !important; 
+        grid-row: 1 / 2 !important;    
+        display: block !important;
+        width: 42px !important;
+        height: 42px !important;
+        border-radius: 50% !important;
+        border: 2px solid #D4C4A8 !important;
+        margin: 0 !important;
+    }
+
+    /* --- BARIS 1 (TENGAH): JUDUL BENAK INSAN --- */
+    .logo__title {
+        grid-column: 2 / 3 !important; 
+        grid-row: 1 / 2 !important;    
+        font-size: 2.2rem !important;
+        line-height: 1 !important;
         margin: 0 !important;
         padding: 0 !important;
+        white-space: nowrap !important; 
+        overflow: hidden !important;    
+        text-align: left !important; /* PAKSA RATA KIRI */
+        justify-self: start !important; /* Paksa menempel ke ikon */
     }
-    
-    .logo__title {
-        font-size: 2.8rem !important;
-        line-height: 1 !important;
-        margin-bottom: 5px !important;
-        border-right: none !important; /* Matikan garis pembatas di HP */
-        padding-right: 0 !important;
-        white-space: normal !important;
-    }
-    .logo__title::after { display: none !important; }
+    .logo__title::after { display: none !important; } 
 
+    /* --- BARIS 2 (BAWAH): TAGLINE --- */
     .logo__tagline {
+        grid-column: 1 / 3 !important; 
+        grid-row: 2 / 3 !important;    
         font-size: 0.75rem !important;
-        letter-spacing: 1px !important;
-        margin: 0 0 10px 0 !important;
-        border-left: none !important; 
-        padding-left: 0 !important;
+        line-height: 1.4 !important;
+        margin: 8px 0 0 0 !important;  
+        padding: 0 !important;
+        border: none !important;
+        color: #8A6849 !important;
         white-space: normal !important;
+        text-align: left !important; /* PAKSA RATA KIRI */
     }
 
-    /* Layout Konten Mobile */
-    .wrapper { display: flex; flex-direction: column; padding: 20px 5% !important; }
-    .sidebar { display: contents; }
-    .widget-search { order: 1 !important; margin-bottom: 25px; }
-    .primary { order: 2 !important; }
-    .widget { order: 3; }
-
-    /* Tombol Hamburger */
+    /* --- BARIS 1 (KANAN): TOMBOL MENU --- */
     .menu__btn {
         position: absolute !important;
-        top: 20px !important;
-        right: 20px !important;
-        width: 42px !important;
-        height: 38px !important;
+        top: 18px !important; 
+        right: 20px !important; 
+        width: 40px !important;
+        height: 36px !important;
         background-color: #5C4033 !important;
         border-radius: 6px !important;
         border: none !important;
@@ -279,19 +310,19 @@ input:focus, textarea:focus, .widget-search__field:focus {
         margin: 0 !important;
         background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' fill='%23ffffff'/%3E%3C/svg%3E") !important;
         background-size: 24px 24px !important;
-        background-repeat: no-repeat !important;
         background-position: center !important;
+        background-repeat: no-repeat !important;
         display: block !important;
         cursor: pointer !important;
     }
     .menu__btn-title, .menu__btn svg { display: none !important; }
 
-    /* Dropdown Mobile */
+    /* Dropdown Melayang */
     .menu__list {
         position: absolute !important;
-        top: 65px !important;
+        top: 70px !important;
         right: 20px !important;
-        width: 140px !important;
+        width: 150px !important;
         background-color: #2b2b2b !important;
         border-radius: 6px !important;
         padding: 5px 0 !important;
@@ -302,17 +333,18 @@ input:focus, textarea:focus, .widget-search__field:focus {
     }
     .menu__item { display: block !important; width: 100% !important; border: none !important; margin: 0 !important; padding: 0 !important; }
     .menu__link {
-        display: block !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-        padding: 12px 15px !important;
-        color: #ffffff !important;
-        font-size: 0.9rem !important;
-        text-align: center !important;
-        background-color: transparent !important;
-        border-radius: 0 !important;
+        display: block !important; width: 100% !important; box-sizing: border-box !important;
+        padding: 12px 15px !important; color: #ffffff !important; font-size: 0.9rem !important;
+        text-align: center !important; background-color: transparent !important; border-radius: 0 !important;
     }
     .menu__link:hover { background-color: #5C4033 !important; color: #ffffff !important; }
+
+    /* Merapikan Susunan Konten di Bawah Header */
+    .wrapper { display: flex; flex-direction: column; padding: 20px 5% !important; }
+    .sidebar { display: contents; }
+    .widget-search { order: 1 !important; margin-bottom: 25px; }
+    .primary { order: 2 !important; }
+    .widget { order: 3; }
 }
 
 /* =========================================================
