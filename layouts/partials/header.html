@@ -1,14 +1,21 @@
 <header class="header">
     <div class="container header__container">
-        <div class="header__top-row"> {{ partial "logo.html" . }}
+        <div class="header__top-row">
+            
+            {{ partial "logo.html" . }}
             
             <div class="header__right">
+                
                 <div class="header-search">
-                    <form class="header-search__form" role="search" method="get" action="{{ "search/" | absURL }}">
-                        <input class="header-search__field" type="search" placeholder="Cari..." name="q">
+                    <form class="header-search__form" role="search" method="get" action="{{ "search/" | relLangURL }}">
+                        <input class="header-search__field" type="search" placeholder="Ketik kata kunci..." name="q" autocomplete="off" aria-label="Search">
                     </form>
                 </div>
+                
                 {{ partial "menu.html" . }}
+                
             </div>
-        </div> </div>
+            
+        </div>
+    </div>
 </header>
