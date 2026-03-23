@@ -30,7 +30,7 @@ canonifyURLs = true
   post_meta = ["author", "date", "categories"]
   
   # MENGAKTIFKAN FAVICON (IKON TAB BROWSER)
-  favicon = "/favicon.png"
+  favicon = "/favicon.ico"
   
   # KEMBALIKAN GARIS MIRING
   customCSS = ["/css/custom.css"]
