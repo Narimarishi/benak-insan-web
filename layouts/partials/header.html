@@ -7,10 +7,7 @@
             <div class="header__right">
                 
                 <div class="header-search">
-                    {{- /* Mengambil URL pencarian kustom dari config.toml kamu, persis seperti widget lama */ -}}
-                    {{- $actionURL := .Site.Params.widgets.search.url | default "search/" -}}
-    
-                    <form class="header-search__form" role="search" method="get" action="{{ $actionURL | relURL }}">
+                    <form class="header-search__form" role="search" method="get" action="{{ "search/" | relURL }}">
                         <input class="header-search__field" type="search" placeholder="Ketik kata kunci..." name="q" autocomplete="off" aria-label="Search">
                     </form>
                 </div>

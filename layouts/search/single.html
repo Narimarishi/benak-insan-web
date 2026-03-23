@@ -1,0 +1,111 @@
+{{ define "main" }}
+<style>
+    /* CSS Khusus untuk merapikan list pencarian */
+    .search-result-item {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
+        border-bottom: 2px dashed #D4C4A8;
+        padding-bottom: 20px;
+        align-items: flex-start;
+    }
+    .search-result-thumb {
+        flex: 0 0 35%; /* Mengambil 35% lebar layar PC */
+        max-width: 300px;
+    }
+    .search-result-thumb img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .search-result-info {
+        flex: 1;
+    }
+    /* Responsif HP */
+    @media (max-width: 768px) {
+        .search-result-item { flex-direction: column; }
+        .search-result-thumb { flex: 0 0 100%; max-width: 100%; }
+    }
+</style>
+
+<main class="main" role="main">
+    <article class="post">
+        <header class="post__header">
+            <h1 class="post__title main__title">Mencari...</h1>
+        </header>
+        
+        <div class="post__content">
+            <div id="search-results" style="margin-top: 10px; min-height: 40vh;">
+                <p>Memproses kata kunci...</p>
+            </div>
+        </div>
+    </article>
+</main>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchQuery = urlParams.get('q');
+    const baseURL = '{{ .Site.BaseURL }}'; // Menangkap alamat root web
+
+    if (searchQuery) {
+        document.querySelector('.main__title').innerText = `Hasil Pencarian: "${searchQuery}"`;
+        
+        fetch('{{ "index.json" | absURL }}')
+            .then(response => response.json())
+            .then(data => {
+                const resultsContainer = document.getElementById('search-results');
+                resultsContainer.innerHTML = ''; 
+
+                const results = data.filter(item => 
+                    (item.title && item.title.toLowerCase().includes(searchQuery.toLowerCase())) || 
+                    (item.summary && item.summary.toLowerCase().includes(searchQuery.toLowerCase()))
+                );
+
+                if (results.length > 0) {
+                    results.forEach(item => {
+                        // Membuang garis miring ganda agar link URL valid
+                        const itemLink = baseURL + item.permalink.replace(/^\//, '');
+                        let thumbHTML = '';
+                        
+                        // Jika artikel punya thumbnail, langsung cetak gambarnya
+                        if (item.thumbnail) {
+                            thumbHTML = `
+                                <div class="search-result-thumb">
+                                    <a href="${itemLink}">
+                                        <img src="${item.thumbnail}" alt="Thumbnail ${item.title}" onerror="this.style.display='none'">
+                                    </a>
+                                </div>
+                            `;
+                        }
+
+                        // Gabungkan Gambar dan Teks
+                        const articleHTML = `
+                            <div class="search-result-item">
+                                ${thumbHTML}
+                                <div class="search-result-info">
+                                    <h2 style="margin: 0 0 10px 0; font-size: 1.5rem; font-family: 'Playfair Display', serif;">
+                                        <a href="${itemLink}" style="text-decoration: none; color: #5C4033;">${item.title}</a>
+                                    </h2>
+                                    <p style="margin: 0; font-size: 0.95rem; line-height: 1.5; color: #3E362E;">${item.summary.substring(0, 160)}...</p>
+                                </div>
+                            </div>
+                        `;
+                        resultsContainer.innerHTML += articleHTML;
+                    });
+                } else {
+                    resultsContainer.innerHTML = '<p>Maaf, tidak ada artikel yang cocok dengan kata kunci tersebut.</p>';
+                }
+            })
+            .catch(err => {
+                console.error("Error:", err);
+                document.getElementById('search-results').innerHTML = '<p>Terjadi kesalahan saat memuat data pencarian.</p>';
+            });
+    } else {
+        document.querySelector('.main__title').innerText = 'Pencarian';
+        document.getElementById('search-results').innerHTML = '<p>Silakan ketik sesuatu di kotak pencarian di atas.</p>';
+    }
+</script>
+{{ end }}

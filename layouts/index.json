@@ -1,0 +1,16 @@
+{{- $list := slice -}}
+{{- range where .Site.RegularPages "Section" "posts" -}}
+  {{- $thumb := "" -}}
+  {{- if .Params.thumbnail -}}
+    {{- /* 1. Cek apakah gambar disimpan satu folder dengan artikel (Page Bundles) */ -}}
+    {{- $res := .Resources.GetMatch .Params.thumbnail -}}
+    {{- if $res -}}
+      {{- $thumb = $res.Permalink -}}
+    {{- else -}}
+      {{- /* 2. Jika tidak ada, asumsikan gambar ada di folder "static" */ -}}
+      {{- $thumb = .Params.thumbnail | absURL -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $list = $list | append (dict "title" .Title "permalink" .RelPermalink "summary" (.Summary | plainify) "thumbnail" $thumb) -}}
+{{- end -}}
+{{- $list | jsonify -}}
