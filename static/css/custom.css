@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
 
+/* =========================================================
+   1. PENGATURAN DASAR & WARNA UTAMA
+   ========================================================= */
 html, body {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
+    margin: 0 !important; padding: 0 !important;
+    width: 100% !important; max-width: 100% !important;
     background-color: #F4EFE6 !important;
     overflow-x: hidden;
     color: #3E362E !important;
@@ -12,126 +13,24 @@ html, body {
 }
 
 body > .container, .main-container {
-    max-width: 100% !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-    border: none !important;
+    max-width: 100% !important; width: 100% !important;
+    margin: 0 !important; padding: 0 !important;
+    box-shadow: none !important; border: none !important;
     background: transparent !important;
 }
 
-/* =========================================================
-   1. HEADER 1-BARIS (DESKTOP) - THE SUPER-SLIM LAYOUT
-   ========================================================= */
-.header {
-    background-color: #EFE8DB !important;
-    border-bottom: 3px solid #D4C4A8 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important; 
-}
-
-.logo__img { display: none !important; }
-.logo { margin: 0 !important; padding: 0 !important;}
-
-.logo__title {
-    color: #5C4033 !important;
-    font-family: 'Allura', cursive !important;
-    font-weight: 400 !important;
-    font-style: normal !important;
-    text-transform: capitalize !important;
-}
-
-.logo__tagline {
-    color: #8A6849 !important;
-    font-family: 'Lora', serif !important;
-    font-style: italic;
-    font-weight: 400 !important;
-}
-
-/* --- TATA LETAK DESKTOP (PAKSAAN 1 BARIS SEJAJAR) --- */
-@media (min-width: 769px) {
-    .header__container {
-        display: flex !important;
-        flex-direction: row !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        padding: 10px 5% !important; 
-    }
-
-    /* Membongkar paksa semua pembungkus rahasia bawaan tema */
-    .logo__link, .logo__item, .logo__text {
-        display: flex !important;
-        flex-direction: row !important;
-        align-items: center !important;
-        text-decoration: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
-    /* Judul: Diberi garis pembatas di sebelah kanannya */
-    .logo__title {
-        font-size: 3rem !important; /* Disesuaikan agar muat sebaris */
-        line-height: 1 !important;
-        margin: 0 !important;
-        white-space: nowrap !important; /* Larang teks turun baris */
-        padding-right: 20px !important; /* Jarak sebelum garis */
-        border-right: 2px solid #D4C4A8 !important; /* GARIS PEMISAH ESTETIK */
-        display: block !important;
-    }
-
-    /* Mematikan pseudo-elemen jika sebelumnya ada */
-    .logo__title::after { display: none !important; }
-
-    /* Tagline: Menempel persis di sebelah kanan garis */
-    .logo__tagline {
-        font-size: 0.8rem !important; /* Disesuaikan agar harmonis */
-        letter-spacing: 1px !important;
-        margin: 0 0 0 20px !important; /* Jarak setelah garis */
-        text-align: left !important;
-        padding: 0 !important;
-        border-left: none !important; 
-        white-space: nowrap !important; /* PAKSA TAGLINE HANYA 1 BARIS */
-        line-height: 1 !important;
-    }
-
-    .menu { margin: 0 !important; }
-}
-
-/* --- Menu Navigasi Desktop --- */
-.menu, .menu__list, .menu__item, .menu__link {
-    background: transparent !important;
-    border: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-.menu__list {
-    display: flex;
-    flex-direction: row;
-    gap: 20px; /* Jarak menu dirapatkan sedikit */
-    align-items: center;
-}
-.menu__link {
-    color: #5C4033 !important;
-    font-family: 'Playfair Display', serif !important;
-    font-weight: 700 !important;
-    text-transform: uppercase;
-    padding: 5px 0 !important;
-    transition: color 0.3s ease;
-}
-.menu__link:hover { color: #8B5A2B !important; }
-
-/* =========================================================
-   2. TATA LETAK KONTEN & WARNA
-   ========================================================= */
 .wrapper {
     padding: 30px 5% !important;
     box-sizing: border-box !important;
-    width: 100% !important;
-    max-width: 100% !important;
+    width: 100% !important; max-width: 100% !important;
 }
+
+a { color: #8A6849 !important; }
+a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post__category a:hover, .post__title a:hover { color: #8B5A2B !important; }
+
+/* =========================================================
+   2. TYPOGRAPHY (JUDUL, WIDGET, & PAGE)
+   ========================================================= */
 .widget__title, .list__title, .recent-posts__title, .post__title a, .page__title, .main__title {
     color: #5C4033 !important;
     font-family: 'Playfair Display', serif !important;
@@ -142,355 +41,250 @@ body > .container, .main-container {
     border-bottom: 2px dashed #D4C4A8 !important;
     padding-bottom: 10px !important;
 }
-a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post__category a:hover, .post__title a:hover { color: #8B5A2B !important; }
-a { color: #8A6849 !important; }
+.widget__title { border-top: none !important; border-bottom: 2px dashed #D4C4A8 !important; }
 
 /* =========================================================
-   3. TOMBOL, TAGS & READ MORE
+   3. TOMBOL, TAGS, BADGE & FOOTER
    ========================================================= */
 .btn, .post__readmore, .tags__link, .widget-tags__link, .button, .category, .tags__title {
-    background-color: #5C4033 !important;
-    color: #F4EFE6 !important;
-    border: none !important;
-    border-radius: 4px !important;
-    padding: 6px 14px !important;
+    background-color: #5C4033 !important; color: #F4EFE6 !important;
+    border: none !important; border-radius: 4px !important;
+    padding: 6px 14px !important; display: inline-block;
     transition: background-color 0.3s ease !important;
-    text-decoration: none !important;
-    display: inline-block;
-    font-family: 'Lora', serif !important;
+    text-decoration: none !important; font-family: 'Lora', serif !important;
 }
 .tags__svg { fill: #F4EFE6 !important; }
-.btn:hover, .post__readmore:hover, .tags__link:hover, .widget-tags__link:hover, .button:hover, .category:hover { background-color: #8A6849 !important; color: #ffffff !important; }
-
-/* =========================================================
-   4. BORDER & FOOTER
-   ========================================================= */
-.widget__title { border-top: none !important; border-bottom: 2px dashed #D4C4A8 !important; }
-.post, .widget, .post__meta, .post__footer, .authorbox { border-color: #E6D8C0 !important; }
-.widget { background-color: #FDFBF7 !important; }
+.btn:hover, .post__readmore:hover, .tags__link:hover, .widget-tags__link:hover, .button:hover, .category:hover { 
+    background-color: #8A6849 !important; color: #ffffff !important; 
+}
+.tags__badge, .categories__badge { background-color: #5C4033 !important; color: #F4EFE6 !important; }
+.tags__badge svg, .categories__badge svg { fill: #F4EFE6 !important; }
 
 .footer {
-    padding: 25px 5% !important;
-    box-sizing: border-box !important;
-    background-color: #3E362E !important;
-    color: #F4EFE6 !important;
-    border-top: 5px solid #5C4033 !important;
-    margin: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    text-align: center !important;
+    padding: 25px 5% !important; box-sizing: border-box !important;
+    background-color: #3E362E !important; color: #F4EFE6 !important;
+    border-top: 5px solid #5C4033 !important; margin: 0 !important;
+    width: 100% !important; max-width: 100% !important; text-align: center !important;
     font-family: 'Lora', serif !important;
 }
-.footer__container { display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 10px; }
+.footer__container { display: flex !important; flex-direction: column !important; align-items: center !important; gap: 10px; }
 .footer__copyright, .footer__info { margin: 0 !important; text-align: center !important; }
 .footer a { color: #D4C4A8 !important; }
 .footer a:hover { color: #ffffff !important; }
 
 /* =========================================================
-   5. BADGE & SEARCH FORM
+   4. THUMBNAIL ASPECT RATIO & BORDER TEMA
    ========================================================= */
-.tags__badge, .categories__badge { background-color: #5C4033 !important; color: #F4EFE6 !important; }
-.tags__badge svg, .categories__badge svg { fill: #F4EFE6 !important; }
+.post, .widget, .post__meta, .post__footer, .authorbox { border-color: #E6D8C0 !important; }
+.widget { background-color: #FDFBF7 !important; }
 
-input:focus, textarea:focus, .widget-search__field:focus {
-    outline: none !important;
-    border: 2px solid #8B5A2B !important;
-    box-shadow: 0 0 5px rgba(139, 90, 43, 0.2) !important;
-    background-color: #FDFBF7 !important;
-    color: #3E362E !important;
-}
-.widget-search__field { border: 1px solid #D4C4A8 !important; border-radius: 4px !important; }
-
-/* =========================================================
-   6. THUMBNAIL ASPECT RATIO
-   ========================================================= */
 .list__thumbnail img {
-    width: 100% !important;
-    height: 100% !important;
-    aspect-ratio: 16 / 9 !important;
-    object-fit: cover !important;
-    object-position: center !important;
-    border-radius: 4px !important;
+    width: 100% !important; height: 100% !important;
+    aspect-ratio: 16 / 9 !important; object-fit: cover !important;
+    object-position: center !important; border-radius: 4px !important;
 }
 .post__thumbnail img, .post__thumbnail-image {
-    width: 100% !important;
-    height: 100% !important;
-    aspect-ratio: 16 / 9 !important;
-    max-height: 450px !important;
-    object-fit: cover !important;
-    object-position: center !important;
+    width: 100% !important; height: 100% !important;
+    aspect-ratio: 16 / 9 !important; max-height: 450px !important;
+    object-fit: cover !important; object-position: center !important;
     border-radius: 8px !important;
 }
 
 /* =========================================================
-   7. RESPONSIF MOBILE (HP & TABLET) - 2 BARIS (RATA KIRI)
-========================================================= */
-@media (max-width: 768px) {
-    /* Penyesuaian Ruang Header Utama */
-    .header { position: relative !important; }
-    .header__container {
-        padding: 15px 20px !important;
-        display: block !important;
-    }
-
-    /* Membersihkan margin & Memaksa Wrapper Rata Kiri */
-    .logo { 
-        margin: 0 !important; 
-        padding: 0 !important; 
-        text-align: left !important; /* PAKSA RATA KIRI */
-    }
-
-    /* BUNGKUSAN LOGO (GRID) */
-    .logo__link {
-        display: grid !important;
-        grid-template-columns: auto 1fr !important; 
-        align-items: center !important;
-        gap: 0px 12px !important; 
-        text-decoration: none !important;
-        padding-right: 55px !important; 
-    }
-
-    /* Menghancurkan Kotak Gaib Tema */
-    .logo__item, .logo__text {
-        display: contents !important; 
-    }
-
-    /* --- BARIS 1 (KIRI): LOGO GAMBAR --- */
-    .logo__img {
-        grid-column: 1 / 2 !important; 
-        grid-row: 1 / 2 !important;    
-        display: block !important;
-        width: 42px !important;
-        height: 42px !important;
-        border-radius: 50% !important;
-        border: 2px solid #D4C4A8 !important;
-        margin: 0 !important;
-    }
-
-    /* --- BARIS 1 (TENGAH): JUDUL BENAK INSAN --- */
-    .logo__title {
-        grid-column: 2 / 3 !important; 
-        grid-row: 1 / 2 !important;    
-        font-size: 2.2rem !important;
-        line-height: 1 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        white-space: nowrap !important; 
-        overflow: hidden !important;    
-        text-align: left !important; /* PAKSA RATA KIRI */
-        justify-self: start !important; /* Paksa menempel ke ikon */
-    }
-    .logo__title::after { display: none !important; } 
-
-    /* --- BARIS 2 (BAWAH): TAGLINE --- */
-    .logo__tagline {
-        grid-column: 1 / 3 !important; 
-        grid-row: 2 / 3 !important;    
-        font-size: 0.75rem !important;
-        line-height: 1.4 !important;
-        margin: 8px 0 0 0 !important;  
-        padding: 0 !important;
-        border: none !important;
-        color: #8A6849 !important;
-        white-space: normal !important;
-        text-align: left !important; /* PAKSA RATA KIRI */
-    }
-
-    /* --- BARIS 1 (KANAN): TOMBOL MENU --- */
-    .menu__btn {
-        position: absolute !important;
-        top: 18px !important; 
-        right: 20px !important; 
-        width: 40px !important;
-        height: 36px !important;
-        background-color: #5C4033 !important;
-        border-radius: 6px !important;
-        border: none !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' fill='%23ffffff'/%3E%3C/svg%3E") !important;
-        background-size: 24px 24px !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        display: block !important;
-        cursor: pointer !important;
-    }
-    .menu__btn-title, .menu__btn svg { display: none !important; }
-
-    /* Dropdown Melayang */
-    .menu__list {
-        position: absolute !important;
-        top: 70px !important;
-        right: 20px !important;
-        width: 150px !important;
-        background-color: #2b2b2b !important;
-        border-radius: 6px !important;
-        padding: 5px 0 !important;
-        margin: 0 !important;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
-        z-index: 9999 !important;
-        flex-direction: column !important;
-    }
-    .menu__item { display: block !important; width: 100% !important; border: none !important; margin: 0 !important; padding: 0 !important; }
-    .menu__link {
-        display: block !important; width: 100% !important; box-sizing: border-box !important;
-        padding: 12px 15px !important; color: #ffffff !important; font-size: 0.9rem !important;
-        text-align: center !important; background-color: transparent !important; border-radius: 0 !important;
-    }
-    .menu__link:hover { background-color: #5C4033 !important; color: #ffffff !important; }
-
-    /* Merapikan Susunan Konten di Bawah Header */
-    .wrapper { display: flex; flex-direction: column; padding: 20px 5% !important; }
-    .sidebar { display: contents; }
-    .widget-search { order: 1 !important; margin-bottom: 25px; }
-    .primary { order: 2 !important; }
-    .widget { order: 3; }
+   5. HEADER GLOBAL & KOTAK PENCARIAN
+   ========================================================= */
+.header {
+    background-color: #EFE8DB !important; border-bottom: 3px solid #D4C4A8 !important;
+    width: 100% !important; max-width: 100% !important; margin: 0 !important; padding: 0 !important; 
+}
+.logo { margin: 0 !important; padding: 0 !important;}
+.logo__title {
+    color: #5C4033 !important; font-family: 'Allura', cursive !important;
+    font-weight: 400 !important; font-style: normal !important; text-transform: capitalize !important;
+}
+.logo__tagline {
+    color: #8A6849 !important; font-family: 'Lora', serif !important; font-style: italic; font-weight: 400 !important;
 }
 
-/* =========================================================
-   8. TOMBOL BACK TO TOP
-   ========================================================= */
+.menu, .menu__item, .menu__link { background: transparent !important; border: none !important; margin: 0 !important; padding: 0 !important; }
+.menu__link {
+    color: #5C4033 !important; font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important; text-transform: uppercase; padding: 5px 0 !important; transition: color 0.3s ease;
+}
+
+/* Menyembunyikan judul widget pencarian yang lama */
+.widget-search .widget__title { display: none !important; }
+.header-search { margin: 0 !important; padding: 0 !important; }
+.header-search__field {
+    padding: 8px 16px !important; border: 1px solid #D4C4A8 !important; border-radius: 20px !important; 
+    background-color: #FDFBF7 !important; color: #3E362E !important; font-family: 'Lora', serif !important;
+    font-size: 0.9rem !important; outline: none !important;
+    transition: all 0.4s ease !important;
+}
+input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:focus {
+    outline: none !important; border-color: #8B5A2B !important; box-shadow: 0 0 8px rgba(139, 90, 43, 0.2) !important;
+}
+
+/* Tombol Back to Top */
 #backToTop {
     position: fixed; bottom: 30px; right: 30px; width: 45px; height: 45px;
     background-color: #5C4033; color: #ffffff; border: none; border-radius: 50%;
     cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    opacity: 0; visibility: hidden; transition: all 0.3s ease-in-out;
-    z-index: 9999; display: flex; align-items: center; justify-content: center;
+    opacity: 0; visibility: hidden; transition: all 0.3s ease-in-out; z-index: 9999; display: flex; align-items: center; justify-content: center;
 }
 #backToTop.show { opacity: 1; visibility: visible; }
 #backToTop:hover { background-color: #333333; transform: translateY(-5px); }
-@media (max-width: 768px) { #backToTop { bottom: 20px; right: 20px; width: 40px; height: 40px; } }
+
 
 /* =========================================================
-   9. REVISI POSISI HEADER MENTOK KIRI & AKTIVASI LOGO GAMBAR
+   6. TAMPILAN DESKTOP (PC/LAPTOP)
    ========================================================= */
-
 @media (min-width: 769px) {
-    /* 1. Menarik seluruh konten header mentok ke kiri (dan kanan) */
+    /* Wadah Utama Header: Ditarik ke kiri & diberi bantalan pelindung di kanan */
     .header__container {
-        padding-left: 1% !important;  /* Jauh lebih mentok dari 5% atau 2% */
-        padding-right: 1.5% !important; /* Agar seimbang, menu juga ikut ke kanan */
+        display: flex !important; flex-direction: row !important;
+        align-items: center !important; justify-content: space-between !important;
+        padding: 10px 30px 10px 20px !important; 
+        max-width: 100% !important; gap: 30px !important;
     }
 
-    /* 2. Mengaktifkan kembali Logo Gambar (dihilangkan dari 'none') */
-    .logo__img {
-        display: inline-block !important; /* Ubah dari 'none' */
-        height: 48px !important;       /* Tinggi disesuaikan agar pas dengan teks 'Allura' */
-        width: 48px !important;        /* Kotak sempurna */
-        object-fit: cover !important;  /* Memastikan gambar proporsional di dalam kotak */
-        margin-right: 15px !important; /* Jarak antara gambar dan teks 'Benak Insan' */
-        
-        /* Gaya Premium: Membuat logo menjadi bulat (lingkaran) */
-        border-radius: 50% !important; 
-        border: 2px solid #D4C4A8 !important; /* Bingkai cokelat pudar agar senada */
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important; /* Sedikit bayangan estetik */
+    /* Susunan Logo */
+    .logo__link, .logo__item, .logo__text {
+        display: flex !important; flex-direction: row !important;
+        align-items: center !important; text-decoration: none !important; margin: 0 !important; padding: 0 !important;
     }
+    .logo__img {
+        display: inline-block !important; height: 48px !important; width: 48px !important;
+        object-fit: cover !important; margin-right: 15px !important;
+        border-radius: 50% !important; border: 2px solid #D4C4A8 !important; box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+    }
+    .logo__title {
+        font-size: 3rem !important; line-height: 1 !important; margin: 0 !important; padding-right: 20px !important;
+        white-space: nowrap !important; border-right: 2px solid #D4C4A8 !important; display: block !important;
+    }
+    .logo__title::after { display: none !important; }
+    .logo__tagline {
+        font-size: 0.75rem !important; letter-spacing: 1px !important; margin: 0 0 0 20px !important;
+        text-align: left !important; padding: 0 !important; border-left: none !important;
+        white-space: nowrap !important; line-height: 1 !important;
+    }
+
+    /* Susunan Menu & Kotak Pencarian */
+    .header__right {
+        display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important;
+        align-items: center !important; gap: 15px !important; margin-left: auto !important;
+    }
+    .menu__list {
+        display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important;
+        gap: 15px !important; align-items: center !important; margin: 0 !important; padding: 0 !important;
+        background: transparent !important; /* Menghilangkan kotak hitam */
+        box-shadow: none !important; /* Membersihkan sisa bayangan */
+    }
+    .menu__item, .menu__link { white-space: nowrap !important; }
+    .menu__link { font-size: 0.85rem !important; }
+    
+    .header-search__field {
+        width: 170px !important; /* Dilebarkan dari 140px menjadi 170px */
+        transform-origin: right center !important;
+    }
+    .header-search__field:focus { width: 200px !important; }
 }
 
+
 /* =========================================================
-   10. PERBAIKAN DAFTAR ARTIKEL (MOBILE) - FINAL CARD STYLE
+   7. TAMPILAN MOBILE (HP & TABLET) - CLEAN & CENTERED
    ========================================================= */
 @media (max-width: 768px) {
-    .list__item {
+    .header { position: relative !important; z-index: 1000 !important; }
+
+    .header__container {
         display: flex !important;
-        flex-direction: column !important; 
-        margin-bottom: 30px !important; 
-        border-bottom: 2px dashed #D4C4A8 !important; 
-        padding-bottom: 20px !important;
-        align-items: stretch !important; 
+        flex-direction: column !important; /* Susun ke bawah */
+        align-items: center !important;    /* Semua di tengah */
+        padding: 15px !important;
+        gap: 10px !important;
     }
 
-    /* 1. MENGHANCURKAN BATASAN GAMBAR BAWAAN TEMA */
-    .list__thumbnail {
-        display: block !important;
-        width: 100% !important;
-        max-width: none !important; 
-        flex: none !important; 
-        margin: 0 0 15px 0 !important; 
+    /* Logo & Judul di Tengah */
+    .logo__link {
+        flex-direction: column !important;
+        text-align: center !important;
         padding: 0 !important;
-    }
-    
-    .list__thumbnail a { display: block !important; width: 100% !important; }
-
-    .list__thumbnail img {
-        display: block !important;
-        width: 100% !important;
-        max-width: 100% !important; 
-        height: 180px !important; 
-        object-fit: cover !important; 
-        object-position: center !important;
-        border-radius: 8px !important; 
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
-    }
-
-    /* 2. MENGHANCURKAN BATASAN KONTEN TEKS */
-    .list__content {
-        display: block !important;
-        width: 100% !important;
-        max-width: none !important; 
-        flex: none !important; 
-        padding: 0 !important;
-    }
-
-    .list__title {
-        font-size: 1.35rem !important;
-        line-height: 1.3 !important;
-        margin: 0 0 10px 0 !important;
-    }
-
-    /* 3. INFO ARTIKEL (TARGET DIPERBAIKI MENJADI .meta) */
-    .meta {
-        display: flex !important;           
-        flex-direction: row !important;     
-        flex-wrap: wrap !important;         /* Izinkan turun baris jika nama terlalu panjang */
-        align-items: center !important;     
-        gap: 8px 15px !important;          
-        margin-bottom: 12px !important;
-        font-size: 0.8rem !important;
-    }
-    
-    /* Target mutlak ke elemen di dalam .meta */
-    .meta__item {
-        display: inline-flex !important;
-        align-items: center !important;
-        margin: 0 !important; 
-        padding: 0 !important;
-        width: auto !important; 
-        flex: 0 0 auto !important; /* Paksa menolak dilebarkan 100% */
-    }
-
-    .meta__icon {
-        margin-right: 5px !important;
-    }
-
-    /* 4. TEKS PREVIEW KUNCI 2 BARIS */
-    .list__excerpt {
-        font-size: 0.95rem !important;
-        line-height: 1.4 !important;
-        margin-bottom: 15px !important;
-        display: -webkit-box !important;
-        -webkit-line-clamp: 2 !important; 
-        line-clamp: 2 !important;
-        -webkit-box-orient: vertical !important;  
-        overflow: hidden !important;
-    }
-
-    /* 5. TOMBOL READ MORE DI KANAN */
-    .list__footer {
-        display: flex !important;
-        justify-content: flex-end !important; 
         margin: 0 !important;
     }
+    .logo__img { margin: 0 0 10px 0 !important; width: 45px !important; height: 45px !important; }
+    .logo__title { font-size: 2rem !important; display: block !important; border: none !important; padding: 0 !important; }
     
-    .post__readmore {
-        display: inline-block !important;
-        padding: 8px 16px !important; 
-        font-size: 0.85rem !important;
-        font-weight: 600 !important;
+    /* Tagline Muncul di Tengah */
+    .logo__tagline {
+        display: block !important;
+        font-size: 0.7rem !important;
+        margin: 5px 0 !important;
+        text-align: center !important;
+        white-space: normal !important;
     }
-}
 
-/* Menyembunyikan judul "Pencarian Materi" beserta garis putus-putus di widget search */
-.widget-search .widget__title {
-    display: none !important;
+    /* Baris Menu & Search */
+    .header__right {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 15px !important;
+        width: 100% !important;
+        margin-top: 5px !important;
+    }
+
+    /* Search Bar Mobile */
+    .header-search__field {
+        width: 150px !important;
+        border-radius: 20px !important;
+        padding: 6px 15px !important;
+    }
+
+    /* Tombol Menu (Menghilangkan tulisan merah/M E) */
+    .menu__btn {
+        background-color: #5C4033 !important;
+        width: 40px !important;
+        height: 35px !important;
+        border-radius: 6px !important;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' fill='%23ffffff'/%3E%3C/svg%3E") !important;
+        background-size: 22px 22px !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        color: transparent !important; /* Sembunyikan teks merah */
+        font-size: 0 !important;        /* Kecilkan teks ke nol */
+        border: none !important;
+    }
+
+    /* Dropdown Menu (Muncul di Depan Slider) */
+    .menu__list {
+        display: none; /* Sembunyi default */
+        position: absolute !important;
+        top: 100% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 90% !important;
+        background-color: #3E362E !important;
+        border-radius: 8px !important;
+        z-index: 9999 !important;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3) !important;
+        padding: 10px 0 !important;
+        flex-direction: column !important;
+    }
+
+    /* Menampilkan menu saat tombol diklik */
+    .menu--opened .menu__list, 
+    .menu__btn--active + .menu__list,
+    .menu__list[style*="display: block"], 
+    .menu__list[style*="display: flex"] {
+        display: flex !important;
+    }
+
+    .menu__link {
+        color: #F4EFE6 !important;
+        padding: 15px !important;
+        text-align: center !important;
+        border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+    }
 }

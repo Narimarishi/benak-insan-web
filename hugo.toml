@@ -51,7 +51,7 @@ canonifyURLs = true
   home = "right"          
   list = "right"
   single = "right"
-  widgets = ["search", "recent", "categories", "taglist"]
+  widgets = ["recent", "categories", "taglist"]
 
 # =========================================================
 # 5. MENU NAVIGASI (KEMBALIKAN GARIS MIRING ABSOLUT)

@@ -1,0 +1,14 @@
+<header class="header">
+    <div class="container header__container">
+        <div class="header__top-row"> {{ partial "logo.html" . }}
+            
+            <div class="header__right">
+                <div class="header-search">
+                    <form class="header-search__form" role="search" method="get" action="/search/">
+                        <input class="header-search__field" type="search" placeholder="Cari..." name="q">
+                    </form>
+                </div>
+                {{ partial "menu.html" . }}
+            </div>
+        </div> </div>
+</header>
