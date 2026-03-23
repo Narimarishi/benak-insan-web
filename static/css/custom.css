@@ -137,80 +137,86 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
 
 
 /* =========================================================
-   6. TAMPILAN DESKTOP (PC/LAPTOP)
+   6. TAMPILAN DESKTOP (PC/LAPTOP) - REVISI TOP-ROW
    ========================================================= */
 @media (min-width: 769px) {
-    /* Wadah utama: Paksa sejajar mendatar dan beri jarak antar grup */
     .header__container {
-        display: flex !important;
-        flex-direction: row !important; /* Paksa satu baris */
-        justify-content: space-between !important; /* Logo kiri, Menu-Search kanan */
-        align-items: center !important;
-        padding: 10px 2% !important; /* Beri sedikit ruang di pinggir */
+        padding: 10px 3% !important; 
         max-width: 100% !important;
-        gap: 20px !important;
     }
 
-    /* Grup Kiri: Logo + Judul + Tagline */
-    .logo__link {
+    /* KUNCI UTAMA: Kita panggil pembungkus baru agar membentang sejajar */
+    .header__top-row {
         display: flex !important;
-        flex-direction: row !important;
+        flex-direction: row !important; /* Paksa satu baris lurus */
+        justify-content: space-between !important; /* Logo mentok kiri, Menu mentok kanan */
         align-items: center !important;
-        flex-shrink: 0 !important; /* Jangan biarkan logo menyusut */
+        width: 100% !important;
     }
 
+    /* GRUP KIRI: Logo, Judul, Garis, dan Tagline */
+    .logo__link, .logo__item, .logo__text {
+        display: flex !important;
+        flex-direction: row !important; /* Paksa sejajar ke samping */
+        align-items: center !important;
+        text-decoration: none !important;
+        margin: 0 !important; padding: 0 !important;
+    }
+    
     .logo__img {
-        display: inline-block !important;
-        height: 48px !important; width: 48px !important;
-        margin-right: 15px !important;
-        border-radius: 50% !important;
-        border: 2px solid #D4C4A8 !important;
+        display: inline-block !important; height: 48px !important; width: 48px !important;
+        object-fit: cover !important; margin-right: 15px !important;
+        border-radius: 50% !important; border: 2px solid #D4C4A8 !important; box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
     }
-
+    
     .logo__title {
-        font-size: 2.8rem !important; /* Ukuran pas untuk sejajar */
-        border-right: 2px solid #D4C4A8 !important;
-        padding-right: 20px !important;
-        margin-right: 20px !important;
-        white-space: nowrap !important;
+        font-size: 2.5rem !important; line-height: 1 !important; margin: 0 !important; padding-right: 20px !important;
+        white-space: nowrap !important; border-right: 2px solid #D4C4A8 !important; display: block !important;
     }
-
+    .logo__title::after { display: none !important; }
+    
     .logo__tagline {
-        font-size: 0.75rem !important;
-        white-space: nowrap !important;
         display: block !important;
+        font-size: 0.75rem !important; letter-spacing: 1px !important; margin: 0 0 0 20px !important;
+        text-align: left !important; padding: 0 !important; border-left: none !important;
+        white-space: nowrap !important; line-height: 1 !important;
+        color: #8A6849 !important;
     }
 
-    /* Grup Kanan: Menu Navigasi + Kotak Pencarian */
+    /* GRUP KANAN: Menu Navigasi & Kotak Pencarian */
     .header__right {
-        display: flex !important;
-        flex-direction: row !important;
-        align-items: center !important;
-        gap: 25px !important; /* Jarak antara menu dan search bar */
-        margin-left: auto !important; /* Dorong ke pojok kanan */
+        display: flex !important; 
+        flex-direction: row !important; 
+        flex-wrap: nowrap !important;
+        align-items: center !important; 
+        gap: 20px !important; 
+        margin-left: auto !important;
+        margin-top: 0 !important; /* Menghapus jarak atas dari settingan mobile */
+        width: auto !important; /* Menghapus paksaan lebar 100% dari mobile */
     }
-
+    
+    /* Memastikan urutan kembali normal di PC: Menu kiri, Search kanan (atau sebaliknya sesuai selera) */
+    .header-search { order: 2 !important; margin: 0 !important; }
+    .menu { order: 1 !important; margin: 0 !important; }
+    
     .menu__list {
-        display: flex !important;
-        flex-direction: row !important;
-        gap: 20px !important;
-        background: transparent !important;
-        box-shadow: none !important;
+        display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important;
+        gap: 20px !important; align-items: center !important; margin: 0 !important; padding: 0 !important;
+        background: transparent !important; box-shadow: none !important; position: static !important;
     }
-
-    .menu__link {
-        font-size: 0.9rem !important;
-        white-space: nowrap !important;
-    }
-
-    /* Search bar desktop: Lebar pas agar tidak makan tempat */
+    
+    .menu__item, .menu__link { white-space: nowrap !important; }
+    .menu__link { font-size: 0.85rem !important; color: #5C4033 !important; }
+    
     .header-search__field {
         width: 160px !important;
-        transform-origin: right center !important;
+        transform-origin: right center !important; 
+        border-radius: 20px !important;
     }
-    .header-search__field:focus {
-        width: 220px !important;
-    }
+    .header-search__field:focus { width: 220px !important; }
+    
+    /* Sembunyikan tombol hamburger di PC */
+    .menu__btn { display: none !important; }
 }
 
 /* =========================================================
