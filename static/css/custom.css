@@ -44,53 +44,83 @@ a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post_
 .widget__title { border-top: none !important; border-bottom: 2px dashed #D4C4A8 !important; }
 
 /* =========================================================
-   3. TOMBOL, TAGS, BADGE & FOOTER
+   3. TOMBOL, TAGS, BADGE (BENTO-BOX STYLE) & FOOTER
    ========================================================= */
-/* Tombol Umum & Kategori */
+/* A. Tombol Umum, Kategori, & Judul Tags (Gaya Bento Peletakan) */
 .post__readmore, .button, .category, .tags__title {
-    background-color: #5C4033 !important; color: #F4EFE6 !important;
-    border: none !important; border-radius: 4px !important;
-    padding: 6px 14px !important; display: inline-block;
+    background-color: #5C4033 !important; /* Cokelat tua pekat untuk tombol */
+    color: #F4EFE6 !important;            /* Teks krem terang */
+    border: none !important; 
+    border-radius: 6px !important;        /* Sudut membulat manis */
+    padding: 6px 14px !important; 
+    display: inline-block;
     transition: background-color 0.3s ease !important;
-    text-decoration: none !important; font-family: 'Lora', serif !important;
+    text-decoration: none !important; 
+    font-family: 'Lora', serif !important;
 }
 .post__readmore:hover, .button:hover, .category:hover { 
-    background-color: #8A6849 !important; color: #ffffff !important; 
+    background-color: #8A6849 !important; 
+    color: #ffffff !important; 
 }
 
-/* Gaya Khusus Tags (Bentuk Pil Melengkung) */
-.widget-taglist__link, .widget-tags__link, a.tags__link.btn, .meta__tag {
-    font-size: 0.85rem !important;        
-    padding: 5px 12px !important;         
-    background-color: #F4EFE6 !important; 
-    color: #5C4033 !important;            
-    border: 1px solid #D4C4A8 !important; 
-    border-radius: 20px !important;       
-    margin: 3px 2px !important;           
-    display: inline-block !important;
+/* B. Gaya Khusus Tags & Badge Ikon (Gaya Cokelat Solid Membulat) */
+.widget-taglist__link, .widget-tags__link, a.tags__link.btn, .meta__tag,
+.tags__badge, .categories__badge {
+    font-size: 0.95rem !important;        /* NAIK: Memperbesar ukuran huruf (sebelumnya 0.85) */
+    padding: 7px 16px !important;         /* NAIK: Memperbesar ruang kotak agar proporsional */
+    background-color: #5C4033 !important; 
+    color: #F4EFE6 !important;            
+    border: 1px solid #5C4033 !important; 
+    border-radius: 6px !important;        
+    margin: 4px 3px !important;           /* Menambah sedikit jarak antar kotak */
+    display: inline-flex !important;
+    align-items: center !important;
     transition: all 0.3s ease !important;
-    line-height: 1.5 !important;
     text-decoration: none !important;
     font-family: 'Lora', serif !important;
-    font-weight: normal !important; /* Menghilangkan efek tebal dari bawaan .btn */
+    font-weight: normal !important; 
+    box-shadow: none !important;
+    vertical-align: middle !important;
 }
+
+/* Penyesuaian khusus untuk Ikon Badge agar serasi dan TIDAK TERGENCET */
+.tags__badge, .categories__badge {
+    padding: 6px 10px !important; /* Sedikit dikurangi agar ikon bisa bernapas bebas */
+    margin-right: 6px !important;
+    justify-content: center !important;
+}
+
+/* Mencegah tumpang tindih kotak jika struktur HTML berlapis */
+.tags__item, .tags__list .btn .tags__link {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* C. Efek Hover untuk Tags */
 .widget-taglist__link:hover, .widget-tags__link:hover, a.tags__link.btn:hover, .meta__tag:hover {
-    background-color: #5C4033 !important; 
-    color: #F4EFE6 !important;            
-    border-color: #5C4033 !important;
-}
-.widget-taglist__link:hover, .widget-tags__link:hover, .tags__link:hover, .meta__tag:hover {
-    background-color: #5C4033 !important; 
-    color: #F4EFE6 !important;            
-    border-color: #5C4033 !important;
+    background-color: #8A6849 !important; /* Cokelat sedikit lebih muda saat disorot */
+    color: #ffffff !important;            /* Teks putih bersih */
+    border-color: #8A6849 !important;     
+    transform: translateY(-2px) !important; 
 }
 
-/* Ikon dan Badge */
-.tags__svg { fill: #5C4033 !important; }
-.tags__badge, .categories__badge { background-color: #5C4033 !important; color: #F4EFE6 !important; }
-.tags__badge svg, .categories__badge svg { fill: #F4EFE6 !important; }
+/* D. Warna & Ukuran Ikon SVG di Dalam Badge */
+.tags__svg, .tags__badge svg, .categories__badge svg {
+    width: 18px !important;     
+    height: 18px !important;    
+    flex-shrink: 0 !important;  /* KUNCI AJAIB: Mencegah browser menggencet ikon */
+}
 
-/* Footer */
+/* Gunakan fill saja, hapus stroke agar gambar tajam dan tidak bengkak/berbayang */
+.tags__svg, .tags__badge svg, .categories__badge svg,
+.tags__svg path, .tags__badge svg path, .categories__badge svg path { 
+    fill: #F4EFE6 !important;   
+    stroke: none !important; 
+}
+
+/* E. Footer */
 .footer {
     padding: 25px 5% !important; box-sizing: border-box !important;
     background-color: #3E362E !important; color: #F4EFE6 !important;
