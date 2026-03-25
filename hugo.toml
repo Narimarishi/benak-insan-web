@@ -85,4 +85,4 @@ canonifyURLs = true
 # 7. PENGATURAN ALAMAT
 # =========================================================
 [permalinks]
-  posts = "/artikel/:slug/"
+  posts = "/:slug/"
