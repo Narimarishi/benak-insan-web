@@ -4,12 +4,12 @@ date: 2020-06-05T15:52:00
 categories:
   - Opini & Esai
 tags:
-  - Sociocultular
+  - Sociocultural
 thumbnail: hydrant-5eda07a2097f3639c8714912.jpg
 lampiran: []
 ---
 
-Sebenarnya ini tipe tulisan yang sebisa mungkin saya hindari untuk dipublikasi, karena ada kemungkinan mereka yang tidak sependapat akan tidak menyukai tulisan ini. Namun apalah arti hidup di negara merdeka yang demokratis bila kita tidak sudi beropini. Toh kata demi kata saya atur sesopan dan sehalus mungkin, mungkin terlalu halus sampai esensi tulisan ini sekalipun belum tentu sampai ke pembaca.
+Sebenarnya ini tipe tulisan yang sebisa mungkin saya hindari untuk dipublikasi, karena ada kemungkinan mereka yang tidak sependapat akan tidak menyukai tulisan ini. Namun apalah arti hidup di negara merdeka yang demokratis bila kita tidak sudi beropini.<!--more--> Toh kata demi kata saya atur sesopan dan sehalus mungkin, mungkin terlalu halus sampai esensi tulisan ini sekalipun belum tentu sampai ke pembaca.
 
 Seorang Gubernur merasa terancam karena keberadaan aplikasi kitab suci dengan bahasa daerahnya beredar di masyarakat. Tidak perlu dibingungkan alasan aplikasi tersebut dikecam karena setiap manusia yang tidak terbiasa dengan kehadiran entitas baru akan selalu merasa terancam, sekalipun tidak merasa keselamatannya terancam mereka akan merasa identitasnya terancam. Ini naluriah, meskipun memang menarik bila dicermati dari sisi nilai-nilai kemanusiaan universal seperti toleransi, kerukunan antar-umat dan lainnya.
 
