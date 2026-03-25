@@ -5,7 +5,7 @@ categories:
   - Opini & Esai
 tags:
   - Sociocultural
-thumbnail: hydrant-5eda07a2097f3639c8714912.jpg
+thumbnail: hydrant.webp
 lampiran: []
 ---
 
