@@ -13,11 +13,11 @@ Tidak, ini tidak salah kamar. Memang sebenarnya aku kecewa ketika lihat opsi kat
 
 Tapi toh apa yang ada, bahkan juga yang tidak ada, selalu bisa bersentuhan dengan filsafat. Begitu pula tulisan yang sejatinya ditulis untuk konsumsi pribadi ini, ketika diselami justru aku menemukan nuansa Eksistensialisme.
 
-26 May 2019
+**_26 May 2019_**
 
-14:31
+**_14:31_**
 
-Aku sedang merasakan apa yang ditakutkan bapaknya Eugene Sledge terjadi pada anaknya. Aku tahu apa yang ada dalam pikiran kalian: who the f\*ck is Eugene Sledge?
+Aku sedang merasakan apa yang ditakutkan bapaknya Eugene Sledge terjadi pada anaknya. Aku tahu apa yang ada dalam pikiran kalian: _who the f\*ck is Eugene Sledge_?
 
 Waktu itu aku di tahun pertama SMA dan TV kabel di rumah masih menayangkan channel HBO. Mereka yang gemar menonton film, apalagi film perang, pasti ingat mini series perang dari HBO yang hits kala itu, The Pasific. Banyak yang bilang kalau film ini masih kalah dengan seniornya, Band of Brother, yang juga keluaran HBO. Tapi aku tidak setuju. Justru The Pacific lebih kaya akan drama dari setiap pendalaman karakter karenanya yang ditampilkan tidak cuma kengerian Perang Dunia II di medan laga, sedangkan  Band of Brother menurutku lebih banyak menampilkan aksi-aksi heboh yang juga dramatis tapi tetap realistis.
 
@@ -33,6 +33,6 @@ Aku lupa line persisnya seperti apa tapi yang begitu kuingat adalah ketika bapak
 
 Aku bukan pulang dari medan perang, belum pula bertempur. Tapi isi kepalaku selalu tentang pertempuran hati yang sulit kumenangkan. Aku belum bertempur tapi aku begitu mendambakannya. Bertempur melawan kebatilan dan tersiksa demi kebaikan. Bagiku pengorbanan semacam itu justru anugerah besar dalam hidup. Tapi kini bukan pertempuran fisik seperti yang dialami Eugene yang aku hadapi, melainkan pertempuran dalam batin untuk menjadi manusia yang tahan banting tapi juga bersih tanpa noda hati.
 
-Benar apa yang dikhawatirkan bapaknya Eugene, sometimes I feel like I lack of spark or I even really have none of it. Mungkin ini pengorbanan yang memang harus kualami, atau bahkan kunikmati.
+Benar apa yang dikhawatirkan bapaknya Eugene, _sometimes I feel like I lack of spark or I even really have none of it_. Mungkin ini pengorbanan yang memang harus kualami, atau bahkan kunikmati.
 
 Instagram.com/rizkiluthfiahaziz
