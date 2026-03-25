@@ -8,7 +8,7 @@ tags:
   - Lembaga
   - Internasional
   - Kolaborasi
-thumbnail: kerjasama-tangan-676a7487c925c4422374cd53.jpg
+thumbnail: kerjasama-tangan.webp
 lampiran: []
 ---
 
