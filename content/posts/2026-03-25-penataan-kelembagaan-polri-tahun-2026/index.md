@@ -16,7 +16,7 @@ setelah menyimak pandangan Refli Harun di salah satu episode Indonesia Lawyers C
 
 Terkait judul tulisan, Polri merupakan bagian dari kehidupan pribadi penulis, meskipun kedua orang tua bukan anggota Polri tapi kedua Kakek penulis adalah anggota Polri yang juga merupakan pejuang Angkatan 45 alias partisipan perlawanan fisik di masa mempertahankan kemerdekaan. Setelah republik mulai stabil berdiri sebagai negara yang masih muda, kedua kakek penulis memilih meniti karir sebagai Perwira Polri. Dari garis ibu, Letkol Pol. Raden Hasan Musatafa bin Raden Arfat Ranuatmaja, adalah perwira berlatar belakang reserse yang berpengalaman sebagai Komandan Resort atau disingkat Danres (sekarang disebut Kapolres) di beberapa wilayah di lingkungan Komdak Jabar (sekarang disebut Polda Jabar), di antaranya sempat mejabat sebagai Danres Majalengka dan Danres Cirebon. Saat itu kepangkatan Polri memang masih mengikuti TNI seperti Letda, Lettu, Kapten, dan seterusnya. Hanya menggunakan tambahan sebutan "Pol" yang menandakan matra kepolisian.
 
-![](img-20181116-wa0000-6952535234777c3be0572162.jpg "Kolonel Pol. Sumali saat menjabat Danres Ciamis Jawa Barat (Sumber: Arsip Penulis)")
+![Kolonel Pol. Sumali saat menjabat Danres Ciamis Jawa Barat (Sumber: Arsip Penulis)](img-20181116-wa0000-6952535234777c3be0572162.jpg)
 
 Kakek dari garis ayah pensiun dengan satu pangkat lebih tinggi, yakni Kolonel Pol. Soemali asal Madiun Jawa Timur. Meskipun berdarah Jawa, beliau malang melintang juga sebagai Danres di lingkungan Komdak Jabar, dari cerita keluarga besar diyakini bahwa saat beliau mejabat sebagai Danres Ciamis Jawa Barat di usia 30-an, beliau adalah (atau salah satu) Danres termuda di Jawa Barat. Menutup karir struktural sebagai Wakapolda Sulawesi Utara, yang saat itu wilayah operasionalnya masih termasuk Provinsi Gorontalo sekarang.
 
@@ -26,7 +26,7 @@ A.S yang merupakan negara federal memiliki polisi yang terdiri dari tingkat loka
 
 Di samping penjelasan di atas sebenarnya masih banyak lembaga penegak hukum lain di A.S, hal ini adalah warisan dari sejarah maraknya kekerasan era wild west di zaman koboy dulu, misal US Marshals yang merupakan Lawman (orang hukum) tertua di A.S yang berwenang menangkap buronan. Hingga hari ini US Marshals yang merupakan lembaga tua masih berdiri kokoh sebagai lembaga penegak hukum yang sah dan berwenang.
 
-Cerita di atas adalah ilustrasi betapa kepolisian di luar begitu dinamis dan kompleks dan tidak terintegrasi dalam satu sistem lembaga yang sama, berbeda jauh dengan Polri kita yang mennjiplak struktur komando TNI. Di negara kita Kapolri adalah penguasa tunggal kepolisian di Indonesia, dan Polri adalah Lawman paling powerful yang memonopoli tata kelola penegakan hukum di Indonesia. Meskipun ada Kejaksaan, kapasitas dan sarana-prasarana penegakan hukum tetap didominasi oleh Polri. 
+Cerita di atas adalah ilustrasi betapa kepolisian di luar begitu dinamis dan kompleks dan tidak terintegrasi dalam satu sistem lembaga yang sama, berbeda jauh dengan Polri kita yang mennjiplak struktur komando TNI. Di negara kita Kapolri adalah penguasa tunggal kepolisian di Indonesia, dan Polri adalah Lawman paling powerful yang memonopoli tata kelola penegakan hukum di Indonesia. Meskipun ada Kejaksaan, kapasitas dan sarana-prasarana penegakan hukum tetap didominasi oleh Polri.
 
 Singkatnya, Polri mengurus dirinya sendiri pun sudah begitu powerful bila dibanding dengan lembaga polisi di negara lain, apalagi sekarang, seperti yang disampaikan Refly Harun, petinggi Polri banyak tersebar di kementerian/lembaga. Penulis tidak bermaksud untuk menunjukkan keberpihakan soal fenomena ini, namun di tengah proses Reformasi Polri karena beberapa hal yang sudah menjadi PR lama bangsa ini, beberapa opsi sederhana untuk Polri yang lebih dinamis adalah sebagai berikut:
 
@@ -38,7 +38,7 @@ Ini bisa dengan mengadopsi gaya A.S walau tidak seutuhnya. Bila mengacu pada A.S
 
 Ini juga bisa dengan mengadopsi Department of Homeland Security di A.S, ia berdiri selevel kementerian yang bertanggungjawab kepada Presiden. Isinya adalah Imigrasi dan Bea Cukai. Jadi misal dibentuk Kementerian Kemanan Nasional, yang di dalamnya ada Polri, Imigrasi, Bea Cukai. Mungkin bisa juga sekaligus mengintegrasikan lembaga-lembaga yang berkaitan dengan keamanan, termasuk: BNN, BNPT, BNPB, Basarnas, Bakamla, BSSN, bahkan mungkin BIN juga. Ini untuk mengurangi risiko overpower dari setiap lembaga
 
-3. Diversifikasi fungsi 
+3. Diversifikasi fungsi
 
 Ini mazhab yang sepenuhnya berbeda dengan opsi nomor 2 yang mengutamakan integrasi, opsi ini justru mendorong pembagian kewenangan dengan mendirikan lembaga-lembaga otonom yang menjalankan fungsinya masing-masing secara mandiri. Misal Bareskrim dibuat langsung di bawah Presiden, karena toh juga sifat kerjanya sepeti FBI di A.S yang berfokus pada penyidikan kasus kriminal dan langsung di bawah presiden. Lalu Pengaturan Lalu Lintas dibuat lembaga yang merupakan gabungan dari Korlantas Polri dengan Ditjen Perhubungan Darat Kemenhub, misal bernama Badan Pengaturan Lalu Lintas Nasional.
 
