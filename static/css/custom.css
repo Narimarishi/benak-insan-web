@@ -377,26 +377,26 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
    9. PENYEMPURNAAN KENYAMANAN MEMBACA (READABILITY)
    ========================================================= */
 
-/* 1. Memperbesar ukuran teks dan merenggangkan jarak baris */
-body, p, .content, .list__excerpt {
-    font-size: 1.125rem !important; /* Memperbesar ukuran teks (sekitar 18px) */
-    line-height: 1.8 !important;    /* Memberi napas/jarak antar baris yang lebih lega */
+/* 1. Memperbesar ukuran teks HANYA di dalam badan artikel utuh */
+.post__content p, .post__content li {
+    font-size: 1.125rem !important; 
+    line-height: 1.8 !important;    
 }
 
 /* 2. Mengubah warna judul utama di dalam artikel */
 .post__title, .page-header__title {
-    color: #5C4033 !important; /* Cokelat tua elegan */
+    color: #5C4033 !important; 
 }
 
 /* 3. Menghapus garis merah pada format teks khusus (Blockquote) */
 blockquote {
-    border-left: 5px solid #5C4033 !important; /* Mengubah garis merah jadi cokelat pekat */
-    background-color: #F4EFE6 !important;      /* Memberikan latar krem yang sangat lembut */
+    border-left: 5px solid #5C4033 !important; 
+    background-color: #F4EFE6 !important;      
     padding: 15px 20px !important;
     margin: 1.5rem 0 !important;
     color: #5C4033 !important;
     font-style: italic !important;
-    border-radius: 0 8px 8px 0 !important;     /* Sedikit lengkungan di sisi kanan */
+    border-radius: 0 8px 8px 0 !important;     
 }
 
 /* =========================================================
@@ -406,4 +406,25 @@ blockquote {
     font-size: 1rem !important;      /* Ukuran standar yang lebih kecil (sekitar 16px) */
     line-height: 1.6 !important;     /* Jarak baris sedikit dirapatkan */
     color: #4A4A4A !important;       /* Sedikit dikelabukan agar judul utama lebih menonjol */
+}
+
+/* =========================================================
+   11. PERAPIAN TOMBOL READ MORE
+   ========================================================= */
+.btn, .list__footer-readmore {
+    font-size: 0.875rem !important; /* Kembalikan ke ukuran mungil proporsional */
+    padding: 8px 18px !important;
+    background-color: #5C4033 !important; /* Cokelat tua pekat */
+    color: #F4EFE6 !important;            /* Teks krem terang */
+    border-radius: 6px !important;        /* Sudut melengkung manis */
+    transition: all 0.3s ease !important;
+    border: none !important;
+    font-weight: bold !important;
+}
+
+/* Efek saat tombol ditunjuk mouse */
+.btn:hover, .list__footer-readmore:hover {
+    background-color: #D4C4A8 !important; /* Berubah jadi cokelat muda */
+    color: #5C4033 !important;
+    transform: translateY(-2px) !important; /* Efek melayang sedikit */
 }
