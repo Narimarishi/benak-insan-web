@@ -348,3 +348,27 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
     color: #F4EFE6 !important;            /* Teks putih/krem */
     border-color: #5C4033 !important;
 }
+
+/* =========================================================
+   TAMBAHAN: Susunan Deretan Angka Pagination
+   ========================================================= */
+.custom-pagination {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 8px !important;       /* Jarak antar kotak angka */
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    margin-top: 2rem !important;
+}
+
+.custom-pagination .pagination__item {
+    padding: 8px 15px !important;
+    min-width: 40px !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05) !important;
+}
