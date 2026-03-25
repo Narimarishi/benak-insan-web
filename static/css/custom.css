@@ -59,7 +59,7 @@ a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post_
 }
 
 /* Gaya Khusus Tags (Bentuk Pil Melengkung) */
-.widget-taglist__link, .widget-tags__link, .tags__link, .meta__tag {
+.widget-taglist__link, .widget-tags__link, a.tags__link.btn, .meta__tag {
     font-size: 0.85rem !important;        
     padding: 5px 12px !important;         
     background-color: #F4EFE6 !important; 
@@ -72,6 +72,12 @@ a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post_
     line-height: 1.5 !important;
     text-decoration: none !important;
     font-family: 'Lora', serif !important;
+    font-weight: normal !important; /* Menghilangkan efek tebal dari bawaan .btn */
+}
+.widget-taglist__link:hover, .widget-tags__link:hover, a.tags__link.btn:hover, .meta__tag:hover {
+    background-color: #5C4033 !important; 
+    color: #F4EFE6 !important;            
+    border-color: #5C4033 !important;
 }
 .widget-taglist__link:hover, .widget-tags__link:hover, .tags__link:hover, .meta__tag:hover {
     background-color: #5C4033 !important; 
