@@ -6,7 +6,7 @@ categories:
 tags:
   - Politik
   - Hukum
-thumbnail: peo-5ae1e714dcad5b2645712e22.jpg
+thumbnail: people-on-street.webp
 lampiran: []
 ---
 
