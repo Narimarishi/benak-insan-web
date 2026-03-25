@@ -372,3 +372,29 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
     text-decoration: none !important;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05) !important;
 }
+
+/* =========================================================
+   9. PENYEMPURNAAN KENYAMANAN MEMBACA (READABILITY)
+   ========================================================= */
+
+/* 1. Memperbesar ukuran teks dan merenggangkan jarak baris */
+body, p, .content, .list__excerpt {
+    font-size: 1.125rem !important; /* Memperbesar ukuran teks (sekitar 18px) */
+    line-height: 1.8 !important;    /* Memberi napas/jarak antar baris yang lebih lega */
+}
+
+/* 2. Mengubah warna judul utama di dalam artikel */
+.post__title, .page-header__title {
+    color: #5C4033 !important; /* Cokelat tua elegan */
+}
+
+/* 3. Menghapus garis merah pada format teks khusus (Blockquote) */
+blockquote {
+    border-left: 5px solid #5C4033 !important; /* Mengubah garis merah jadi cokelat pekat */
+    background-color: #F4EFE6 !important;      /* Memberikan latar krem yang sangat lembut */
+    padding: 15px 20px !important;
+    margin: 1.5rem 0 !important;
+    color: #5C4033 !important;
+    font-style: italic !important;
+    border-radius: 0 8px 8px 0 !important;     /* Sedikit lengkungan di sisi kanan */
+}
