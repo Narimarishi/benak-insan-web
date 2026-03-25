@@ -5,7 +5,7 @@ categories:
   - Opini & Esai
 tags:
   - Filsafat
-thumbnail: images-5-5e995429097f3604010e5833.jpeg
+thumbnail: soldier.webp
 lampiran: []
 ---
 
