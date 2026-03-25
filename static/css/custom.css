@@ -316,3 +316,35 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
         border-bottom: 1px solid rgba(255,255,255,0.1) !important;
     }
 }
+
+/* =========================================================
+   8. NAVIGASI HALAMAN (PAGINATION)
+   ========================================================= */
+
+/* Gaya dasar untuk kotak angka dan panah navigasi */
+.pagination__item {
+    background-color: #F4EFE6 !important; /* Warna dasar krem terang */
+    color: #5C4033 !important;            /* Teks cokelat tua */
+    border: 1px solid #D4C4A8 !important; /* Garis tepi cokelat muda */
+    border-radius: 4px !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Mengatur warna link di dalamnya agar ikut cokelat */
+.pagination__link {
+    color: #5C4033 !important;
+}
+
+/* Efek saat tombol ditunjuk mouse (Hover) */
+.pagination__item:hover,
+.pagination__link:hover {
+    background-color: #D4C4A8 !important; /* Berubah jadi cokelat muda */
+    color: #5C4033 !important;
+}
+
+/* KUNCI UTAMA: Mengubah warna merah pada halaman yang sedang aktif */
+.pagination__item--current {
+    background-color: #5C4033 !important; /* Cokelat tua utama */
+    color: #F4EFE6 !important;            /* Teks putih/krem */
+    border-color: #5C4033 !important;
+}
