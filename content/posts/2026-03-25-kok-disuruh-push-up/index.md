@@ -10,7 +10,7 @@ thumbnail: push-up-5ecddc95097f36546d22ebe4.jpg
 lampiran: []
 ---
 
-Jauh sebelum persoalan penyebaran COVID-19 merebak saya sudah sering terganggu dengan fenomena sebagian masyarakat yang dinilai melanggar hukum dikenai sanksi berupa aktivitas fisik melakukan push-up di tempat. Gambaran ini lagi-lagi kita temui beberapa hari lalu ka sebagian orang yang melanggar Pembatasan Sosial Berskala Besar (PSBB) diperintahkan untuk melakukan push-up di tempat. Ada pertanyaan mendasar yang patut disampaikan kepada para pemberi perintah push-up, apa ada dasar hukumnya? Apa dipayungi UU? Tentu tidak. Oh mungkin ada Perppu-nya? Tidak. Atau paling tidak Pergub? Perwalkot? Perbup? Sejauh yang saya tahu cukup yakin sepertinya tidak.
+Jauh sebelum persoalan penyebaran COVID-19 merebak saya sudah sering terganggu dengan fenomena sebagian masyarakat yang dinilai melanggar hukum dikenai sanksi berupa aktivitas fisik melakukan push-up di tempat. Gambaran ini lagi-lagi kita temui beberapa hari lalu ka sebagian orang yang melanggar Pembatasan Sosial Berskala Besar (PSBB) diperintahkan untuk melakukan push-up di tempat.<!--more--> Ada pertanyaan mendasar yang patut disampaikan kepada para pemberi perintah push-up, apa ada dasar hukumnya? Apa dipayungi UU? Tentu tidak. Oh mungkin ada Perppu-nya? Tidak. Atau paling tidak Pergub? Perwalkot? Perbup? Sejauh yang saya tahu cukup yakin sepertinya tidak.
 
 Berarti apa landasan formil dan moril yang menjadi pembenaran satu pihak merasa (dan juga disepakati) berwenang memerintahkan push-up dan satu pihak lainnya diwajibkan melaksanakan perintah tersebut? Jawabannya satu: hieararki imaginer. Pihak yang memerintahkan push-up diyakini merupakan entitas superior yang pantas memberi perintah.
 
