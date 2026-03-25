@@ -7,7 +7,7 @@ tags:
   - Kebijakan
   - Militer
   - Sipil
-thumbnail: civil-military-relations-5b39ef29f133442fea399ce2.jpg
+thumbnail: civil-military-relations.webp
 lampiran: []
 ---
 
