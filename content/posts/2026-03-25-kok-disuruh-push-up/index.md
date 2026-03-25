@@ -6,7 +6,7 @@ categories:
 tags:
   - Politik
   - Hukum
-thumbnail: push-up-5ecddc95097f36546d22ebe4.jpg
+thumbnail: push-up.webp
 lampiran: []
 ---
 
