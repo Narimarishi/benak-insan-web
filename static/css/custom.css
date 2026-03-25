@@ -46,20 +46,45 @@ a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post_
 /* =========================================================
    3. TOMBOL, TAGS, BADGE & FOOTER
    ========================================================= */
-.btn, .post__readmore, .tags__link, .widget-tags__link, .button, .category, .tags__title {
+/* Tombol Umum & Kategori */
+.post__readmore, .button, .category, .tags__title {
     background-color: #5C4033 !important; color: #F4EFE6 !important;
     border: none !important; border-radius: 4px !important;
     padding: 6px 14px !important; display: inline-block;
     transition: background-color 0.3s ease !important;
     text-decoration: none !important; font-family: 'Lora', serif !important;
 }
-.tags__svg { fill: #F4EFE6 !important; }
-.btn:hover, .post__readmore:hover, .tags__link:hover, .widget-tags__link:hover, .button:hover, .category:hover { 
+.post__readmore:hover, .button:hover, .category:hover { 
     background-color: #8A6849 !important; color: #ffffff !important; 
 }
+
+/* Gaya Khusus Tags (Bentuk Pil Melengkung) */
+.widget-taglist__link, .widget-tags__link, .tags__link, .meta__tag {
+    font-size: 0.85rem !important;        
+    padding: 5px 12px !important;         
+    background-color: #F4EFE6 !important; 
+    color: #5C4033 !important;            
+    border: 1px solid #D4C4A8 !important; 
+    border-radius: 20px !important;       
+    margin: 3px 2px !important;           
+    display: inline-block !important;
+    transition: all 0.3s ease !important;
+    line-height: 1.5 !important;
+    text-decoration: none !important;
+    font-family: 'Lora', serif !important;
+}
+.widget-taglist__link:hover, .widget-tags__link:hover, .tags__link:hover, .meta__tag:hover {
+    background-color: #5C4033 !important; 
+    color: #F4EFE6 !important;            
+    border-color: #5C4033 !important;
+}
+
+/* Ikon dan Badge */
+.tags__svg { fill: #5C4033 !important; }
 .tags__badge, .categories__badge { background-color: #5C4033 !important; color: #F4EFE6 !important; }
 .tags__badge svg, .categories__badge svg { fill: #F4EFE6 !important; }
 
+/* Footer */
 .footer {
     padding: 25px 5% !important; box-sizing: border-box !important;
     background-color: #3E362E !important; color: #F4EFE6 !important;
@@ -145,19 +170,17 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
         max-width: 100% !important;
     }
 
-    /* KUNCI UTAMA: Kita panggil pembungkus baru agar membentang sejajar */
     .header__top-row {
         display: flex !important;
-        flex-direction: row !important; /* Paksa satu baris lurus */
-        justify-content: space-between !important; /* Logo mentok kiri, Menu mentok kanan */
+        flex-direction: row !important; 
+        justify-content: space-between !important; 
         align-items: center !important;
         width: 100% !important;
     }
 
-    /* GRUP KIRI: Logo, Judul, Garis, dan Tagline */
     .logo__link, .logo__item, .logo__text {
         display: flex !important;
-        flex-direction: row !important; /* Paksa sejajar ke samping */
+        flex-direction: row !important; 
         align-items: center !important;
         text-decoration: none !important;
         margin: 0 !important; padding: 0 !important;
@@ -183,7 +206,6 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
         color: #8A6849 !important;
     }
 
-    /* GRUP KANAN: Menu Navigasi & Kotak Pencarian */
     .header__right {
         display: flex !important; 
         flex-direction: row !important; 
@@ -191,11 +213,10 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
         align-items: center !important; 
         gap: 20px !important; 
         margin-left: auto !important;
-        margin-top: 0 !important; /* Menghapus jarak atas dari settingan mobile */
-        width: auto !important; /* Menghapus paksaan lebar 100% dari mobile */
+        margin-top: 0 !important; 
+        width: auto !important; 
     }
     
-    /* Memastikan urutan kembali normal di PC: Menu kiri, Search kanan (atau sebaliknya sesuai selera) */
     .header-search { order: 2 !important; margin: 0 !important; }
     .menu { order: 1 !important; margin: 0 !important; }
     
@@ -215,7 +236,6 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
     }
     .header-search__field:focus { width: 220px !important; }
     
-    /* Sembunyikan tombol hamburger di PC */
     .menu__btn { display: none !important; }
 }
 
@@ -227,13 +247,12 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
 
     .header__container {
         display: flex !important;
-        flex-direction: column !important; /* Susun ke bawah */
-        align-items: center !important;    /* Semua di tengah */
+        flex-direction: column !important; 
+        align-items: center !important;    
         padding: 15px !important;
         gap: 10px !important;
     }
 
-    /* Logo & Judul di Tengah */
     .logo__link {
         flex-direction: column !important;
         text-align: center !important;
@@ -243,7 +262,6 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
     .logo__img { margin: 0 0 10px 0 !important; width: 45px !important; height: 45px !important; }
     .logo__title { font-size: 2rem !important; display: block !important; border: none !important; padding: 0 !important; }
     
-    /* Tagline Muncul di Tengah */
     .logo__tagline {
         display: block !important;
         font-size: 0.7rem !important;
@@ -252,7 +270,6 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
         white-space: normal !important;
     }
 
-    /* Baris Menu & Search */
     .header__right {
         display: flex !important;
         flex-direction: row !important;
@@ -263,14 +280,12 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
         margin-top: 5px !important;
     }
 
-    /* Search Bar Mobile */
     .header-search__field {
         width: 150px !important;
         border-radius: 20px !important;
         padding: 6px 15px !important;
     }
 
-    /* Tombol Menu (Menghilangkan tulisan merah/M E) */
     .menu__btn {
         background-color: #5C4033 !important;
         width: 40px !important;
@@ -280,14 +295,13 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
         background-size: 22px 22px !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
-        color: transparent !important; /* Sembunyikan teks merah */
-        font-size: 0 !important;        /* Kecilkan teks ke nol */
+        color: transparent !important; 
+        font-size: 0 !important;        
         border: none !important;
     }
 
-    /* Dropdown Menu (Muncul di Depan Slider) */
     .menu__list {
-        display: none; /* Sembunyi default */
+        display: none; 
         position: absolute !important;
         top: 100% !important;
         left: 50% !important;
@@ -301,7 +315,6 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
         flex-direction: column !important;
     }
 
-    /* Menampilkan menu saat tombol diklik */
     .menu--opened .menu__list, 
     .menu__btn--active + .menu__list,
     .menu__list[style*="display: block"], 
@@ -320,42 +333,34 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
 /* =========================================================
    8. NAVIGASI HALAMAN (PAGINATION)
    ========================================================= */
-
-/* Gaya dasar untuk kotak angka dan panah navigasi */
 .pagination__item {
-    background-color: #F4EFE6 !important; /* Warna dasar krem terang */
-    color: #5C4033 !important;            /* Teks cokelat tua */
-    border: 1px solid #D4C4A8 !important; /* Garis tepi cokelat muda */
+    background-color: #F4EFE6 !important; 
+    color: #5C4033 !important;            
+    border: 1px solid #D4C4A8 !important; 
     border-radius: 4px !important;
     transition: all 0.3s ease !important;
 }
 
-/* Mengatur warna link di dalamnya agar ikut cokelat */
 .pagination__link {
     color: #5C4033 !important;
 }
 
-/* Efek saat tombol ditunjuk mouse (Hover) */
 .pagination__item:hover,
 .pagination__link:hover {
-    background-color: #D4C4A8 !important; /* Berubah jadi cokelat muda */
+    background-color: #D4C4A8 !important; 
     color: #5C4033 !important;
 }
 
-/* KUNCI UTAMA: Mengubah warna merah pada halaman yang sedang aktif */
 .pagination__item--current {
-    background-color: #5C4033 !important; /* Cokelat tua utama */
-    color: #F4EFE6 !important;            /* Teks putih/krem */
+    background-color: #5C4033 !important; 
+    color: #F4EFE6 !important;            
     border-color: #5C4033 !important;
 }
 
-/* =========================================================
-   TAMBAHAN: Susunan Deretan Angka Pagination
-   ========================================================= */
 .custom-pagination {
     display: flex !important;
     flex-direction: row !important;
-    gap: 8px !important;       /* Jarak antar kotak angka */
+    gap: 8px !important;       
     flex-wrap: wrap !important;
     align-items: center !important;
     margin-top: 2rem !important;
@@ -376,19 +381,15 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
 /* =========================================================
    9. PENYEMPURNAAN KENYAMANAN MEMBACA (READABILITY)
    ========================================================= */
-
-/* 1. Memperbesar ukuran teks HANYA di dalam badan artikel utuh */
 .post__content p, .post__content li {
     font-size: 1.125rem !important; 
     line-height: 1.8 !important;    
 }
 
-/* 2. Mengubah warna judul utama di dalam artikel */
 .post__title, .page-header__title {
     color: #5C4033 !important; 
 }
 
-/* 3. Menghapus garis merah pada format teks khusus (Blockquote) */
 blockquote {
     border-left: 5px solid #5C4033 !important; 
     background-color: #F4EFE6 !important;      
@@ -403,28 +404,27 @@ blockquote {
    10. PENYESUAIAN TEKS RINGKASAN (DAFTAR ARTIKEL)
    ========================================================= */
 .list__excerpt, .list__excerpt p {
-    font-size: 1rem !important;      /* Ukuran standar yang lebih kecil (sekitar 16px) */
-    line-height: 1.6 !important;     /* Jarak baris sedikit dirapatkan */
-    color: #4A4A4A !important;       /* Sedikit dikelabukan agar judul utama lebih menonjol */
+    font-size: 1rem !important;      
+    line-height: 1.6 !important;     
+    color: #4A4A4A !important;       
 }
 
 /* =========================================================
    11. PERAPIAN TOMBOL READ MORE
    ========================================================= */
 .btn, .list__footer-readmore {
-    font-size: 0.875rem !important; /* Kembalikan ke ukuran mungil proporsional */
+    font-size: 0.875rem !important; 
     padding: 8px 18px !important;
-    background-color: #5C4033 !important; /* Cokelat tua pekat */
-    color: #F4EFE6 !important;            /* Teks krem terang */
-    border-radius: 6px !important;        /* Sudut melengkung manis */
+    background-color: #5C4033 !important; 
+    color: #F4EFE6 !important;            
+    border-radius: 6px !important;        
     transition: all 0.3s ease !important;
     border: none !important;
     font-weight: bold !important;
 }
 
-/* Efek saat tombol ditunjuk mouse */
 .btn:hover, .list__footer-readmore:hover {
-    background-color: #D4C4A8 !important; /* Berubah jadi cokelat muda */
+    background-color: #D4C4A8 !important; 
     color: #5C4033 !important;
-    transform: translateY(-2px) !important; /* Efek melayang sedikit */
+    transform: translateY(-2px) !important; 
 }
