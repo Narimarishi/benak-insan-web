@@ -398,3 +398,12 @@ blockquote {
     font-style: italic !important;
     border-radius: 0 8px 8px 0 !important;     /* Sedikit lengkungan di sisi kanan */
 }
+
+/* =========================================================
+   10. PENYESUAIAN TEKS RINGKASAN (DAFTAR ARTIKEL)
+   ========================================================= */
+.list__excerpt, .list__excerpt p {
+    font-size: 1rem !important;      /* Ukuran standar yang lebih kecil (sekitar 16px) */
+    line-height: 1.6 !important;     /* Jarak baris sedikit dirapatkan */
+    color: #4A4A4A !important;       /* Sedikit dikelabukan agar judul utama lebih menonjol */
+}
