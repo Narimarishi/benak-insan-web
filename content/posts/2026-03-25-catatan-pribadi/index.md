@@ -9,7 +9,7 @@ thumbnail: images-5-5e995429097f3604010e5833.jpeg
 lampiran: []
 ---
 
-Tidak, ini tidak salah kamar. Memang sebenarnya aku kecewa ketika lihat opsi kategori yang disediakan Kompasiana rupanya tidak ada yang pas untuk menjadi ruang curhat semata.
+Tidak, ini tidak salah kamar. Memang sebenarnya aku kecewa ketika lihat opsi kategori yang disediakan Kompasiana rupanya tidak ada yang pas untuk menjadi ruang curhat semata.<!--more-->
 
 Tapi toh apa yang ada, bahkan juga yang tidak ada, selalu bisa bersentuhan dengan filsafat. Begitu pula tulisan yang sejatinya ditulis untuk konsumsi pribadi ini, ketika diselami justru aku menemukan nuansa Eksistensialisme.
 
