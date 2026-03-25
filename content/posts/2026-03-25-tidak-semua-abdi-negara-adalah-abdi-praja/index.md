@@ -6,7 +6,7 @@ categories:
 tags:
   - Kebijakan
   - Birokrasi
-thumbnail: images-5-5fac0715d541df1a6f6a1d82.jpeg
+thumbnail: raja-priyayi-kawula.webp
 lampiran: []
 ---
 
