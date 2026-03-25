@@ -2,7 +2,7 @@
 title: Hindari Ancaman, Bukan Musnahkan Ancaman
 date: 2020-06-05T15:52:00
 categories:
-  - Opini
+  - Opini & Esai
 tags:
   - Sociocultular
 thumbnail: hydrant-5eda07a2097f3639c8714912.jpg
@@ -27,7 +27,7 @@ Padahal setiap ancaman yang tidak mengarah pada ancaman keselamatan ataupun keam
 
 Memusnahkan ide, gagasan, teori, kepercayaan dan keyakinan yang bertentangan dengan yang dianut oleh otoritas atas nama rakyat hanya menutup ruang diskusi dan pembelajaran akan pandangan-pandangan lain yang sesungguhnya diperlukan untuk menambah wawasan dan kematangan berpikir semua orang.
 
-Soal kekhawatiran orang-orang akan "tersesat" atau "belok" maka ada dua pilihan guna mengatasinya: 
+Soal kekhawatiran orang-orang akan "tersesat" atau "belok" maka ada dua pilihan guna mengatasinya:
 
 Pertama, berikan haluan dasar bahwa ideologi tertentu adalah salah, ya cukup katakan salah bukan terlarang. Tentu perlu ada dasar-dasar filosofis yang menguatkan alasan bahwa ideologi tersebut pantas disebut ideologi yang salah. Sehingga sebagaimanapun orang-orang mempelajarinya tidak akan terlepas dari keyakinan dasar bahwa buku yang sedang dibacanya salah.
 
@@ -37,7 +37,7 @@ Gereja pemuja setan saja bisa bebas beraktivitas tentu kecaman pihak lain dan te
 
 Pemerintah A.S tidak ambil pusing, makhluk yang sudah lama mati tidak akan mungkin bangkit dari kubur. Meskipun bangkit hanya akan menjadi zombie yang menjadi bahan tertawaan saja. Tidak diambil serius. Justru ancaman gerakan far-right yang kerap memboncengi pandangan rasis lebih menarik perhatian pemerintah A.S, seperti gerakan Klu Klux Klan, Neo-Nazi dan lainnya. Lucu mengingat A.S sendiri yang memimpin sekutu memberantas Nazi di Eropa saat Perang Dunia II.
 
-Ya itulah kedewasaan demokrasi A.S yang rasa-rasanya tidak akan mungkin diterapkan di negara-negara dunia ketiga. Tidak salah memang, saya pun khawatir bila sebagian orang yang hanya karena sekali-dua kali baca buku tiba-tiba jadi seorang fasis, atau karena sekali-dua kali melihat ketidakmerataan pembangunan lalu mendadak jadi 'belok kiri'. 
+Ya itulah kedewasaan demokrasi A.S yang rasa-rasanya tidak akan mungkin diterapkan di negara-negara dunia ketiga. Tidak salah memang, saya pun khawatir bila sebagian orang yang hanya karena sekali-dua kali baca buku tiba-tiba jadi seorang fasis, atau karena sekali-dua kali melihat ketidakmerataan pembangunan lalu mendadak jadi 'belok kiri'.
 
 Perlu diketahui oleh dunia bahwa sebagai warga Indonesia yang 'merah-putih' saya pribadi seorang Pancasilais yang menolak marxist dan segala variannya. Bagi saya cita-cita menciptakan masyarakat tanpa kelas yang bisa saling mencukupi adalah pemikiran yang terlalu utopis sampai-sampai tidak akan bisa terwujud kecuali di surga. Bahkan surga yang saya yakini pun ada kelasnya, dari mulai surga terendah sampai surga firdaus.
 
@@ -45,7 +45,7 @@ Belum lagi soal narasi penentangan terhadap agama sangat tidak cocok dengan saya
 
 Ini berlaku pada diri saya sendiri, sejak kecil betapa banyak input saya terima tentang kebenaran agama saya, tentu sebagaimana anak kecil umumnya saya juga menerimanya secara dogmatis tanpa ragu. Hal ini membentuk pribadi saya hingga semakin saya melakukan komparasi agama semakin saya merasakan kebenaran agama saya.
 
-Semakin saya memperbanyak bacaan tentang agama lain semakin saya bersyukur memeluk agama saya ini. Cukup dengan kemandirian pikiran dan hati saja, tidak perlu kecaman ini-itu, tidak perlu penekanan dari sana-sini, tidak perlu melalui perdebatan yang tidak sehat, toh saya sendiri mampu menjaga, atau semoga menguatkan, iman atas dasar hati dan pikiran yang matang. Bila saya bisa kenapa orang lain tidak?  
+Semakin saya memperbanyak bacaan tentang agama lain semakin saya bersyukur memeluk agama saya ini. Cukup dengan kemandirian pikiran dan hati saja, tidak perlu kecaman ini-itu, tidak perlu penekanan dari sana-sini, tidak perlu melalui perdebatan yang tidak sehat, toh saya sendiri mampu menjaga, atau semoga menguatkan, iman atas dasar hati dan pikiran yang matang. Bila saya bisa kenapa orang lain tidak?
 
 > Ilustrasi sederhana yang relevan adalah ketika kita membayangkan api maka kita setuju bahwa api dapat membahayakan, apalagi bila sudah tergolong kebakaran.
 
