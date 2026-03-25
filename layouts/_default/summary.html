@@ -1,16 +1,21 @@
 <article class="list__item post">
-    
     {{- if .Params.thumbnail }}
-    <figure class="list__thumbnail">
-        <a href="{{ .RelPermalink }}">
-            {{- $namaFile := path.Base .Params.thumbnail -}}
-            {{- $gambar := .Resources.GetMatch $namaFile -}}
-            {{- if $gambar -}}
-                <img src="{{ $gambar.RelPermalink }}" alt="{{ .Title }}">
+    <figure class="list__thumbnail"> <a href="{{ .RelPermalink }}">
+            
+            {{- /* Mesin pemindai URL pintar */ -}}
+            {{- $thumbUrl := "" -}}
+            {{- if or (hasPrefix .Params.thumbnail "http://") (hasPrefix .Params.thumbnail "https://") -}}
+                {{- $thumbUrl = .Params.thumbnail -}}
             {{- else -}}
-                {{- $urlPaksa := printf "%s%s" .RelPermalink $namaFile -}}
-                <img src="{{ $urlPaksa }}" alt="{{ .Title }}">
+                {{- $res := .Resources.GetMatch .Params.thumbnail -}}
+                {{- if $res -}}
+                    {{- $thumbUrl = $res.RelPermalink -}}
+                {{- else -}}
+                    {{- $thumbUrl = .Params.thumbnail | relURL -}}
+                {{- end -}}
             {{- end -}}
+            
+            <img src="{{ $thumbUrl }}" alt="{{ .Title }}">
         </a>
     </figure>
     {{- end }}

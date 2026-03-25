@@ -1,25 +1,19 @@
 {{- if .Params.thumbnail -}}
 
     {{- $thumbUrl := "" -}}
-    
-    {{- /* 1. Cek apakah ini URL eksternal dari CMS (Stock Photos, dll) */ -}}
     {{- if or (hasPrefix .Params.thumbnail "http://") (hasPrefix .Params.thumbnail "https://") -}}
         {{- $thumbUrl = .Params.thumbnail -}}
     {{- else -}}
-        {{- /* 2. Cek apakah ini gambar lokal dari dalam folder artikel (Page Bundle) */ -}}
         {{- $res := .Resources.GetMatch .Params.thumbnail -}}
         {{- if $res -}}
             {{- $thumbUrl = $res.RelPermalink -}}
         {{- else -}}
-            {{- /* 3. Jika bukan keduanya, asumsikan gambar ada di folder "static" */ -}}
             {{- $thumbUrl = .Params.thumbnail | relURL -}}
         {{- end -}}
     {{- end -}}
 
-    <figure class="list__picture">
-        <a href="{{ .RelPermalink }}" style="display: block; overflow: hidden; border-radius: 4px;">
-            <img src="{{ $thumbUrl }}" alt="{{ .Title }}" class="list__pic" style="object-fit: cover; width: 100%; height: 100%;">
-        </a>
+    <figure class="post__thumbnail">
+        <img src="{{ $thumbUrl }}" alt="{{ .Title }}">
     </figure>
 
 {{- end -}}
