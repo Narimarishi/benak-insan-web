@@ -1,0 +1,9 @@
+<figure class="post__figure" style="text-align: center; margin: 2rem 0;">
+    <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title }}title="{{ . }}"{{ end }} style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    
+    {{- if .Title -}}
+    <figcaption style="font-size: 0.95rem; color: #8A6849; margin-top: 10px; font-style: italic;">
+        {{ .Title }}
+    </figcaption>
+    {{- end -}}
+</figure>
