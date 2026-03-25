@@ -5,7 +5,7 @@ categories:
   - Opini & Esai
 tags:
   - Edukasi
-thumbnail: images-jpeg-5f05ff84097f36609045ba82.jpg
+thumbnail: old-building.webp
 lampiran: []
 ---
 
