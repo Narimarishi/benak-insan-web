@@ -15,7 +15,7 @@ Tulisan ini merupakan subjektivitas penulis yang sama sekali tidak bermaksud unt
 
 Sudah lama penulis berniat untuk mencurahkan pikiran seputar sikap khas yang diberikan kepada individu-individu yang termasuk bagian dari angkatan bersenjata.<!--more--> Istilah angkatan bersenjata sengaja dipilih, alih-alih militer, sebab cakupan angkatan bersenjata pada beberapa negara, terutama negara-negara berkembang, tidak hanya terbatas pada angkatan perangnya saja melainkan juga institusi paramiliter dan lembaga bernuansa semi-militer seperti kepolisian.
 
-Kerancuan Hubungan Sipil - Militer di Indonesia Pada Masa Lalu
+**Kerancuan Hubungan Sipil - Militer di Indonesia Pada Masa Lalu**
 
 Di Indonesia sendiri pada masa orde baru hingga reformasi bangsa ini sempat melewati masa ketika institusi militernya yakni Tentara Nasional Indonesia atau TNI diintegrasikan dengan Kepolisian Negara Republik Indonesia (Polri) dalam satu alur komando bersama yang kemudian dikenal luas sebagai Angkatan Bersenjata Republik Indonesia (ABRI).
 
@@ -51,11 +51,11 @@ Dengan kata lain perwira lulusan Sesko TNI memiliki kesempatan besar untuk menja
 
 Selanjutnya masih ada pendidikan pengembangan karir yang menyiapkan individu-individu terpilih untuk dapat memegang jabatan strategis yang memengaruhi roda pemerintahan hingga lingkup nasional, yakni Lembaga Ketahananan Nasional (Lemhannas). Selain perwira TNI - Polri, para Direktur Jenderal tingkat Kementerian dan bahkan para kepala daerah dan anggota DPR/DPRD juga perlu mengikuti kursus di lembaga ini.
 
-Para perwira tinggi lulusan Lemhannas dinilai mampu berkiprah di lingkungan yang lebih luas seperti menduduki jabatan eselon I di Badan Nasional Penanggulangan Terorisme (BNPT), Badan Intelijen Negara (BIN), Kementerian Pertahanan, Kemenkopolhukam dan lain sebagainya. Bahkan banyak yang diperbantukan di institusi yang tidak berkaitan dengan pertahanan-keamanan. Ini menegaskan bahwa setiap perwira memang diorientasikan pada penekanan leadership dalam rangka  kemampuan mengatasai masalah, mulai dari yang bersifat mikro ketika memimpin satuan hingga makro dalam cakupan nasional yang bersifat non-militer.
+Para perwira tinggi lulusan Lemhannas dinilai mampu berkiprah di lingkungan yang lebih luas seperti menduduki jabatan eselon I di Badan Nasional Penanggulangan Terorisme (BNPT), Badan Intelijen Negara (BIN), Kementerian Pertahanan, Kemenkopolhukam dan lain sebagainya. Bahkan banyak yang diperbantukan di institusi yang tidak berkaitan dengan pertahanan-keamanan. Ini menegaskan bahwa setiap perwira memang diorientasikan pada penekanan _leadership_ dalam rangka  kemampuan mengatasai masalah, mulai dari yang bersifat mikro ketika memimpin satuan hingga makro dalam cakupan nasional yang bersifat non-militer.
 
 Serangkaian pendidikan tersebut terbukti efektif mencetak individu yang tidak hanya mampu mengelola lembaganya namun juga dapat berkiprah pada tingkat manajerial di lingkungan sipil. Terlepas dari kontroversinya, sejak reformasi sekalipun bahkan hingga hari ini sejumlah pensiunan angkatan bersenjata banyak yang berhasil meraih posisi sebagai kepala daerah melalui pemilihan umum, legislator, duta besar, komisaris perusahaan nasional, hingga terpilih sebagai anggota kabinet.
 
-Ada gap pengetahuan dan pengalaman antara masyarakat sipil dengan individu-individu angkatan bersenjata, kita mengakui adanya alih status dari angkatan bersenjata menuju sipil saat pensiun ataupun saat para perwira 'dikaryakan' di institusi lain, namun sebaliknya alih status sipil ke angkatan bersenjata hanya berlaku pada saat pendidikan pembentukan yang tentu terjadi saat individu masih di usia muda belia dan belum memiliki cukup pengetahuan dan pengalaman untuk memahami esensi perbedaan antara kehidupan sipil dengan kehidupan angkatan bersenjata.
+Ada _gap_ pengetahuan dan pengalaman antara masyarakat sipil dengan individu-individu angkatan bersenjata, kita mengakui adanya alih status dari angkatan bersenjata menuju sipil saat pensiun ataupun saat para perwira 'dikaryakan' di institusi lain, namun sebaliknya alih status sipil ke angkatan bersenjata hanya berlaku pada saat pendidikan pembentukan yang tentu terjadi saat individu masih di usia muda belia dan belum memiliki cukup pengetahuan dan pengalaman untuk memahami esensi perbedaan antara kehidupan sipil dengan kehidupan angkatan bersenjata.
 
 Sederhananya, para individu angkatan bersenjata lebih memahami seluk-beluk berbagai aspek kehidupan sipil dan tidak sebanding dengan tingkat pemahaman individu sipil yang mencoba memahami seluk beluk kehidupan angkatan bersenjata. Arus informasi yang eksklusif karena kerap berbenturan dengan rahasia negara juga menjadi penghambat bagi masyarakat umum untuk memahami dinamika pengelolaan institusi angkatan bersenjata secara mendalam.
 
@@ -71,14 +71,14 @@ Padahal bila kembali berorientasi pada supremasi sipil, sejatinya status sipil l
 
 Pada Pemerintahan Daerah Tingkat I terlihat bagaimana Gubernur, Pangdam dan Kapolda saling menjaga kekompakan. Begitu pula pada Pemerintahan Daerah Tingkat II antara Bupati, Dandim dan Kapolres. Ada yang rancu bila kita ingat pada semangat supremasi sipil: siapa memimpin siapa di antara mereka? Tidak ada yang bisa memberi komando pada satu sama lain antara tiga simbol negara tersebut. Memang ini berkaitan dengan Undang-Undang namun setiap hukum adalah cerminan pola pikir dan nilai yang dianut masyarakatnya itu sendiri.
 
-Bila kita melihat negara-negara maju, sebagai contoh Amerika Serikat, pada tingkat kota setiap kota memiliki departemen kepolisian tersendiri semisal New York Police Department dengan Kepala Kepolisian yang bertanggung jawab dan diangkat atau diberhentikan oleh Wali Kota. Lalu pada tingkat State atau umum diterjemahkan sebagia Negara Bagian, setiap State terdapat Tentara Teritorial yang disebut National Guard dengan pimpinan setingkat Pangdam di Indonesia.
+Bila kita melihat negara-negara maju, sebagai contoh Amerika Serikat, pada tingkat kota setiap kota memiliki departemen kepolisian tersendiri semisal _New York Police Department_ dengan Kepala Kepolisian yang bertanggung jawab dan diangkat atau diberhentikan oleh Wali Kota. Lalu pada tingkat _State_ atau umum diterjemahkan sebagia Negara Bagian, setiap _State_ terdapat Tentara Teritorial yang disebut _National Guard_ dengan pimpinan setingkat Pangdam di Indonesia.
 
-Meski Komandan National Guard bertanggung jawab pada Kepala Staf Angkatan Darat namun hak untuk memobilisasi pasukan ada di tangan Gubernur. Pada tingkat nasional setiap matra pada militer Amerika Serikat memiliki seorang Menteri tersendiri yang secara hierarki berada di atas Kepala Staf.
+Meski Komandan _National Guard_ bertanggung jawab pada Kepala Staf Angkatan Darat namun hak untuk memobilisasi pasukan ada di tangan Gubernur. Pada tingkat nasional setiap matra pada militer Amerika Serikat memiliki seorang Menteri tersendiri yang secara hierarki berada di atas Kepala Staf.
 
-Salah satu contohnya terdapat jabatan Secretatry of the Navy atau diterjemahkan sebagai Menteri Angkatan Laut, seorang US Navy Chief of Staff (Kepala Staf Angkatan Laut) yang merupakan individu militer bertanggung jawab pada Secretary of the Navy tersebut yang umumnya seorang sipil murni. Ini merupakan pemahaman atas impelementasi prinsip supremasi sipil yang matang.
+Salah satu contohnya terdapat jabatan _Secretatry of the Navy_ atau diterjemahkan sebagai Menteri Angkatan Laut, seorang _US Navy Chief of Staff_ (Kepala Staf Angkatan Laut) yang merupakan individu militer bertanggung jawab pada _Secretary of the Navy_ tersebut yang umumnya seorang sipil murni. Ini merupakan pemahaman atas impelementasi prinsip supremasi sipil yang matang.
 
 Akhir kata, demokrasi yang sehat ditandai dengan pembagian ruang hidup dan ruang tugas yang jelas antara kehidupan sipil dengan angkatan bersenjatanya. Karena bagaimanapun juga sejatinya setiap individu angkatan bersenjata adalah bagian dari lembaga yang dibiayai oleh pajak masyarakat sehingga setiap tugas yang diemban tidak lain merupakan bentuk pengabdian dan pelayanan kepada masyarakat itu sendiri, masyarakat yang mana? Tentu masyarakat non-angkatan bersenjata atau dengan kata lain masyarakat sipil.
 
-Bandung, 2 Juli 2018
+**Bandung, 2 Juli 2018**
 
-R. Moh. Rizki Luthfiah Aziz, S.H.Int.
+**R. Moh. Rizki Luthfiah Aziz, S.H.Int.**
