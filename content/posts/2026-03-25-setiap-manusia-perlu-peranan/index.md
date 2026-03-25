@@ -6,7 +6,7 @@ categories:
 tags:
   - Humaniora
   - Pendidikan
-thumbnail: magical-realism-58eb7640939773b801379e3a.jpg
+thumbnail: magical-realism.webp
 lampiran: []
 ---
 
