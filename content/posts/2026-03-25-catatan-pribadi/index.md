@@ -2,14 +2,14 @@
 title: Catatan Pribadi
 date: 2019-05-26T15:48:00
 categories:
-  - Opini
+  - Opini & Esai
 tags:
   - Filsafat
 thumbnail: images-5-5e995429097f3604010e5833.jpeg
 lampiran: []
 ---
 
-Tidak, ini tidak salah kamar. Memang sebenarnya aku kecewa ketika lihat opsi kategori yang disediakan Kompasiana rupanya tidak ada yang pas untuk menjadi ruang curhat semata. 
+Tidak, ini tidak salah kamar. Memang sebenarnya aku kecewa ketika lihat opsi kategori yang disediakan Kompasiana rupanya tidak ada yang pas untuk menjadi ruang curhat semata.
 
 Tapi toh apa yang ada, bahkan juga yang tidak ada, selalu bisa bersentuhan dengan filsafat. Begitu pula tulisan yang sejatinya ditulis untuk konsumsi pribadi ini, ketika diselami justru aku menemukan nuansa Eksistensialisme.
 
