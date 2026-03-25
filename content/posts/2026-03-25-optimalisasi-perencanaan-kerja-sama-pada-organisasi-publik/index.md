@@ -7,7 +7,7 @@ tags:
   - Sociocultural
   - Lembaga
   - Internasional
-  - Kerja Sama
+  - Kolaborasi
 thumbnail: kerjasama-tangan-676a7487c925c4422374cd53.jpg
 lampiran: []
 ---
