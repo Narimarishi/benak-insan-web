@@ -1,8 +1,9 @@
 # 1. Konfigurasi Server
 backend:
   name: github
-  repo: Narimarishi/benak-insan-web
+  repo: narimarishi/benak-insan-web
   branch: main
+  base_url: https://benak-insan-web.vercel.app/api
 
 # 2. Pengaturan Media & Gambar
 media_folder: "static/gambar" # Tempat CMS menyimpan gambar yang di-upload klien
