@@ -483,3 +483,66 @@ blockquote {
         max-width: 100% !important; 
     }
 }
+
+/* =========================================================
+   13. OPTIMASI UI DAFTAR ARTIKEL & TAMPILAN MOBILE
+   ========================================================= */
+
+/* 1. Meta Info Berjejer ke Samping (Berlaku di Semua Layar) */
+.meta, .meta__list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 15px !important; /* Jarak antar info (author, tanggal, folder) */
+    padding: 0 !important;
+    margin-bottom: 15px !important;
+}
+.meta__item {
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+.meta__icon {
+    margin-right: 5px !important; /* Jarak ikon dengan teksnya */
+}
+
+/* 2. Memotong Teks Preview Maksimal 3 Baris (Fitur Cerdas Webkit) */
+.list__excerpt {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important; /* Ubah angka ini jika ingin 2 atau 4 baris */
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+/* 3. Menyulap Layout Menjadi "Kartu" Khusus Layar HP */
+@media (max-width: 768px) {
+    .list__item {
+        display: flex !important;
+        flex-direction: column !important; /* Menumpuk elemen: Gambar -> Judul -> Teks */
+    }
+    
+    .list__thumbnail {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 0 15px 0 !important; /* Memberi jarak antara gambar dan judul di bawahnya */
+        float: none !important;        /* Mematikan sifat bawaan tema yang mendesak teks */
+    }
+    
+    .list__thumbnail img {
+        border-radius: 8px !important; /* Membuat sudut gambar melengkung manis */
+    }
+    
+    .list__content {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    
+    /* Sedikit mengecilkan teks meta agar muat berjejer di layar sempit HP */
+    .meta__list {
+        gap: 10px !important;
+    }
+    .meta__item {
+        font-size: 0.75rem !important;
+    }
+}
