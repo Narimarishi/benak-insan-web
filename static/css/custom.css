@@ -506,10 +506,11 @@ blockquote {
     margin-right: 5px !important; /* Jarak ikon dengan teksnya */
 }
 
-/* 2. Memotong Teks Preview Maksimal 3 Baris (Fitur Cerdas Webkit) */
+/* 2. Memotong Teks Preview Maksimal 3 Baris (Fitur Cerdas Webkit & Standar) */
 .list__excerpt {
     display: -webkit-box !important;
-    -webkit-line-clamp: 3 !important; /* Ubah angka ini jika ingin 2 atau 4 baris */
+    -webkit-line-clamp: 3 !important; /* Untuk Chrome, Safari, Edge, dll */
+    line-clamp: 3 !important;         /* Standar universal yang diminta VS Code */
     -webkit-box-orient: vertical !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
