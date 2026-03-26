@@ -1,7 +1,7 @@
 # =========================================================
 # 1. PENGATURAN UTAMA
 # =========================================================
-baseURL = "https://narimarishi.github.io/benak-insan-web/"
+baseURL = "https://benak-insan-web.vercel.app/"
 title = "Benak Insan"
 languageCode = "id-id"
 theme = "mainroad"
