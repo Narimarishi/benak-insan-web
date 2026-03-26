@@ -46,6 +46,8 @@ Dengan demikian, makalah ini mampu mengulas secara mendalam tentang kompleksitas
 
 Kerja sama internasional
 
+![Ilustrasi Persetujuan Kerja Sama Internasional](tujuan-kerjasama-internasional.jpg "Ilustrasi Persetujuan Kerja Sama Internasional")
+
 Para ahli dan penstudi hubungan internasional telah lama mendiskusikan beragam perspektif dan pendekatan terkait bagaimana negara-negara dapat bekerja bersama untuk mencapai tujuan bersama di tengah dinamika geopolitik yang kompleks.
 
 Dalam teori realisme, kerja sama internasional dipandang dari sudut pandang kepentingan nasional dan kekuasaan relatif antar negara. Realisme menekankan bahwa kerja sama terjadi ketika negara-negara menilai bahwa keuntungan bersama atau kepentingan nasional mereka tercapai melalui kolaborasi. Pendekatan ini menyoroti persaingan antar negara sebagai pendorong utama kerja sama internasional. Di sisi lain, teori liberalisme menekankan peran institusi internasional, nilai-nilai demokrasi, perdamaian, dan kerjasama antar negara. Dalam kerangka liberalisme, kerja sama internasional dilihat sebagai sarana untuk menciptakan tatanan global yang lebih stabil dan adil. Institusi internasional dipandang sebagai fasilitator utama bagi negara-negara untuk bekerja sama dalam mencapai tujuan bersama. Konstruktivisme menawarkan perspektif yang berfokus pada peran identitas, norma, dan persepsi dalam hubungan internasional. Konsep kerja sama internasional dalam kerangka konstruktivisme menyoroti bagaimana interaksi antar aktor negara dapat membentuk persepsi bersama dan norma-norma yang mendukung kerja sama lintas batas (Mastanduno, 2018). .
@@ -65,6 +67,8 @@ Melalui berbagai konsep dan teori ini, para ahli memberikan wawasan yang mendala
 _Collaborative Government_
 
 Teori dan konsep seputar collaborative government menekankan pentingnya kolaborasi antara pemerintah, sektor swasta, masyarakat sipil, dan berbagai pemangku kepentingan lainnya dalam proses pengambilan keputusan dan pelaksanaan kebijakan publik. Pendekatan ini didasarkan pada keyakinan bahwa isu-isu kompleks seperti perubahan iklim, kemiskinan, dan ketimpangan sosial memerlukan kerja sama lintas sektor dan lintas lembaga untuk mencapai solusi yang berkelanjutan.
+
+![Ilustrasi Kegiatan Diskusi](collaborative-governance.webp "Ilustrasi Kegiatan Diskusi")
 
 Dalam collaborative government, pemerintah berperan sebagai fasilitator dan koordinator yang membuka ruang partisipasi bagi berbagai pihak untuk berkontribusi dalam menyusun kebijakan publik. Kolaborasi ini dapat terjadi dalam berbagai tingkatan, mulai dari penyusunan program kecil hingga pembentukan kebijakan nasional yang luas. Konsep ini menekankan transparansi, akuntabilitas, dan partisipasi aktif dari semua pihak yang terlibat. Dengan melibatkan berbagai perspektif dan pengetahuan, collaborative government diharapkan dapat menghasilkan kebijakan yang lebih holistik, inovatif, dan berdampak positif bagi masyarakat secara keseluruhan. Selain itu, collaborative government juga memperkuat legitimasi kebijakan dengan melibatkan pemangku kepentingan yang beragam, sehingga keputusan yang diambil dapat mencerminkan kebutuhan dan aspirasi masyarakat secara lebih menyeluruh. Dengan demikian, kolaborasi antarlembaga dan antarorganisasi menjadi kunci dalam membangun kebijakan yang responsif, inklusif, dan berkelanjutan (Ansell, 2018).
 
