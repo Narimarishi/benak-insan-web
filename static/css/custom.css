@@ -464,3 +464,22 @@ blockquote {
     color: #5C4033 !important;
     transform: translateY(-2px) !important; 
 }
+
+/* =========================================================
+   12. PENYESUAIAN GAMBAR DI DALAM ARTIKEL
+   ========================================================= */
+.post__content img, .content img {
+    max-width: 75% !important;     /* Membatasi ukuran maksimal hanya 75% dari lebar ruang baca */
+    height: auto !important;       /* Menjaga proporsi gambar agar tidak gepeng */
+    display: block !important;     /* Memisahkan gambar dari baris teks */
+    margin: 2rem auto !important;  /* Mendorong gambar tepat ke tengah (center) & memberi jarak napas */
+    border-radius: 8px !important; /* Sudut membulat elegan agar senada dengan elemen lain */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important; /* Bayangan super tipis agar gambar sedikit menonjol */
+}
+
+/* Khusus untuk tampilan HP: Biarkan gambar penuh karena layar sudah sempit */
+@media (max-width: 768px) {
+    .post__content img, .content img {
+        max-width: 100% !important; 
+    }
+}
