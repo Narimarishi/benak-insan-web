@@ -2,7 +2,7 @@
 title: Kok Disuruh Push-up?
 date: 2020-05-27T10:15:00
 categories:
-  - Opini & Esai
+  - Opini
 tags:
   - Politik
   - Hukum

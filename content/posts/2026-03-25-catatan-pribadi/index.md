@@ -2,7 +2,7 @@
 title: Catatan Pribadi
 date: 2019-05-26T15:48:00
 categories:
-  - Opini & Esai
+  - Opini
 tags:
   - Filsafat
 thumbnail: soldier.webp

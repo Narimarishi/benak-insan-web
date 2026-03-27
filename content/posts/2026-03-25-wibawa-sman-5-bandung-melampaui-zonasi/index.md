@@ -2,7 +2,7 @@
 title: Wibawa SMAN 5 Bandung Melampaui Zonasi
 date: 2020-07-09T02:23:00
 categories:
-  - Opini & Esai
+  - Opini
 tags:
   - Edukasi
 thumbnail: old-building.webp
