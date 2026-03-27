@@ -55,7 +55,7 @@ collections:
           
           # --- Ini adalah dua kolom khusus yang kita buat tadi ---
           - {label: "Foto Profil", name: "foto_profil", widget: "image", required: false}
-          - {label: "Teks Biografi (Sebelah Foto)", name: "biografi", widget: "text", required: false}
+          - {label: "Teks Biografi (Sebelah Foto)", name: "biografi", widget: "markdown", required: false}
           # ------------------------------------------------------
           
           - {label: "Isi Konten Lanjutan (Bagian Bawah)", name: "body", widget: "markdown"}
