@@ -25,6 +25,7 @@ canonifyURLs = true
 # 3. PENGATURAN TEMA & CSS KUSTOM
 # =========================================================
 [params]
+  description = "Portal digital Mohammad Rizky Luthfiah Aziz yang berbagi materi perkuliahan, analisis kebijakan publik, dan catatan tata kelola pemerintahan."
   mainSections = ["posts"] 
   readmore = true 
   post_meta = ["author", "date", "categories"]
