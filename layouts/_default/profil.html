@@ -2,46 +2,79 @@
   <div class="content main__content clearfix">
     
     <style>
-      .profil-container {
+      /* ==== GAYA UNTUK DESKTOP ==== */
+      .profil-wrapper {
         display: flex;
-        flex-direction: row;
-        gap: 35px;
+        flex-direction: row; 
+        gap: 45px; /* Spasi ditingkatkan drastis agar lebih lega (Breathing Room) */
         align-items: flex-start;
-        margin-bottom: 40px;
+        margin-bottom: 20px; /* Jarak padat ke garis pemisah <hr> di bawahnya */
       }
-      .profil-foto {
-        width: 220px;
-        height: auto;
-        border-radius: 12px;
-        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+
+      .profil-foto-box {
+        flex: 0 0 200px; /* Lebar foto tetap di desktop */
+        width: 200px;
+      }
+
+      .profil-image {
+        width: 100%; 
+        height: auto; 
+        border-radius: 8px; 
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Bayangan lebih halus */
         object-fit: cover;
-        flex-shrink: 0;
       }
-      .profil-teks {
-        flex: 1;
-        line-height: 1.7;
+
+      .profil-text-box {
+        flex: 1; /* Teks mengambil sisa ruang dengan elastis */
       }
+
+      /* MEMAKSA TEKS BIOGRAFI MENYERUPAI PARAGRAF STANDAR TEMA */
+      .profil-text-box > * {
+        margin-top: 0 !important; /* Hapus margin atas dari markdownify output */
+      }
+
+      /* Terapkan gaya paragraf dasar tema Mainroad (ukuran, tinggi baris, jarak)
+         agar teks biografi terlihat identik dengan teks artikel di bawahnya. */
+      .profil-text-box p {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        margin-bottom: 1.6em; /* Spasi antar paragraf biografi yang proporsional */
+      }
+      
+      .profil-text-box p:last-child {
+        margin-bottom: 0; /* Paragraf terakhir tidak perlu spasi bawah */
+      }
+
+      /* ==== PERBAIKAN TOTAL UNTUK MOBILE ==== */
       @media (max-width: 768px) {
-        .profil-container {
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
+        .profil-wrapper {
+          flex-direction: column; /* Foto pindah ke ATAS teks */
+          align-items: center; 
+          gap: 15px; /* Kurangi gap desktop yang terlalu lebar */
         }
-        .profil-foto {
-          width: 180px;
-          margin-bottom: 10px;
+        
+        .profil-foto-box {
+          /* PERBAIKAN INI ADALAH KUNCI */
+          flex: 0 0 auto; /* Jangan paksa flex-basis 200px di HP */
+          width: 140px; /* Batasi lebar foto agar terlihat manis di tengah, tidak memenuhi layar */
+          margin-bottom: 10px; /* Jarak bawah ke teks */
         }
       }
     </style>
 
     {{ if .Params.foto_profil }}
-    <div class="profil-container">
-      <img src="{{ .Params.foto_profil }}" alt="Profil Penulis" class="profil-foto">
-      <div class="profil-teks">
+    <div class="profil-wrapper">
+      <div class="profil-foto-box">
+        <img src="{{ .Params.foto_profil }}" alt="Profil Penulis" class="profil-image">
+      </div>
+      <div class="profil-text-box">
         {{ .Params.biografi | markdownify }}
       </div>
     </div>
     {{ end }}
+
+    <hr style="margin-top: 15px; margin-bottom: 30px; border: 0; border-top: 1px solid #eee;">
 
     {{ .Content }}
 
