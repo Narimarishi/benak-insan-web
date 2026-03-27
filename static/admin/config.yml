@@ -39,3 +39,23 @@ collections:
           - {label: "Nama/Judul Dokumen", name: "nama_dokumen", widget: "string"}
           - {label: "File Dokumen (PDF/PPT/Doc)", name: "file_dokumen", widget: "file"}
       - {label: "Isi Teks Artikel", name: "body", widget: "markdown"}
+
+# 4. Merancang Formulir Input untuk Halaman Tunggal (Profil)
+  - name: "halaman"
+    label: "Pengaturan Halaman"
+    files:
+      - label: "Edit Profil Saya"
+        name: "profil"
+        file: "content/profil.md" # Pastikan nama file markdown profilmu benar di sini
+        fields:
+          - {label: "Judul Halaman", name: "title", widget: "string"}
+          - {label: "Tanggal", name: "date", widget: "datetime"}
+          - {label: "Sembunyikan Sidebar", name: "sidebar", widget: "boolean", default: false}
+          - {label: "Layout (Sistem)", name: "layout", widget: "hidden", default: "profil"}
+          
+          # --- Ini adalah dua kolom khusus yang kita buat tadi ---
+          - {label: "Foto Profil", name: "foto_profil", widget: "image", required: false}
+          - {label: "Teks Biografi (Sebelah Foto)", name: "biografi", widget: "text", required: false}
+          # ------------------------------------------------------
+          
+          - {label: "Isi Konten Lanjutan (Bagian Bawah)", name: "body", widget: "markdown"}

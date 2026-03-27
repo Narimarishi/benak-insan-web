@@ -2,18 +2,15 @@
 title: "Profil Saya"
 date: 2026-03-13
 sidebar: false
+layout: "profil"
+foto_profil: "/gambar/Mohammad-Rizky-Luthfiah-Aziz.jpg"
+biografi: |
+  Selamat datang di **Benak Insan**.
+
+  Saya adalah **Mohammad Rizky Luthfiah Aziz**, seorang Aparatur Sipil Negara (PNS) yang juga mengabdi di dunia akademik sebagai Tenaga Pendidik (Dosen). Portal ini saya dedikasikan sebagai ruang berbagi—sebuah repositori digital untuk materi perkuliahan, analisis kebijakan publik, serta catatan-catatan pemikiran terkait transformasi tata kelola pemerintahan.
+  
+  Sebagai seorang birokrat dan akademisi, saya percaya bahwa sinergi antara teori akademik dan implementasi praktis di sektor publik adalah kunci untuk menciptakan kebijakan yang berdampak nyata bagi masyarakat.
 ---
-
-<img src="/gambar/Mohammad-Rizky-Luthfiah-Aziz.jpg" alt="Foto Profil Rizky" style="float: left; width: 160px; border-radius: 50%; margin-right: 25px; margin-bottom: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-
-Selamat datang di **Benak Insan**.
-
-Saya adalah **Mohammad Rizky Luthfiah Aziz**, seorang Aparatur Sipil Negara (PNS) yang juga mengabdi di dunia akademik sebagai Tenaga Pendidik (Dosen). Portal ini saya dedikasikan sebagai ruang berbagi—sebuah repositori digital untuk materi perkuliahan, analisis kebijakan publik, serta catatan-catatan pemikiran terkait transformasi tata kelola pemerintahan.
-
-Sebagai seorang birokrat dan akademisi, saya percaya bahwa sinergi antara teori akademik dan implementasi praktis di sektor publik adalah kunci untuk menciptakan kebijakan yang berdampak nyata bagi masyarakat.
-
-<div style="clear: both;"></div>
-<br>
 
 ### 🏛️ Pengabdian & Profesionalisme
 Dalam menjalankan tugas keseharian, fokus utama saya terbagi ke dalam dua pilar:

@@ -1,0 +1,49 @@
+{{ define "main" }}
+  <div class="content main__content clearfix">
+    
+    <style>
+      .profil-container {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        align-items: flex-start;
+        margin-bottom: 40px;
+      }
+      .profil-foto {
+        width: 220px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+      .profil-teks {
+        flex: 1;
+        line-height: 1.7;
+      }
+      @media (max-width: 768px) {
+        .profil-container {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        .profil-foto {
+          width: 180px;
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+
+    {{ if .Params.foto_profil }}
+    <div class="profil-container">
+      <img src="{{ .Params.foto_profil }}" alt="Profil Penulis" class="profil-foto">
+      <div class="profil-teks">
+        {{ .Params.biografi | markdownify }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{ .Content }}
+
+  </div>
+{{ end }}
