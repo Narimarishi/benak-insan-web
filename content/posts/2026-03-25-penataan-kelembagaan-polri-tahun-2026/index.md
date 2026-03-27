@@ -2,7 +2,7 @@
 title: Penataan Kelembagaan Polri Tahun 2026
 date: 2025-12-29T17:17:00
 categories:
-  - Opini & Esai
+  - Opini
 tags:
   - Sociocultural
   - Penegak Hukum
