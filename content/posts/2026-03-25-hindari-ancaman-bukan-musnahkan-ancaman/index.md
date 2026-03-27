@@ -2,7 +2,7 @@
 title: Hindari Ancaman, Bukan Musnahkan Ancaman
 date: 2020-06-05T15:52:00
 categories:
-  - Opini & Esai
+  - Opini
 tags:
   - Sociocultural
 thumbnail: hydrant.webp
