@@ -1,0 +1,24 @@
+<div class="logo">
+	<a class="logo__link" href="{{ "" | relURL }}" title="{{ .Site.Title }}" rel="home">
+		{{- with .Site.Params.logo.image }}
+		<div class="logo__item logo__imagebox">
+			<img class="logo__img" src="{{ . | relURL }}" alt="Logo {{ $.Site.Title }} - Portal Analisis Kebijakan Publik">
+		</div>
+		{{- end }}
+		
+		{{- $title := .Site.Params.logo.title | default .Site.Title }}
+		{{- if $title }}
+		<div class="logo__item logo__text">
+			{{ if .IsHome }}
+				<h1 class="logo__title">{{ $title }}</h1>
+			{{ else }}
+				<div class="logo__title">{{ $title }}</div>
+			{{ end }}
+			
+			{{- with .Site.Params.logo.subtitle }}
+			<div class="logo__tagline">{{ . }}</div>
+			{{- end }}
+		</div>
+		{{- end }}
+	</a>
+</div>
