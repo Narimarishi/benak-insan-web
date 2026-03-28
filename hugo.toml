@@ -2,7 +2,7 @@
 # 1. PENGATURAN UTAMA
 # =========================================================
 baseURL = "https://benak-insan.vercel.app/"
-title = "Benak Insan"
+title = "Benak Insan - Portal Pemikiran & Analisis Kebijakan Publik"
 languageCode = "id-id"
 theme = "mainroad"
 
