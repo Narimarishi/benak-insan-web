@@ -65,8 +65,8 @@ collections:
         file: "content/video.md"
         fields:
           - {label: "Judul Halaman", name: "title", widget: "string"}
+          - {label: "Sembunyikan Sidebar", name: "sidebar", widget: "boolean", default: false}
           - {label: "Layout (JANGAN DIUBAH)", name: "layout", widget: "hidden", default: "video"}
-          - {label: "Sidebar (JANGAN DIUBAH)", name: "sidebar", widget: "boolean", default: false}
           - label: "Daftar Video BSKDN"
             name: "daftar_video"
             widget: "list"
