@@ -472,26 +472,51 @@ blockquote { border-left: 5px solid #5C4033 !important; background-color: #F4EFE
 .video-title { color: #6a4a3a !important; margin-bottom: 12px !important; font-size: 22px !important; }
 
 /* =========================================================
-   15. OPTIMASI LAYAR TABLET (600px - 768px)
+   15. PENYEMPURNAAN MENU VIDEO
    ========================================================= */
-@media (min-width: 600px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     .header__container {
-        flex-direction: row !important; /* KUNCI: Ubah tumpukan (column) menjadi baris (row) */
-        justify-content: space-between !important; /* Dorong kiri dan kanan hingga mentok */
+        flex-direction: row !important;
+        justify-content: space-between !important;
         align-items: center !important;
-        padding: 15px 4% !important; /* Sedikit ruang bernapas di tepi layar tablet */
+        padding: 15px 4% !important;
     }
 
-    /* 1. Kembalikan Grup Logo ke Kiri */
     .logo__link {
-        width: auto !important; /* Bebaskan dari batasan 100% lebar HP */
+        width: auto !important;
         justify-content: flex-start !important;
     }
 
-    /* 2. Kembalikan Grup Pencarian & Menu ke Kanan */
+    .logo__img {
+        width: 50px !important;
+        height: 50px !important;
+        min-width: 50px !important;
+    }
+
+    .logo__title {
+        font-size: 30px !important;
+        white-space: nowrap !important;
+    }
+
+    .logo__tagline {
+        font-size: 13px !important;
+        white-space: nowrap !important;
+    }
+
     .header__right {
-        width: auto !important; /* Bebaskan dari batasan 100% lebar HP */
-        margin-top: 0 !important; /* Hilangkan jarak atas karena sudah di samping */
+        width: auto !important;
+        margin-top: 0 !important;
         justify-content: flex-end !important;
+        gap: 12px !important;
+    }
+
+    .header-search__field {
+        width: 180px !important;
+        height: 44px !important;
+    }
+
+    .menu__btn {
+        width: 50px !important;
+        height: 44px !important;
     }
 }
