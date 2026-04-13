@@ -1,6 +1,6 @@
 ---
 title: Galeri Video BSKDN
-sidebar: false
+sidebar: true
 layout: video
 daftar_video:
   - judul_video: SIMAK BERAGAM LANGKAH YANG AKAN DILAKUKAN BSKDN | BSKDN Info bersama Rizki Azis
