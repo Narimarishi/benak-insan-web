@@ -24,3 +24,21 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+// FITUR UX: Tutup menu dropdown mobile jika klik di luar area menu
+document.addEventListener('click', function(event) {
+    var menuBtn = document.querySelector('.menu__btn');
+    var menuList = document.querySelector('.menu__list');
+
+    // Pastikan tombol menu ada di layar (agar tidak error di versi desktop)
+    if (!menuBtn || !menuList) return;
+
+    // Mendeteksi apakah titik yang diklik oleh user berada di DALAM area menu/tombol
+    var isClickInside = menuBtn.contains(event.target) || menuList.contains(event.target);
+
+    // Jika kliknya di LUAR, DAN menu sedang dalam keadaan terbuka (aria-expanded="true")
+    if (!isClickInside && menuBtn.getAttribute('aria-expanded') === 'true') {
+        // Simulasikan klik pada tombol untuk menutupnya dengan aman
+        menuBtn.click(); 
+    }
+});
