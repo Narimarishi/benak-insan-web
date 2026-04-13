@@ -50,7 +50,7 @@ collections:
         fields:
           - {label: "Judul Halaman", name: "title", widget: "string"}
           - {label: "Tanggal", name: "date", widget: "datetime"}
-          - {label: "Munculkan Sidebar", name: "sidebar", widget: "boolean", default: false}
+          - {label: "Tes Sidebar", name: "sidebar", widget: "boolean", default: false}
           - {label: "Layout (Sistem)", name: "layout", widget: "hidden", default: "profil"}
           
           # --- Ini adalah dua kolom khusus yang kita buat tadi ---
