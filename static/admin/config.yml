@@ -59,3 +59,16 @@ collections:
           # ------------------------------------------------------
           
           - {label: "Isi Konten Lanjutan (Bagian Bawah)", name: "body", widget: "markdown"}
+
+      - label: "Edit Halaman Video"
+        name: "video"
+        file: "content/video.md"
+        fields:
+          - {label: "Judul Halaman", name: "title", widget: "string"}
+          - {label: "Layout (JANGAN DIUBAH)", name: "layout", widget: "hidden", default: "video"}
+          - label: "Daftar Video BSKDN"
+            name: "daftar_video"
+            widget: "list"
+            fields:
+              - {label: "Judul Video", name: "judul_video", widget: "string"}
+              - {label: "ID YouTube (Contoh: 9ASVTwsAjZg)", name: "youtube_id", widget: "string"}

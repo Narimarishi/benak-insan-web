@@ -65,6 +65,12 @@ canonifyURLs = true
     weight = 10
 
   [[menu.main]]
+    identifier = "video"
+    name = "Video"
+    url = "/video/" 
+    weight = 15
+
+  [[menu.main]]
     identifier = "artikel"
     name = "Artikel"
     url = "/posts/" 
