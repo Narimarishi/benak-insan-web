@@ -46,12 +46,11 @@ a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post_
 /* =========================================================
    3. TOMBOL, TAGS, BADGE (BENTO-BOX STYLE) & FOOTER
    ========================================================= */
-/* A. Tombol Umum, Kategori, & Judul Tags (Gaya Bento Peletakan) */
 .post__readmore, .button, .category, .tags__title {
-    background-color: #5C4033 !important; /* Cokelat tua pekat untuk tombol */
-    color: #F4EFE6 !important;            /* Teks krem terang */
+    background-color: #5C4033 !important;
+    color: #F4EFE6 !important;
     border: none !important; 
-    border-radius: 6px !important;        /* Sudut membulat manis */
+    border-radius: 6px !important;
     padding: 6px 14px !important; 
     display: inline-block;
     transition: background-color 0.3s ease !important;
@@ -63,16 +62,15 @@ a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post_
     color: #ffffff !important; 
 }
 
-/* B. Gaya Khusus Tags & Badge Ikon (Gaya Cokelat Solid Membulat) */
 .widget-taglist__link, .widget-tags__link, a.tags__link.btn, .meta__tag,
 .tags__badge, .categories__badge {
-    font-size: 0.95rem !important;        /* NAIK: Memperbesar ukuran huruf (sebelumnya 0.85) */
-    padding: 7px 16px !important;         /* NAIK: Memperbesar ruang kotak agar proporsional */
+    font-size: 0.95rem !important;
+    padding: 7px 16px !important;
     background-color: #5C4033 !important; 
     color: #F4EFE6 !important;            
     border: 1px solid #5C4033 !important; 
     border-radius: 6px !important;        
-    margin: 4px 3px !important;           /* Menambah sedikit jarak antar kotak */
+    margin: 4px 3px !important;
     display: inline-flex !important;
     align-items: center !important;
     transition: all 0.3s ease !important;
@@ -83,14 +81,12 @@ a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post_
     vertical-align: middle !important;
 }
 
-/* Penyesuaian khusus untuk Ikon Badge agar serasi dan TIDAK TERGENCET */
 .tags__badge, .categories__badge {
-    padding: 6px 10px !important; /* Sedikit dikurangi agar ikon bisa bernapas bebas */
+    padding: 6px 10px !important;
     margin-right: 6px !important;
     justify-content: center !important;
 }
 
-/* Mencegah tumpang tindih kotak jika struktur HTML berlapis */
 .tags__item, .tags__list .btn .tags__link {
     background: transparent !important;
     border: none !important;
@@ -98,29 +94,25 @@ a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post_
     margin: 0 !important;
 }
 
-/* C. Efek Hover untuk Tags */
 .widget-taglist__link:hover, .widget-tags__link:hover, a.tags__link.btn:hover, .meta__tag:hover {
-    background-color: #8A6849 !important; /* Cokelat sedikit lebih muda saat disorot */
-    color: #ffffff !important;            /* Teks putih bersih */
+    background-color: #8A6849 !important;
+    color: #ffffff !important;            
     border-color: #8A6849 !important;     
     transform: translateY(-2px) !important; 
 }
 
-/* D. Warna & Ukuran Ikon SVG di Dalam Badge */
 .tags__svg, .tags__badge svg, .categories__badge svg {
     width: 18px !important;     
     height: 18px !important;    
-    flex-shrink: 0 !important;  /* KUNCI AJAIB: Mencegah browser menggencet ikon */
+    flex-shrink: 0 !important;
 }
 
-/* Gunakan fill saja, hapus stroke agar gambar tajam dan tidak bengkak/berbayang */
 .tags__svg, .tags__badge svg, .categories__badge svg,
 .tags__svg path, .tags__badge svg path, .categories__badge svg path { 
     fill: #F4EFE6 !important;   
     stroke: none !important; 
 }
 
-/* E. Footer */
 .footer {
     padding: 25px 5% !important; box-sizing: border-box !important;
     background-color: #3E362E !important; color: #F4EFE6 !important;
@@ -152,7 +144,7 @@ a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post_
 }
 
 /* =========================================================
-   5. HEADER GLOBAL, NAVBAR, & KOTAK PENCARIAN
+   5. HEADER GLOBAL (ATURAN ESTETIKA DASAR)
    ========================================================= */
 .header {
     background-color: #EFE8DB !important; border-bottom: 3px solid #D4C4A8 !important;
@@ -165,6 +157,7 @@ a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post_
 }
 .logo__tagline {
     color: #8A6849 !important; font-family: 'Lora', serif !important; font-style: italic; font-weight: 400 !important;
+    text-transform: none !important; /* Wajib dipertahankan agar tidak kapital semua */
 }
 
 .menu, .menu__item, .menu__link { background: transparent !important; border: none !important; margin: 0 !important; padding: 0 !important; }
@@ -173,72 +166,25 @@ a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post_
     font-weight: 700 !important; text-transform: uppercase; padding: 5px 0 !important; transition: color 0.3s ease;
 }
 
-/* --- PERBAIKAN HEADER LOGO & TAGLINE (RESPONSIF) --- */
-
-/* 1. Aturan Dasar (Berlaku otomatis untuk Layar HP) */
-.logo__tagline {
-    text-transform: none !important;
-}
-.logo .logo__item.logo__text {
-    white-space: normal !important;
-    text-align: center !important; /* Menengahkan teks di HP agar rapi */
-}
-.logo .logo__item.logo__text .logo__title {
-    font-size: 26px !important; /* Diperkecil sedikit agar pas di HP */
-    line-height: 1.2 !important;
-}
-.logo .logo__item.logo__text .logo__tagline {
-    font-size: 13px !important; /* Diperkecil agar tidak kepanjangan di HP */
-    line-height: 1.3 !important;
-    margin-top: 4px !important;
-    text-transform: none !important;
-}
-
-/* Membatalkan ukuran kaku di HP agar tidak berantakan */
-.header__right {
-    min-width: 0 !important; 
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    margin-top: 10px !important;
-    gap: 15px; /* Memberi jarak antara kolom pencarian dan tombol menu */
-}
-
-/* 2. Aturan Khusus Layar Besar (Tablet & Laptop) */
-@media (min-width: 768px) {
-    .logo .logo__item.logo__text {
-        max-width: 320px !important;
-        flex: 0 0 auto !important;
-        text-align: left !important; /* Rata kiri kembali di Laptop */
-    }
-    .logo .logo__item.logo__text .logo__title {
-        font-size: 32px !important; /* Membesar kembali di Laptop */
-    }
-    .logo .logo__item.logo__text .logo__tagline {
-        font-size: 15px !important; /* Membesar kembali di Laptop */
-    }
-    .header__right {
-        flex: 1 1 auto !important;
-        min-width: 550px !important; /* Lebar kaku HANYA aktif di Laptop */
-        justify-content: flex-end !important;
-        margin-top: 0 !important;
-    }
-}
-
-/* Menyembunyikan judul widget pencarian yang lama */
 .widget-search .widget__title { display: none !important; }
 .header-search { margin: 0 !important; padding: 0 !important; }
 .header-search__field {
-    padding: 8px 16px !important; border: 1px solid #D4C4A8 !important; border-radius: 20px !important; 
+    border: 1px solid #D4C4A8 !important; border-radius: 20px !important; 
     background-color: #FDFBF7 !important; color: #3E362E !important; font-family: 'Lora', serif !important;
     font-size: 0.9rem !important; outline: none !important;
     transition: all 0.4s ease !important;
+    box-sizing: border-box !important;
+    /* Suntikan Ikon Kaca Pembesar (SVG) */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238A6849' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 12px center !important; /* Posisi ikon di sebelah kanan */
+    background-size: 16px 16px !important; /* Ukuran proporsional ikon */
+    padding: 8px 35px 8px 16px !important; /* Ruang ekstra di kanan agar teks yang diketik tidak menabrak ikon */
 }
 input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:focus {
     outline: none !important; border-color: #8B5A2B !important; box-shadow: 0 0 8px rgba(139, 90, 43, 0.2) !important;
 }
 
-/* Tombol Back to Top */
 #backToTop {
     position: fixed; bottom: 30px; right: 30px; width: 45px; height: 45px;
     background-color: #5C4033; color: #ffffff; border: none; border-radius: 50%;
@@ -248,365 +194,225 @@ input:focus, textarea:focus, .widget-search__field:focus, .header-search__field:
 #backToTop.show { opacity: 1; visibility: visible; }
 #backToTop:hover { background-color: #333333; transform: translateY(-5px); }
 
-
 /* =========================================================
-   6. TAMPILAN DESKTOP (PC/LAPTOP) - REVISI TOP-ROW
+   6. TAMPILAN DESKTOP (PC/LAPTOP) - MINIMAL 769PX
    ========================================================= */
 @media (min-width: 769px) {
-    .header__container {
-        padding: 10px 3% !important; 
-        max-width: 100% !important;
-    }
+    .header__container { padding: 10px 3% !important; max-width: 100% !important; }
+    .header__top-row { display: flex !important; flex-direction: row !important; justify-content: space-between !important; align-items: center !important; width: 100% !important; }
 
-    .header__top-row {
-        display: flex !important;
-        flex-direction: row !important; 
-        justify-content: space-between !important; 
-        align-items: center !important;
-        width: 100% !important;
-    }
-
-    .logo__link, .logo__item, .logo__text {
+    .logo__link { display: flex !important; flex-direction: row !important; align-items: center !important; text-decoration: none !important; margin: 0 !important; padding: 0 !important; }
+    
+    /* MENGEMBALIKAN POSISI KE SAMPING DAN ANTI-LIPAT */
+    .logo .logo__item.logo__text {
         display: flex !important;
         flex-direction: row !important; 
         align-items: center !important;
-        text-decoration: none !important;
-        margin: 0 !important; padding: 0 !important;
+        max-width: none !important; 
+        white-space: nowrap !important; /* Kembali dibuat 1 baris anti-lipat */
     }
     
-    .logo__img {
-        display: inline-block !important; height: 48px !important; width: 48px !important;
-        object-fit: cover !important; margin-right: 15px !important;
-        border-radius: 50% !important; border: 2px solid #D4C4A8 !important; box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+    .logo__img { 
+        display: inline-block !important; 
+        height: 48px !important; 
+        width: 48px !important; 
+        min-width: 48px !important; /* Paksa lebar minimum */
+        flex-shrink: 0 !important; /* KUNCI: Larang browser menekan gambar */
+        object-fit: cover !important; 
+        margin-right: 15px !important; 
+        border-radius: 50% !important; 
+        border: 2px solid #D4C4A8 !important; 
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important; 
     }
     
     .logo__title {
-        font-size: 2.5rem !important; line-height: 1 !important; margin: 0 !important; padding-right: 20px !important;
-        white-space: nowrap !important; border-right: 2px solid #D4C4A8 !important; display: block !important;
+        font-size: 40px !important; /* Dibesarkan dan Berwibawa */
+        line-height: 1 !important;
+        margin: 0 !important; 
+        padding-right: 20px !important;
+        border-right: 2px solid #D4C4A8 !important; 
+        display: block !important;
+        white-space: nowrap !important; /* Mencegah turun baris */
     }
     .logo__title::after { display: none !important; }
     
     .logo__tagline {
-        display: block !important;
-        font-size: 0.75rem !important; letter-spacing: 1px !important; margin: 0 0 0 20px !important;
-        text-align: left !important; padding: 0 !important; border-left: none !important;
-        white-space: nowrap !important; line-height: 1 !important;
-        color: #8A6849 !important;
+        font-size: 16px !important; 
+        line-height: 1.4 !important; 
+        letter-spacing: 1px !important; 
+        margin: 0 0 0 20px !important; /* Jarak aman */
+        text-align: left !important; 
+        padding: 0 !important; 
+        border-left: none !important;
+        white-space: nowrap !important; /* Menjaga tetap di samping garis */
+        position: relative !important;
+        top: -1px !important;
     }
 
-    .header__right {
+    .header__right { 
         display: flex !important; 
         flex-direction: row !important; 
-        flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important; 
         align-items: center !important; 
-        gap: 20px !important; 
+        justify-content: flex-end !important; 
+        gap: 15px !important; 
         margin-left: auto !important;
+        padding-left: 25px !important; 
         margin-top: 0 !important; 
-        width: auto !important; 
+        flex: 0 1 auto !important; 
     }
-    
-    .header-search { order: 2 !important; margin: 0 !important; }
+    .header-search { 
+        order: 2 !important; 
+        margin: 0 !important; 
+    }
     .menu { order: 1 !important; margin: 0 !important; }
-    
-    .menu__list {
-        display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important;
-        gap: 20px !important; align-items: center !important; margin: 0 !important; padding: 0 !important;
-        background: transparent !important; box-shadow: none !important; position: static !important;
-    }
-    
+    .menu__list { display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; gap: 20px !important; align-items: center !important; margin: 0 !important; padding: 0 !important; background: transparent !important; box-shadow: none !important; position: static !important; }
     .menu__item, .menu__link { white-space: nowrap !important; }
     .menu__link { font-size: 0.85rem !important; color: #5C4033 !important; }
-    
-    .header-search__field {
-        width: 160px !important;
-        transform-origin: right center !important; 
-        border-radius: 20px !important;
+    .header-search__field { 
+        width: 170px !important; /* Ukuran permanen yang cukup luas dan elegan */
     }
-    .header-search__field:focus { width: 220px !important; }
     
     .menu__btn { display: none !important; }
 }
 
 /* =========================================================
-   7. TAMPILAN MOBILE (HP & TABLET) - CLEAN & CENTERED
+   7. TAMPILAN MOBILE (HP & TABLET) - MAKSIMAL 768PX
    ========================================================= */
 @media (max-width: 768px) {
     .header { position: relative !important; z-index: 1000 !important; }
+    .header__container { display: flex !important; flex-direction: column !important; align-items: center !important; padding: 15px !important; gap: 10px !important; }
 
-    .header__container {
+    .logo__link { display: flex !important; flex-direction: column !important; align-items: center !important; text-decoration: none !important; }
+    .logo__img { 
+        margin: 0 0 10px 0 !important; 
+        width: 45px !important; 
+        height: 45px !important; 
+        min-width: 45px !important; /* Paksa lebar minimum */
+        flex-shrink: 0 !important; /* Larang ditekan di layar HP */
+        border-radius: 50% !important;
+        object-fit: cover !important;
+    }
+    
+    .logo .logo__item.logo__text {
         display: flex !important;
-        flex-direction: column !important; 
-        align-items: center !important;    
-        padding: 15px !important;
-        gap: 10px !important;
-    }
-
-    .logo__link {
         flex-direction: column !important;
-        text-align: center !important;
-        padding: 0 !important;
-        margin: 0 !important;
+        align-items: center !important;
+        width: 100% !important;
     }
-    .logo__img { margin: 0 0 10px 0 !important; width: 45px !important; height: 45px !important; }
-    .logo__title { font-size: 2rem !important; display: block !important; border: none !important; padding: 0 !important; }
+    
+    .logo__title { 
+        font-size: 34px !important; /* Disesuaikan agar besar di HP */
+        line-height: 1.2 !important;
+        display: block !important; border: none !important; padding: 0 !important; 
+        margin: 0 0 5px 0 !important;
+        white-space: nowrap !important;
+    }
     
     .logo__tagline {
         display: block !important;
-        font-size: 0.7rem !important;
-        margin: 5px 0 !important;
+        font-size: 15px !important; 
+        line-height: 1.3 !important;
+        margin: 0 !important;
         text-align: center !important;
         white-space: normal !important;
     }
 
+    /* Sinkronisasi Tinggi Pencarian & Tombol Hamburger */
     .header__right {
         display: flex !important;
         flex-direction: row !important;
         justify-content: center !important;
         align-items: center !important;
-        gap: 15px !important;
+        gap: 10px !important;
         width: 100% !important;
-        margin-top: 5px !important;
+        margin-top: 15px !important;
+        min-width: 0 !important;
     }
 
     .header-search__field {
-        width: 150px !important;
+        width: 190px !important; 
+        height: 42px !important; 
         border-radius: 20px !important;
-        padding: 6px 15px !important;
+        padding: 0 35px 0 15px !important; /* Jarak 35px di kanan melindungi teks dari ikon */
+        margin: 0 !important;
+        box-sizing: border-box !important;
     }
 
     .menu__btn {
         background-color: #5C4033 !important;
-        width: 40px !important;
-        height: 35px !important;
+        width: 48px !important;
+        height: 42px !important; /* Tinggi disamakan dengan kotak pencarian */
         border-radius: 6px !important;
         background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' fill='%23ffffff'/%3E%3C/svg%3E") !important;
-        background-size: 22px 22px !important;
+        background-size: 24px 24px !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         color: transparent !important; 
         font-size: 0 !important;        
         border: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: inline-block !important;
     }
 
-    .menu__list {
-        display: none; 
-        position: absolute !important;
-        top: 100% !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        width: 90% !important;
-        background-color: #3E362E !important;
-        border-radius: 8px !important;
-        z-index: 9999 !important;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.3) !important;
-        padding: 10px 0 !important;
-        flex-direction: column !important;
-    }
-
-    .menu--opened .menu__list, 
-    .menu__btn--active + .menu__list,
-    .menu__list[style*="display: block"], 
-    .menu__list[style*="display: flex"] {
-        display: flex !important;
-    }
-
-    .menu__link {
-        color: #F4EFE6 !important;
-        padding: 15px !important;
-        text-align: center !important;
-        border-bottom: 1px solid rgba(255,255,255,0.1) !important;
-    }
+    .menu__list { display: none; position: absolute !important; top: 100% !important; left: 50% !important; transform: translateX(-50%) !important; width: 90% !important; background-color: #3E362E !important; border-radius: 8px !important; z-index: 9999 !important; box-shadow: 0 10px 25px rgba(0,0,0,0.3) !important; padding: 10px 0 !important; flex-direction: column !important; }
+    .menu--opened .menu__list, .menu__btn--active + .menu__list, .menu__list[style*="display: block"], .menu__list[style*="display: flex"] { display: flex !important; }
+    .menu__link { color: #F4EFE6 !important; padding: 15px !important; text-align: center !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; }
 }
 
 /* =========================================================
    8. NAVIGASI HALAMAN (PAGINATION)
    ========================================================= */
-.pagination__item {
-    background-color: #F4EFE6 !important; 
-    color: #5C4033 !important;            
-    border: 1px solid #D4C4A8 !important; 
-    border-radius: 4px !important;
-    transition: all 0.3s ease !important;
-}
-
-.pagination__link {
-    color: #5C4033 !important;
-}
-
-.pagination__item:hover,
-.pagination__link:hover {
-    background-color: #D4C4A8 !important; 
-    color: #5C4033 !important;
-}
-
-.pagination__item--current {
-    background-color: #5C4033 !important; 
-    color: #F4EFE6 !important;            
-    border-color: #5C4033 !important;
-}
-
-.custom-pagination {
-    display: flex !important;
-    flex-direction: row !important;
-    gap: 8px !important;       
-    flex-wrap: wrap !important;
-    align-items: center !important;
-    margin-top: 2rem !important;
-}
-
-.custom-pagination .pagination__item {
-    padding: 8px 15px !important;
-    min-width: 40px !important;
-    text-align: center !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    font-weight: bold !important;
-    text-decoration: none !important;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05) !important;
-}
+.pagination__item { background-color: #F4EFE6 !important; color: #5C4033 !important; border: 1px solid #D4C4A8 !important; border-radius: 4px !important; transition: all 0.3s ease !important; }
+.pagination__link { color: #5C4033 !important; }
+.pagination__item:hover, .pagination__link:hover { background-color: #D4C4A8 !important; color: #5C4033 !important; }
+.pagination__item--current { background-color: #5C4033 !important; color: #F4EFE6 !important; border-color: #5C4033 !important; }
+.custom-pagination { display: flex !important; flex-direction: row !important; gap: 8px !important; flex-wrap: wrap !important; align-items: center !important; margin-top: 2rem !important; }
+.custom-pagination .pagination__item { padding: 8px 15px !important; min-width: 40px !important; text-align: center !important; display: flex !important; justify-content: center !important; align-items: center !important; font-weight: bold !important; text-decoration: none !important; box-shadow: 0 2px 5px rgba(0,0,0,0.05) !important; }
 
 /* =========================================================
    9. PENYEMPURNAAN KENYAMANAN MEMBACA (READABILITY)
    ========================================================= */
-.post__content p, .post__content li {
-    font-size: 1.125rem !important; 
-    line-height: 1.8 !important;    
-}
-
-.post__title, .page-header__title {
-    color: #5C4033 !important; 
-}
-
-blockquote {
-    border-left: 5px solid #5C4033 !important; 
-    background-color: #F4EFE6 !important;      
-    padding: 15px 20px !important;
-    margin: 1.5rem 0 !important;
-    color: #5C4033 !important;
-    font-style: italic !important;
-    border-radius: 0 8px 8px 0 !important;     
-}
+.post__content p, .post__content li { font-size: 1.125rem !important; line-height: 1.8 !important; }
+.post__title, .page-header__title { color: #5C4033 !important; }
+blockquote { border-left: 5px solid #5C4033 !important; background-color: #F4EFE6 !important; padding: 15px 20px !important; margin: 1.5rem 0 !important; color: #5C4033 !important; font-style: italic !important; border-radius: 0 8px 8px 0 !important; }
 
 /* =========================================================
    10. PENYESUAIAN TEKS RINGKASAN (DAFTAR ARTIKEL)
    ========================================================= */
-.list__excerpt, .list__excerpt p {
-    font-size: 1rem !important;      
-    line-height: 1.6 !important;     
-    color: #4A4A4A !important;       
-}
+.list__excerpt, .list__excerpt p { font-size: 1rem !important; line-height: 1.6 !important; color: #4A4A4A !important; }
 
 /* =========================================================
    11. PERAPIAN TOMBOL READ MORE
    ========================================================= */
-.btn, .list__footer-readmore {
-    font-size: 0.875rem !important; 
-    padding: 8px 18px !important;
-    background-color: #5C4033 !important; 
-    color: #F4EFE6 !important;            
-    border-radius: 6px !important;        
-    transition: all 0.3s ease !important;
-    border: none !important;
-    font-weight: bold !important;
-}
-
-.btn:hover, .list__footer-readmore:hover {
-    background-color: #D4C4A8 !important; 
-    color: #5C4033 !important;
-    transform: translateY(-2px) !important; 
-}
+.btn, .list__footer-readmore { font-size: 0.875rem !important; padding: 8px 18px !important; background-color: #5C4033 !important; color: #F4EFE6 !important; border-radius: 6px !important; transition: all 0.3s ease !important; border: none !important; font-weight: bold !important; }
+.btn:hover, .list__footer-readmore:hover { background-color: #D4C4A8 !important; color: #5C4033 !important; transform: translateY(-2px) !important; }
 
 /* =========================================================
    12. PENYESUAIAN GAMBAR DI DALAM ARTIKEL
    ========================================================= */
-.post__content img, .content img {
-    max-width: 75% !important;     /* Membatasi ukuran maksimal hanya 75% dari lebar ruang baca */
-    height: auto !important;       /* Menjaga proporsi gambar agar tidak gepeng */
-    display: block !important;     /* Memisahkan gambar dari baris teks */
-    margin: 2rem auto !important;  /* Mendorong gambar tepat ke tengah (center) & memberi jarak napas */
-    border-radius: 8px !important; /* Sudut membulat elegan agar senada dengan elemen lain */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important; /* Bayangan super tipis agar gambar sedikit menonjol */
-}
-
-/* Khusus untuk tampilan HP: Biarkan gambar penuh karena layar sudah sempit */
-@media (max-width: 768px) {
-    .post__content img, .content img {
-        max-width: 100% !important; 
-    }
-}
+.post__content img, .content img { max-width: 75% !important; height: auto !important; display: block !important; margin: 2rem auto !important; border-radius: 8px !important; box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important; }
+@media (max-width: 768px) { .post__content img, .content img { max-width: 100% !important; } }
 
 /* =========================================================
    13. OPTIMASI UI DAFTAR ARTIKEL & TAMPILAN MOBILE
    ========================================================= */
+.meta, .meta__list { display: flex !important; flex-wrap: wrap !important; align-items: center !important; gap: 15px !important; padding: 0 !important; margin-bottom: 15px !important; }
+.meta__item { margin: 0 !important; display: flex !important; align-items: center !important; }
+.meta__icon { margin-right: 5px !important; }
+.list__excerpt { display: -webkit-box !important; -webkit-line-clamp: 3 !important; line-clamp: 3 !important; -webkit-box-orient: vertical !important; overflow: hidden !important; text-overflow: ellipsis !important; }
 
-/* 1. Meta Info Berjejer ke Samping (Berlaku di Semua Layar) */
-.meta, .meta__list {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    align-items: center !important;
-    gap: 15px !important; /* Jarak antar info (author, tanggal, folder) */
-    padding: 0 !important;
-    margin-bottom: 15px !important;
-}
-.meta__item {
-    margin: 0 !important;
-    display: flex !important;
-    align-items: center !important;
-}
-.meta__icon {
-    margin-right: 5px !important; /* Jarak ikon dengan teksnya */
-}
-
-/* 2. Memotong Teks Preview Maksimal 3 Baris (Fitur Cerdas Webkit & Standar) */
-.list__excerpt {
-    display: -webkit-box !important;
-    -webkit-line-clamp: 3 !important; /* Untuk Chrome, Safari, Edge, dll */
-    line-clamp: 3 !important;         /* Standar universal yang diminta VS Code */
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-}
-
-/* 3. Menyulap Layout Menjadi "Kartu" Khusus Layar HP */
 @media (max-width: 768px) {
-    .list__item {
-        display: flex !important;
-        flex-direction: column !important; /* Menumpuk elemen: Gambar -> Judul -> Teks */
-    }
-    
-    .list__thumbnail {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 0 15px 0 !important; /* Memberi jarak antara gambar dan judul di bawahnya */
-        float: none !important;        /* Mematikan sifat bawaan tema yang mendesak teks */
-    }
-    
-    .list__thumbnail img {
-        border-radius: 8px !important; /* Membuat sudut gambar melengkung manis */
-    }
-    
-    .list__content {
-        width: 100% !important;
-        padding: 0 !important;
-    }
-    
-    /* Sedikit mengecilkan teks meta agar muat berjejer di layar sempit HP */
-    .meta__list {
-        gap: 10px !important;
-    }
-    .meta__item {
-        font-size: 0.75rem !important;
-    }
+    .list__item { display: flex !important; flex-direction: column !important; }
+    .list__thumbnail { width: 100% !important; max-width: 100% !important; margin: 0 0 15px 0 !important; float: none !important; }
+    .list__thumbnail img { border-radius: 8px !important; }
+    .list__content { width: 100% !important; padding: 0 !important; }
+    .meta__list { gap: 10px !important; }
+    .meta__item { font-size: 0.75rem !important; }
 }
 
 /* =========================================================
    14. PENYEMPURNAAN MENU VIDEO
    ========================================================= */
-
-/* --- WARNA JUDUL VIDEO BSKDN --- */
-.video-title {
-    color: #6a4a3a !important; /* Kode warna cokelat yang senada dengan tema */
-    margin-bottom: 12px !important; /* Memberi jarak sedikit agar tidak terlalu mepet dengan video */
-    font-size: 22px !important;
-}
+.video-title { color: #6a4a3a !important; margin-bottom: 12px !important; font-size: 22px !important; }
