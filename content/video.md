@@ -1,7 +1,9 @@
 ---
-title: "Galeri Video BSKDN"
-layout: "video"
+title: Galeri Video BSKDN
+layout: video
 daftar_video:
-  - judul_video: "Rapat Koordinasi BSKDN"
-    youtube_id: "9ASVTwsAjZg"
+  - judul_video: SIMAK BERAGAM LANGKAH YANG AKAN DILAKUKAN BSKDN | BSKDN Info bersama Rizki Azis
+    youtube_id: 9ASVTwsAjZg
+  - judul_video: PERKUAT KELEMBAGAAN, BSKDN BELAJAR DARI KOREA SELATAN
+    youtube_id: 3pU_TAXgqO4
 ---
