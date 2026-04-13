@@ -583,3 +583,14 @@ blockquote {
         font-size: 0.75rem !important;
     }
 }
+
+/* =========================================================
+   14. PENYEMPURNAAN MENU VIDEO
+   ========================================================= */
+
+/* --- WARNA JUDUL VIDEO BSKDN --- */
+.video-title {
+    color: #6a4a3a !important; /* Kode warna cokelat yang senada dengan tema */
+    margin-bottom: 12px !important; /* Memberi jarak sedikit agar tidak terlalu mepet dengan video */
+    font-size: 22px !important;
+}
