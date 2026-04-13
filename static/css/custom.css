@@ -173,40 +173,56 @@ a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post_
     font-weight: 700 !important; text-transform: uppercase; padding: 5px 0 !important; transition: color 0.3s ease;
 }
 
-/* --- PERBAIKAN HEADER LOGO & TAGLINE --- */
-/* Menghapus gaya kapital semua pada subtitle logo */
+/* --- PERBAIKAN HEADER LOGO & TAGLINE (RESPONSIF) --- */
+
+/* 1. Aturan Dasar (Berlaku otomatis untuk Layar HP) */
 .logo__tagline {
     text-transform: none !important;
 }
-
-/* 1. specific to the tagline text container to prevent layout clash */
 .logo .logo__item.logo__text {
-    max-width: 320px !important; /* Force a break to prevent pushing the menu */
-    white-space: normal !important; /* Allow wrapping */
-    flex: 0 0 auto !important; /* Prevent it from growing, only shrinking */
-    text-transform: none !important; /* Maintain mixed case */
+    white-space: normal !important;
+    text-align: center !important; /* Menengahkan teks di HP agar rapi */
 }
-
-/* 2. font sizes and spacing refinement */
 .logo .logo__item.logo__text .logo__title {
-    font-size: 40px !important; /* balance the header title */
+    font-size: 26px !important; /* Diperkecil sedikit agar pas di HP */
     line-height: 1.2 !important;
 }
-
 .logo .logo__item.logo__text .logo__tagline {
-    font-size: 15px !important; /* adjust for neatness */
-    line-height: 1.4 !important;
+    font-size: 13px !important; /* Diperkecil agar tidak kepanjangan di HP */
+    line-height: 1.3 !important;
     margin-top: 4px !important;
-    text-transform: none !important; /* explicit here too for tagline text itself */
+    text-transform: none !important;
 }
 
-/* 3. ensure the menu container has enough minimum space to avoid getting squished */
+/* Membatalkan ukuran kaku di HP agar tidak berantakan */
 .header__right {
-    flex: 1 1 auto !important; /* Grow and shrink as needed */
-    min-width: 550px !important; /* Provide enough space for menu items to line up */
+    min-width: 0 !important; 
     display: flex !important;
-    justify-content: flex-end !important; /* Keep search and menu list to the right */
-    align-items: center !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    margin-top: 10px !important;
+    gap: 15px; /* Memberi jarak antara kolom pencarian dan tombol menu */
+}
+
+/* 2. Aturan Khusus Layar Besar (Tablet & Laptop) */
+@media (min-width: 768px) {
+    .logo .logo__item.logo__text {
+        max-width: 320px !important;
+        flex: 0 0 auto !important;
+        text-align: left !important; /* Rata kiri kembali di Laptop */
+    }
+    .logo .logo__item.logo__text .logo__title {
+        font-size: 32px !important; /* Membesar kembali di Laptop */
+    }
+    .logo .logo__item.logo__text .logo__tagline {
+        font-size: 15px !important; /* Membesar kembali di Laptop */
+    }
+    .header__right {
+        flex: 1 1 auto !important;
+        min-width: 550px !important; /* Lebar kaku HANYA aktif di Laptop */
+        justify-content: flex-end !important;
+        margin-top: 0 !important;
+    }
 }
 
 /* Menyembunyikan judul widget pencarian yang lama */
