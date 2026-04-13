@@ -66,7 +66,7 @@ collections:
         fields:
           - {label: "Judul Halaman", name: "title", widget: "string"}
           - {label: "Layout (JANGAN DIUBAH)", name: "layout", widget: "hidden", default: "video"}
-          - {label: "Sidebar (JANGAN DIUBAH)", name: "sidebar", widget: "hidden", default: false}
+          - {label: "Sidebar (JANGAN DIUBAH)", name: "disable_sidebar", widget: "hidden", default: true}
           - label: "Daftar Video BSKDN"
             name: "daftar_video"
             widget: "list"
