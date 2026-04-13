@@ -173,7 +173,13 @@ a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post_
     font-weight: 700 !important; text-transform: uppercase; padding: 5px 0 !important; transition: color 0.3s ease;
 }
 
+/* Meningkatkan ukuran teks header secara keseluruhan dengan paksaan */
+.logo__title {
+    font-size: 36px !important;
+}
+
 .logo__tagline {
+    font-size: 20px !important;
     text-transform: none !important;
 }
 
