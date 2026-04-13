@@ -173,6 +173,10 @@ a:hover, .widget__link:hover, .widget__item a:hover, .post__meta a:hover, .post_
     font-weight: 700 !important; text-transform: uppercase; padding: 5px 0 !important; transition: color 0.3s ease;
 }
 
+.logo__tagline {
+    text-transform: none !important;
+}
+
 /* Menyembunyikan judul widget pencarian yang lama */
 .widget-search .widget__title { display: none !important; }
 .header-search { margin: 0 !important; padding: 0 !important; }
