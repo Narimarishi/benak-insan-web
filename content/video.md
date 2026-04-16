@@ -13,6 +13,4 @@ daftar_video:
     youtube_id: MsYp3uQ57GQ
   - judul_video: KEPALA BSKDN JARING SARAN DAN MASUKAN DARI DAERAH GUNA PENYEMPURNAAN PEDOMAN KELEMBAGAAN BSKDN
     youtube_id: -EiB-zH2_ek
-  - judul_video: Tes Judul Video
-    youtube_id: tesvideo
 ---
